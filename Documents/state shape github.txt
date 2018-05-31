@@ -1,0 +1,159 @@
+{
+  entities: {
+    posts: {
+      1: {
+        id: 1,
+        user_id: 1,
+        type: "photo",
+        description: "Had to share this photo of me finally benching 75 lbs, OH YEAH",
+        image_url: "google.images/guy-with-small-biceps"
+      },
+      2: {
+        id: 2,
+        user_id: 2,
+        type: "audio",
+        description: "thought u guys might wanna hear my recording of me crying into my tuba",
+        image_url: ''
+      },
+      3: {
+        id: 3,
+        user_id: 2,
+        type: "photo-set",
+        description: "Here are some of my latest selfies taken on my vintage polaroid. please like thes e my personality depends on it",
+        image_url: ''
+      },
+      4: {
+        id: 4,
+        user_id: 1,
+        type: 'text',
+        description: "guys I've been secretly really into 1980s german polka recently, especially with heavy tuba parts",
+        image_url: ''
+      }
+    },
+    users: {
+      1: {
+        id: 1,
+        username: "Hard body Chongo",
+        email: "hard_body_steve@yahoo.com",
+        password_digest: "2r0g9jff",
+        session_token: "wr3290gh23"
+      },
+      2: {
+        id: 2,
+        username: "Soft body Chongo",
+        email: "soft_body_joe@aol.com",
+        password_digest: "f03huh5g",
+        session_token: "204bv3i0k"
+      },
+    },
+    user_profiles: {
+      1: {
+        user_id: 1,
+        description: "This guy goes hard in the paint all day and all night and you better not fuggedabouddit",
+        avatar_url: "google.com/images/search/gym-selfie-pic"
+      },
+      2: {
+        user_id: 2,
+        description: "I love to listen to soft jazz while I try not to cry",
+        avatar_url: "google.com/images/search/skinny-guy-playing-tuba-in-marching-band"
+      }
+    },
+    post_medias: {
+      1: {
+        id: 1,
+        post_id: 3,
+        image_url: 'sad-looking-selfie'
+      },
+      2: {
+        id: 2,
+        post_id: 3,
+        image_url: 'emo-looking-selfie'
+      },
+      3: {
+        id: 3,
+        post_id: 3,
+        image_url: 'gothic-looking-selfie'
+      }
+    },
+    user_follows: {
+      1: {
+        id: 1,
+        following_id: 1,
+        followee_id: 2
+      },
+      2: {
+        id: 2,
+        following_id: 2,
+        followee_id: 1
+      }
+    },
+    likes: {
+      1: {
+        id: 1,
+        user_id: 2,
+        post_id: 1
+      },
+      2: {
+        id: 2,
+        user_id: 2,
+        post_id: 4
+      }
+    },
+    reblogs: {
+      1: {
+        id: 1,
+        author_id: 1,
+        user_id: 1,
+        post_id: 1,
+        description: "Had to reblog this pic of me hitting 75, such a proud day"
+      }
+    },
+    collections: {
+      1: {
+        id: 1,
+        user_id: 2,
+        collection_name: "cool polka music to twerk to"
+      }
+    },
+    collection_posts: {
+      1: {
+        collection_id: 1,
+        post_id: 3431
+      },
+      2: {
+        collection_id: 1,
+        post_id: 541
+      },
+      3: {
+        collection_id: 1,
+        post_id: 234
+      },
+      4: {
+        collection_id: 1,
+        post_id: 5541
+      }
+    }
+  },
+  ui: {
+    notifications: {
+      1: {
+        id: 1,
+        content: "you logged in!"
+      },
+      2: {
+        id: 2,
+        content: "welcome new user"
+      }
+    },
+    errors: {
+      1: {
+        content: "there are no users with the name 'kiss_from_a_bicep'"
+      }
+    },
+    loading: true/false
+  },
+  session: {
+    session_token: "aslfjwr309fbefu",
+    current_user_id: 1
+  }
+}
