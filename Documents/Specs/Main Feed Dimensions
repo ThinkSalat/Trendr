@@ -1,0 +1,130 @@
+Dimensions: Main Feed
+
+header-container
+  height: 54px;
+  width: 100%
+
+  header
+    height 54px (inherit from container)
+    padding: 0 20px 0 0;
+
+    header logo
+      height 54px (inherit)
+      width 61px
+
+    header search bar
+      width auto - probably flex left or float
+      
+      header search bar icon
+        36px x 36px
+
+      header search bar input
+        height: 36px;
+        max-width: 540;
+        width adjusts as main nav gets closer, giving nav priority
+
+
+    header main nav
+      width 306px, 400px including compose button
+      margin right 6px
+      height 32
+      padding top 12px
+      position relative    
+
+      header main nav buttons
+        height 32px 
+        width 49-55px
+
+      header compose button
+        45 x 32
+        or 36 x 49
+
+Main Content container
+  padding  92px 5px 0 5px (0 bottom)
+
+  main content (clearfix if necessary)
+    width 990px;
+    height auto
+
+    left column (main content)
+      width 625px
+
+      avatar
+        display: block;
+        height: 64px;
+        width: 64px;
+        left: -85px;
+
+      posts nav
+        width 540
+        height 99
+        margin bottom 20
+      
+      post feed
+        width 540
+
+        post container !!!
+          width 540
+
+          post header
+            height 20px
+            padding-right: 20px;
+            padding-left: 20px;
+
+            user link - reblog icon - reblogged user link
+          post media
+            width 540
+
+          post content
+            width 540
+            height depends on content - make max something around 3 page lengths
+
+            post author link 
+              height depends on content
+              contains avatar, link and user added notes
+
+          post bottom nav (notes, reblog connections, comments, likes)
+            540 x 45
+            notes - post bottom nav buttons
+
+    new post modal (nearly same for all post types)
+      width 540 + 85 for avatar (65 x 65 + 20 pad right)
+      min height 290
+
+      post modal header
+        height 45 
+
+      post form
+        540 x 137 min, adjust to media lenght
+      tags 
+        height 41, adjust with number of tags if overfow
+      form buttons
+        height 61
+        close - post 
+
+
+    right column (sidebar)
+      320 x 760
+
+      user list
+        width 340px
+
+      other content
+        320 x 420
+
+  sidebar footer
+    900px x 81px
+
+    sidebar footer content
+      300 x 56
+
+  user link popover
+    280 x 266
+
+  popover top (link and avatar)
+    280 x 166
+      popover header
+      popover avatar
+      popover username
+  popover bottom ( shows last 3 posts)
+    280 x 100
