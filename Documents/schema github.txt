@@ -1,0 +1,69 @@
+# Database Schema
+
+## Users
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+| id  | integer  | not null, unique true  |
+| username  | string  | not null, unique true |
+email | string | not null, unique true
+password_digest | string | not null, unique true
+session_token | string | not null, unique true
+
+
+## User profile
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+user id | integer | not null, unique true
+description | string | 
+avatar_url | string | default (blank profile image)
+
+## Posts 
+(can have many post medias)
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+id | integer | not null, unique true
+user_id | integer | not null
+type | string | not null
+description | string | 
+image_url | string | 
+
+## PostMedia 
+(belongs_to post)
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+post_id | integer | not null
+image_url | string | not null
+
+## UserFollows
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+folling_id | integer | not null, unique true
+followed_id | integer | not null, unique true
+
+## Likes
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+user_id | integer | not null, unique true
+post_id | integer | not null, unique true
+
+## Reblogs
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+author_id | integer | not null, unique true
+user_id | integer | not null, unique true
+post_id | integer | not null, unique true
+
+## Collections
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+user_id | integer | not null, unique true
+post_id | integer | not null, unique true
+collection_name | string | not,null unique true in scope (user)
