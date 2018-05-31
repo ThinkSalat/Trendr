@@ -3,3 +3,11 @@ Dimension:
 
   main form container 
     800 x 329
+  
+    logo header
+      740 x 104
+    form buttons
+      740 x 159 
+
+      buttons width 350px
+     
