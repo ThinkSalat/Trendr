@@ -4,7 +4,7 @@
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-| id  | integer  | not null, unique true  |
+id | integer | not null, unique true, primary key
 | username  | string  | not null, unique true |
 email | string | not null, unique true
 password_digest | string | not null, unique true
@@ -15,7 +15,8 @@ session_token | string | not null, unique true
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-user id | integer | not null, unique true
+id | integer | not null, unique true, primary key
+user id | integer | not null, unique true, indexed, foreign key (references users)
 description | string | 
 avatar_url | string | default (blank profile image)
 
@@ -24,7 +25,8 @@ avatar_url | string | default (blank profile image)
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-id | integer | not null, unique true
+id | integer | not null, unique true, primary key
+title | string | optional
 user_id | integer | not null
 type | string | not null
 description | string | 
@@ -35,35 +37,68 @@ image_url | string |
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-post_id | integer | not null
+id | integer | not null, unique true, primary key
+post_id | integer | not null, indexed, foreign key (references posts)
 image_url | string | not null
 
 ## UserFollows
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-folling_id | integer | not null, unique true
-followed_id | integer | not null, unique true
+id | integer | not null, unique true, primary key
+following_id | integer | not null, unique true, indexed, foreign key (references users, person following the other user)
+followed_id | integer | not null, unique true, indexed, foreign key (references users, the person being followed)
 
 ## Likes
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-user_id | integer | not null, unique true
-post_id | integer | not null, unique true
+id | integer | not null, unique true, primary key
+user_id | integer | not null, unique true, indexed, foreign key (references user who liked post)
+post_id | integer | not null, unique true, indexed, foreign key (references posts)
 
 ## Reblogs
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-author_id | integer | not null, unique true
-user_id | integer | not null, unique true
-post_id | integer | not null, unique true
+id | integer | not null, unique true, primary key
+author_id | integer | not null, unique true, indexed, foreign key (references users, original poster of material)
+user_id | integer | not null, unique true, indexed, foreign key (references users, person who reblogged)
+post_id | integer | not null, unique true, indexed, foreign key (references posts)
+description | string |
 
 ## Collections
 
 | Column        | Data Type     | Details       |  
 | ------------- | ------------- | ------------- |
-user_id | integer | not null, unique true
-post_id | integer | not null, unique true
-collection_name | string | not,null unique true in scope (user)
+id | integer | not null, unique true, primary key
+user_id | integer | not null, unique true, indexed, foreign key (references users)
+collection_name | string | not,null unique true in scope (user_id)
+description | string | optional 
+
+## Collection Posts
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+id | integer | not null, unique true, primary key
+collection_id | integer | not null, unique true, indexed, foreign key (references collections)
+post_id | integer | not null, unique true in scope (collection_id), indexed, foreign key (references posts)
+
+
+## tags
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+id | integer | not null, unique true, primary key
+name | string | not null, unique
+(tags deleted when not in use)
+
+## taggings
+
+| Column        | Data Type     | Details       |  
+| ------------- | ------------- | ------------- |
+id | integer | not null, primary key
+tag_id | integer | not null, unique in scope (post_id), indexed, foreign key (references tags)
+post_id | integer | not null, unique in scope (tag_id), indexed, foreign key (references posts)
+
+
