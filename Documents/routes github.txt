@@ -1,0 +1,70 @@
+# Routes
+## Frontend Routes
+* `/` (splash screen/main feed)
+* `/search/:query`
+* `/user/:user_id` - user profile/user posts feed
+* `/user/:user_id/likes` - all posts liked by user
+* `/user/:user_id/collections` - 
+* `/user/:user_id/collection/:collection_id`
+* `/user/:user_id/followers`
+* `/user/:user_id/following`
+* `/post/:post_id/:post_title`
+
+users - tumblr does subdomains -- username.tumblr.com. This may not work with heroku so the above will be used for development
+
+Post can be alternatively accessed like so /user/:user_id/post/:post_id
+this will use user's profile as backdrop as opposed to main feed
+
+Searching: /search/:query (will search blogs, considering often-used tags in posts, likes, followers)
+
+Root goes to main feed if signed in, sign in/sign up splash screen if not
+Followers/Following/Likes/Collections  - user can choose to make private
+
+Collections will be list of user collections with collection name, description, thumbnails and # posts
+## API Endpoints
+### `users`
+
+* `GET /api/users` - return users for search feature
+* `GET /api/users/:user_id` - return user by id
+* `POST /api/users` - sign up
+
+### `posts`
+
+* `GET /api/posts` - retrieve relevant posts filtered by params
+* `GET /api/posts/:post_id` - retrieve post
+* `POST /api/posts` - creates post
+* `PATCH /api/posts/:post_id` - edit a post
+* `DELETE /api/posts/:post_id` - delete a post
+
+### `likes`
+
+* `POST /api/likes` - like a post
+* `DELETE /api/likes` - unlike a post
+
+### `follows`
+* `POST /api/follows` - follow a user
+* `DELETE /api/follows` - unfollow a user
+
+### `collections`
+* `GET /api/collections` - get all relevant collections
+* `GET /api/collections/:collection_id` - get collection
+* `POST /api/collections` - create a collection
+* `PATCH /api/collections/:collection_id` - edit a collection
+* `DELETE /api/collections/:collection_id` - delete a collection
+
+### `collection_posts`
+* `GET /api/collection/:collection_id/collection_posts` - get all posts from collection
+* `POST /api/collection/:collection_id/collection_posts` - add post to collection
+* `DELETE /api/collection/:collection_id/collection_posts` -delete a post from collection
+
+### `tags`
+
+* `GET /api/tags` - get all tags for post or collection
+* `POST /api/tags` - create new tag
+* `DELETE /api/tags/:tag_id` - delete tag
+
+### `taggings`
+
+* `GET /api/taggings` - get all taggings for a post or collection
+* `POST /api/taggings`- add tag to a post or collection
+* `DELETE /api/taggings/:tagging_id` - remove tag from post or collection
