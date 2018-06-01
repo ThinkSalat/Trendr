@@ -4,11 +4,12 @@
 * `/search/:query`
 * `/user/:user_id` - user profile/user posts feed
 * `/user/:user_id/likes` - all posts liked by user
-* `/user/:user_id/collections` - 
-* `/user/:user_id/collection/:collection_id`
-* `/user/:user_id/followers`
-* `/user/:user_id/following`
-* `/post/:post_id/:post_title`
+* `/user/:user_id/collections` - all collections curated by :user_id
+* `/user/:user_id/collection/:collection_id` - collection curated by :user_id
+* `/user/:user_id/followers` - see who is following :user_id
+* `/user/:user_id/following` - see who :user_id is following
+* `/post/:post_id/:post_title` - view post
+* `/new/:post_type` - create new post of type :post_type
 
 users - tumblr does subdomains -- username.tumblr.com. This may not work with heroku so the above will be used for development
 
