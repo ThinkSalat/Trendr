@@ -5,8 +5,24 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
+//TEST
+import * as SessionApiUtil from './util/session_api_util';
+
+
+//END TEST
+
 
 document.addEventListener('DOMContentLoaded', () => {
+//TEST
+
+window.login = SessionApiUtil.login;
+window.signup = SessionApiUtil.signup;
+window.logout = SessionApiUtil.logout;
+
+//END TEST
+
+
+
   let store;
   if (window.currentUser) {
     const preloadedState = {
