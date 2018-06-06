@@ -1,0 +1,44 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                 :bigint(8)        not null, primary key
+#  username           :string           not null
+#  email              :string           not null
+#  password_digest    :string           not null
+#  session_token      :string           not null
+#  title              :string
+#  description        :string
+#  private_posts      :boolean          default(FALSE)
+#  private_likes      :boolean          default(TRUE)
+#  private_followers  :boolean          default(TRUE)
+#  private_followings :boolean          default(TRUE)
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  email: MyString
+  password_digest: MyString
+  session_token: MyString
+  description: MyString
+  avatar_url: MyString
+  private_posts: false
+  private_likes: false
+  private_followers: false
+  private_followings: false
+
+two:
+  username: MyString
+  email: MyString
+  password_digest: MyString
+  session_token: MyString
+  description: MyString
+  avatar_url: MyString
+  private_posts: false
+  private_likes: false
+  private_followers: false
+  private_followings: false
