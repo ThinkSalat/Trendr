@@ -1,4 +1,5 @@
 class Api::UsersController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def show
     render "api/users/profile"
@@ -6,7 +7,7 @@ class Api::UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-
+    p @user
     if @user.save
       login(@user)
       render "api/users/show"
@@ -27,10 +28,10 @@ class Api::UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:username, :email, :title, :description, :private_posts, :private_likes, :private_followers, :private_followings)
+    params.require(:user).permit(:username, :email, :password, :title, :description, :private_posts, :private_likes, :private_followers, :private_followings)
   end
 
   def update_user_params
-    params.require(:user).permit(:email, :title, :description, :private_posts, :private_likes, :private_followers, :private_followings)
+    params.require(:user).permit(:email, :password, :title, :description, :private_posts, :private_likes, :private_followers, :private_followings)
   end
 end

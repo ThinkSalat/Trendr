@@ -20,18 +20,18 @@
 class User < ApplicationRecord
   attr_reader :password
   before_validation :ensure_session_token
-  validates :username, :email, :session_token, presence: true, unqiueness: true
+  validates :username, :email, :session_token, presence: true, uniqueness: true
   validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
   validates_presence_of :password_digest
-  valdiates :username, length: { in: 5..30 }
-  validates :password, length: { minumum: 6, allow_nil: true }
+  validates :username, length: { in: 5..30 }
+  validates :password, length: { minimum: 6, allow_nil: true }
 
   # has_many :posts
   # has_many :likes
   # has_many :followers
   # has_many :followings
 
-  def find_by_credentials(username, password)
+  def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     user && user.is_password?(password) ? user : nil
   end
