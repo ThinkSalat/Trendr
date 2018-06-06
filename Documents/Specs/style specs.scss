@@ -1,0 +1,18 @@
+spec {
+
+  main blue: #37455C;
+  search bar blue: #303C50;
+  
+  active white: #FFFFFF;
+  inactive white color: #ACB1B9;
+  
+  buttons color {
+    background-color: #559FCA;
+  }
+  session forms radiuses {
+    border-radius: 2px;
+  }
+  avatars & posts & everything else {
+    border-radius: 3px
+  } 
+}
