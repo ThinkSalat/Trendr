@@ -19,7 +19,7 @@ import SignupFromContainer from './session/signup_form_container';
 const App = () => {
 
   return (
-  <div className="full-page">
+  <div className="full-page">  
     <header>
       <HeaderContainer />
     </header>
