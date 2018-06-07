@@ -34,9 +34,9 @@ class Header extends React.Component {
             <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
             <div className='header-search'> Search Trendr</div>
           {/* </div> */}
-          {/* <div className='header-right'> */}
+          <div className='header-right'>
             {this.renderHeaderSessionButton.bind(this)()}
-          {/* </div> */}
+          </div>
         </div>
       );
   }
