@@ -35,6 +35,7 @@ class SignUpForm extends React.Component {
       </ul>
     );
   }
+  
   render() {
     return(
       <div className="session-page">

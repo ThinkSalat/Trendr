@@ -18,11 +18,11 @@ export default class SessionPage extends React.Component {
             <br/>
           </div>
           <div>
-            <Link to="/signup" className="signup-button">Get Started</Link>
+            <Link to="/signup" onClick={() => this.props.clearErrors()} className="signup-button">Get Started</Link>
           </div>
           
           <div>
-            <Link to="/login" className="login-button">Log In</Link>
+            <Link to="/login" onClick={() => this.props.clearErrors()} className="login-button">Log In</Link>
           </div>
           <div>
             <Link to="/demo" className="demo-button">Demo Login</Link>
