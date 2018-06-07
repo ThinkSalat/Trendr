@@ -21,18 +21,22 @@ class Header extends React.Component {
   }
 
 
-  renderLogout() {
+  renderHeaderSessionButton() {
     if (this.props.currentUser){
-    return <button onClick={() => this.props.logout()}> Log out </button>
+    return <button className='header-session-button' onClick={() => this.props.logout()}> Log out </button>
     }
   }
 
   render() {
       return (
-        <div className='header'>
-          <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
-          <div> Search Trendr</div>
-          {this.renderLogout.bind(this)()}
+        <div className='header-container'>
+          {/* <div className='header-left'> */}
+            <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
+            <div className='header-search'> Search Trendr</div>
+          {/* </div> */}
+          {/* <div className='header-right'> */}
+            {this.renderHeaderSessionButton.bind(this)()}
+          {/* </div> */}
         </div>
       );
   }

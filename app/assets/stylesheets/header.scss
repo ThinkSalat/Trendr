@@ -1,17 +1,41 @@
 //automatically imported into application.scss through require_tree .
 
-.header {
+.header-container {
+  // background-color: gray;
   display: flex;
   flex-direction: row;
+  // justify-content: space-between;
   padding-left: 15px;
+
+
+  position: fixed;
+  width: 100%;
 }
 
 
 .header-logo {
-  width: 21px;
+  // width: 21px;
+  // height: 35px;
+
+  margin: 0px 18px 6px 0px;
   height: 35px;
-  background: url('https://assets.tumblr.com/images/logo/hover-animations/2.png') left center;
+  width: 21px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAhCAYAAAA74pBqAAAABGdBTUEAALGPC/xhBQAAAZZJREFUSA3dlr1KA0EUhXc14k9lIxHTpHAFG1GwCxYW4guEgK2PYK0PkEa08AEsrERJZWcpCGJlpyAWGjCFqfwBlfUbWZa5M7PrTrQIDpzMveeee3Z+wiZB4BhxHE+CZ6CPD5J1hzylBtJIBjOkY5IKBsnnDE6kWWbTQlUwyTJbLtgvZJYZ5zKOoi5UBRPLjL4tMFKwX8iEGatqUN0QCo/k2wyTYbBJ375HryUNMVmB3QORVbWJS6hTmw46cNvK7IVg1CHwpWbVNv/CSD24JC7Adymmvr/NuuZye8hjerrqNisE1cSgyVxLYtd0CLnrKHTCMLwp8fFAUSHA+Mkh1Kk2+jOd0OP+vgB9pb+K/882w7xzMLf5mSem5vXrdPuDWY3vYjVLY67sKkuY8EPMRxgugAjUQVPlVh/kPOhltJSZdaA4XcNH1pPyiVfKE+Y2VctOfp+zqt7Wq66Vqf8UF8A+B6dPSh6kkR6w1Qq48zy8R91DxBiVwXFBwza6hrVN4UiCaJFpDSyBKVAGb+AenIMT0OI99/4F8BYUhlPAAqcAAAAASUVORK5CYII=) left;
+  background-size: 21px 35px;
+  // background: url(https://assets.tumblr.com/images/logo/hover-animations/2.png) left center;
+
+
+
   &:hover {
     animation: play 1.4s steps(48) infinite;
   }
 }
+
+//tumblrs
+// .png-logo {
+//   padding: 11px 18px 6px 22px;
+//   height: 35px;
+//   width: 21px;
+//   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAhCAYAAAA74pBqAAAABGdBTUEAALGPC/xhBQAAAZZJREFUSA3dlr1KA0EUhXc14k9lIxHTpHAFG1GwCxYW4guEgK2PYK0PkEa08AEsrERJZWcpCGJlpyAWGjCFqfwBlfUbWZa5M7PrTrQIDpzMveeee3Z+wiZB4BhxHE+CZ6CPD5J1hzylBtJIBjOkY5IKBsnnDE6kWWbTQlUwyTJbLtgvZJYZ5zKOoi5UBRPLjL4tMFKwX8iEGatqUN0QCo/k2wyTYbBJ375HryUNMVmB3QORVbWJS6hTmw46cNvK7IVg1CHwpWbVNv/CSD24JC7Adymmvr/NuuZye8hjerrqNisE1cSgyVxLYtd0CLnrKHTCMLwp8fFAUSHA+Mkh1Kk2+jOd0OP+vgB9pb+K/882w7xzMLf5mSem5vXrdPuDWY3vYjVLY67sKkuY8EPMRxgugAjUQVPlVh/kPOhltJSZdaA4XcNH1pPyiVfKE+Y2VctOfp+zqt7Wq66Vqf8UF8A+B6dPSh6kkR6w1Qq48zy8R91DxBiVwXFBwza6hrVN4UiCaJFpDSyBKVAGb+AenIMT0OI99/4F8BYUhlPAAqcAAAAASUVORK5CYII=) 22px 11px no-repeat;
+//   background-size: 19px 33px;
+// }
