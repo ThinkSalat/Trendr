@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Header extends React.Component {
   constructor(props){
@@ -20,23 +21,23 @@ export default class Header extends React.Component {
       'https://i.imgur.com/8SDVH5P.png'
     ];
     const logoSpriteUrl = logoSprites[Math.floor(Math.random()*5)];
-
-
-    
+    // enter code to animate diff here
   }
+
+
   render() {
 
     if (!this.currentUser) {
       return (
         <div className='header'>
-          <div onMouseEnter={() => this.animate()} className='header-logo'></div>
+          <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
           <div> Search Tumblr</div>
         </div>
       );
     } else {
       return (
         <div className='header'>
-          <div onMouseEnter={() => this.animate()} className='header-logo'></div>
+          <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
           <div>Search Tumblr</div>
           <button onClick={() => this.logout()}> Log out </button>
         </div>
