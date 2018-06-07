@@ -7,6 +7,6 @@ export default class MainFeed extends React.Component {
       <div className='main-feed-container'>
         Main Feed
       </div>
-    )
+    );
   }
 }
