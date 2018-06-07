@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
+import SearchBarContainer from './searchbar_container';
+
 class Header extends React.Component {
 
   // const header =  <Searchbar />
@@ -32,7 +34,8 @@ class Header extends React.Component {
         <div className='header-container'>
           {/* <div className='header-left'> */}
             <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
-            <div className='header-search'> Search Trendr</div>
+            {/* <div className='header-search'> Search Trendr</div> */}
+            <SearchBarContainer />
           {/* </div> */}
           <div className='header-right'>
             {this.renderHeaderSessionButton.bind(this)()}
