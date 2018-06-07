@@ -1,20 +1,29 @@
 import React from 'react';
 
-const Header = ({ currentUser, logout }) => {
+export default class Header extends React.Component {
+  constructor(props){
+    super(props);
+    this.currentUser = this.props.currentUser;
+    this.logout = this.props.logout;
+  }
   // const header =  <Searchbar />
   //<Navbar /> ;
-  if (!currentUser) {
-    return (
-      <div>header</div>
-    );
-  } else {
-    return (
-      <div>
-        <div>header</div>
-        <button onClick={() => logout()}> Log out </button>
-      </div>
-    );
+  render() {
+    if (!this.currentUser) {
+      return (
+        <div className='header'>
+          <div onHover={() => this.animate} className='header-logo'></div>
+          <div>header</div>
+        </div>
+      );
+    } else {
+      return (
+        <div className='header'>
+          <div onHover={() => this.animate()} className='header-logo'></div>
+          <div>header</div>
+          <button onClick={() => this.logout()}> Log out </button>
+        </div>
+      );
+    }
   }
-};
-
-export default Header;
+}

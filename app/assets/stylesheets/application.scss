@@ -25,7 +25,10 @@ body {
 
 }
 
-.full-page {
+
+.header {
+  display: flex;
+  flex-direction: row;
 }
 
 .session-form {
@@ -120,4 +123,29 @@ body {
     85%{color: blue;}
     0%{color: orange;}	
   }
+}
+
+
+.header-logo {
+  width: 21px;
+  height: 35px;
+  background: url('https://assets.tumblr.com/images/logo/hover-animations/2.png') left center;
+  animation: play 1.4s steps(48) infinite;
+}
+
+@keyframes play {
+	100% { background-position: -1008px; }
+}
+
+.session-form-animation {
+  animation: aboutTumblrIntro .7s ease-out .5s;
+ animation-name: aboutTumblrIntro;
+ animation-duration: 0.7s;
+ animation-timing-function: ease-out;
+ animation-delay: 0.5s;
+ animation-iteration-count: initial;
+ animation-direction: initial;
+ animation-fill-mode: backwards;
+ animation-play-state: initial;
+ animation-fill-mode: backwards;
 }
