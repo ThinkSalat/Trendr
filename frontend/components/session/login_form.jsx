@@ -42,7 +42,7 @@ class LoginForm extends React.Component {
         <div className="session-page-form">
           <div className="session-page-form-logo"/>
           <form className='session-form' onSubmit={this.handleSubmit}>
-            <input type="text" placeholder="Email" onChange={this.update('email')} value={this.state.email}/>
+            <input type="text" placeholder="Username/Email" onChange={this.update('email')} value={this.state.email}/>
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
             {this.renderErrors()}
             <input type="submit" value="Sign In"/>
