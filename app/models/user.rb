@@ -1,4 +1,4 @@
-# == Schema Information
+ # == Schema Information
 #
 # Table name: users
 #
@@ -19,20 +19,26 @@
 
 class User < ApplicationRecord
   attr_reader :password
-  before_validation :ensure_session_token
+
   validates :username, :email, :session_token, presence: true, uniqueness: true
   validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
   validates_presence_of :password_digest
   validates :username, length: { in: 5..30 }
   validates :password, length: { minimum: 6, allow_nil: true }
-
+  
+  before_save :downcase_fields
+  before_validation :ensure_session_token
+  
   # has_many :posts
   # has_many :likes
   # has_many :followers
   # has_many :followings
-
+  def downcase_fields
+    self.username.downcase!
+    self.email.downcase!
+  end
   def self.find_by_credentials(signin, password)
-    user = User.find_by_email(signin) || User.find_by_username(signin)
+    user = User.find_by_email(signin.downcase) || User.find_by_username(signin.downcase)
     user && user.is_password?(password) ? user : nil
   end
 
