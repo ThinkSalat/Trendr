@@ -70,9 +70,10 @@
     text-align: center;
   }
   
-  .signup-button {
+  .signup-button, .session-submit-button {
     background-color: #559FCA;
     color: #fff;
+    font-weight: bold;
   }
   
   .login-button {
@@ -80,24 +81,57 @@
     color: #444444;
   }
 
-
-
-
-
-  .demo-button {
-    background-color: #559FCA;
-    color: #fff; 
-    &:hover {
-      animation: rainbow 1.75s infinite; 
-    }
+  input {
+  font-size: 16px;
+  font-weight: 250;
+  color: #A7A7A7;
+  border: .1px solid grey;
+  max-width: 298px;
+  min-width: 298px;
+  min-height: 45px;
+  display: block;
+  text-decoration: none;
+  padding: 11px 0px 8px 0px;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  padding-left: 8px;
   }
-
-  // source https://codepen.io/cabron/pen/OVXXmj
-  @keyframes rainbow{
-    5%{color: red;}
-    35%{color: yellow;}
-    65%{color: green;}
-    85%{color: blue;}
-    0%{color: orange;}	
+  
+  
+  .session-form-error-container {
+    // margin-right: 50px;
+    list-style-type: none;
+    max-width: 300px;
+    border-radius: 2px;
+    margin: -2px 0 0 0;
+    padding: 0;
+    // overflow: hidden;
+    // clear: both;
+    // opacity: 0;
+    // max-height: 0;
+    // transition-property: max-height, opacity, margin;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease;
   }
+  
+}
+
+
+.demo-button {
+  background-color: #559FCA;
+  color: #fff; 
+  &:hover {
+    animation: rainbow 1.75s infinite; 
+  }
+}
+
+
+// source https://codepen.io/cabron/pen/OVXXmj
+@keyframes rainbow{
+  5%{color: red;}
+  35%{color: yellow;}
+  65%{color: green;}
+  85%{color: blue;}
+  0%{color: orange;}	
 }

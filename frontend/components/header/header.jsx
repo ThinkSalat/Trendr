@@ -1,12 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-export default class Header extends React.Component {
-  constructor(props){
-    super(props);
-    this.currentUser = this.props.currentUser;
-    this.logout = this.props.logout;
-  }
+class Header extends React.Component {
+
   // const header =  <Searchbar />
   //<Navbar /> ;
 
@@ -25,23 +21,21 @@ export default class Header extends React.Component {
   }
 
 
-  render() {
-
-    if (!this.currentUser) {
-      return (
-        <div className='header'>
-          <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
-          <div> Search Tumblr</div>
-        </div>
-      );
-    } else {
-      return (
-        <div className='header'>
-          <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
-          <div>Search Tumblr</div>
-          <button onClick={() => this.logout()}> Log out </button>
-        </div>
-      );
+  renderLogout() {
+    if (this.props.currentUser){
+    return <button onClick={() => this.props.logout()}> Log out </button>
     }
   }
+
+  render() {
+      return (
+        <div className='header'>
+          <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link>
+          <div> Search Trendr</div>
+          {this.renderLogout.bind(this)()}
+        </div>
+      );
+  }
 }
+
+export default withRouter(Header);

@@ -26,9 +26,9 @@ class LoginForm extends React.Component {
   }
   renderErrors() {
     return(
-      <ul>
+      <ul className='session-form-error-container'>
         {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
+          <li className='session-form-error' key={`error-${i}`}>
             {error}
           </li>
         ))}
@@ -45,7 +45,7 @@ class LoginForm extends React.Component {
             <input type="text" placeholder="Username/Email" onChange={this.update('email')} value={this.state.email}/>
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
             {this.renderErrors()}
-            <input type="submit" value="Sign In"/>
+            <input type="submit" value="Sign In" className='session-submit-button'/>
           </form>
             {/* //github logo
             //linked in logo

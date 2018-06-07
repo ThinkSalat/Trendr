@@ -26,7 +26,7 @@ class SignUpForm extends React.Component {
   }
   renderErrors() {
     return(
-      <ul>
+      <ul className='session-form-error-container'>
         {this.props.errors.map((error, i) => (
           <li className='session-form-error' key={`error-${i}`}>
             {error}
@@ -46,7 +46,7 @@ class SignUpForm extends React.Component {
             <input type="text" placeholder="Email" onChange={this.update('email')} value={this.state.email}/>
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
             {this.renderErrors()}
-            <input type="submit" value="Sign Up" className="signup-button"/>
+            <input type="submit" value="Sign Up" className="session-submit-button"/>
           </form>
             {/* //github logo
             //linked in logo
