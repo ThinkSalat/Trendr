@@ -14,10 +14,18 @@
 *= require_self
 */
 body {
+  -webkit-font-smoothing: antialiased;
+
   background-color: #37455C;
   color: #FFFFFF;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.full-page {
 }
 
 .session-form {
@@ -82,7 +90,7 @@ body {
   .session-page-slogan {
     p {
       font-size: 12px;
-      font-weight: 300;
+      font-weight: 500;
     }
     text-align: center;
   }
@@ -95,5 +103,21 @@ body {
   .login-button {
     background-color: #FFFFFF;
     color: #444444;
+  }
+  .demo-button {
+    background-color: #559FCA;
+    color: #fff; 
+    &:hover {
+      animation: rainbow 1.75s infinite; 
+    }
+
+  }
+  // source https://codepen.io/cabron/pen/OVXXmj
+  @keyframes rainbow{
+    5%{color: red;}
+    35%{color: yellow;}
+    65%{color: green;}
+    85%{color: blue;}
+    0%{color: orange;}	
   }
 }

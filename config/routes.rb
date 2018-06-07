@@ -8,5 +8,8 @@ Rails.application.routes.draw do
     resources :follows, only: [:create, :destroy, :index]
     resource :search, only: [:show, :index]
   end
+
+  resources :images, ony: [:show]
+
   root "static_pages#root"
 end

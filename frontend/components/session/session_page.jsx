@@ -20,8 +20,12 @@ export default class SessionPage extends React.Component {
           <div>
             <Link to="/signup" className="signup-button">Get Started</Link>
           </div>
+          
           <div>
             <Link to="/login" className="login-button">Log In</Link>
+          </div>
+          <div>
+            <Link to="/demo" className="demo-button">Demo Login</Link>
           </div>
           {/* //github logo
           //linked in logo

@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-class SessionForm extends React.Component {
+class SignUpForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,7 +22,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user);
+    this.props.processForm(user).then( res => this.props.history.push('/'));
   }
   renderErrors() {
     return(
@@ -36,7 +36,6 @@ class SessionForm extends React.Component {
     );
   }
   render() {
-    
     return(
       <div className="session-page">
         <div className="session-page-form">
@@ -57,4 +56,4 @@ class SessionForm extends React.Component {
   }
 }
 
-export default withRouter(SessionForm);
+export default withRouter(SignUpForm);

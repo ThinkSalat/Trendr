@@ -12,12 +12,13 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HeaderContainer from './header/header_container';
 import MainFeed from './main_feed_container';
 import SessionPage from './session/session_page';
-import SessionForm from './session/session_form';
 import LoginFormContainer from './session/login_form_container';
 import SignupFromContainer from './session/signup_form_container';
 
 
-const App = () => { return (
+const App = () => {
+
+  return (
   <div className="full-page">
     <header>
       <HeaderContainer />

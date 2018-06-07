@@ -31,8 +31,8 @@ class User < ApplicationRecord
   # has_many :followers
   # has_many :followings
 
-  def self.find_by_credentials(username, password)
-    user = User.find_by_username(username)
+  def self.find_by_credentials(email, password)
+    user = User.find_by_email(email)
     user && user.is_password?(password) ? user : nil
   end
 

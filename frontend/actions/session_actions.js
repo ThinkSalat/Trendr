@@ -25,9 +25,9 @@ export const logout = () => dispatch => (
 
 // Normal Action Creators
 
-export const receiveCurrentUser = currentUser => ({
+export const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
-  currentUser
+  user
 });
 
 export const logoutCurrentUser = () => ({
