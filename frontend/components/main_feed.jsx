@@ -4,7 +4,7 @@ export default class MainFeed extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='main-feed-container'>
         Main Feed
       </div>
     )

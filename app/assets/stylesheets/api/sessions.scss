@@ -36,7 +36,8 @@
   box-sizing: border-box;
   text-align: center;
   border: 0px !important; 
-
+  
+ 
 }
 
 .session-page {
@@ -79,6 +80,12 @@
     background-color: #559FCA;
     color: #fff;
     font-weight: bold;
+    &:active {
+      color: #e3ecf3;
+      color: rgba(255,255,255,0.8);
+      background: #4e96c2;
+      border-color: #4e96c2;
+      }
   }
 
   .session-submit-button {
@@ -86,6 +93,12 @@
     color: #fff;
     font-weight: bold;
     margin-top: 10px;
+    &:active {
+      color: #e3ecf3;
+      color: rgba(255,255,255,0.8);
+      background: #4e96c2;
+      border-color: #4e96c2;
+      }
   }
   
   .login-button {
@@ -143,6 +156,12 @@
   &:hover {
     animation: rainbow 1.75s infinite; 
   }
+  &:active {
+    background: #4e96c2;
+    border-color: #4e96c2;
+    animation-play-state: paused;
+
+    }
 }
 
 

@@ -26,21 +26,6 @@ body {
 
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  padding-left: 15px;
-}
-
-
-.header-logo {
-  width: 21px;
-  height: 35px;
-  background: url('https://assets.tumblr.com/images/logo/hover-animations/2.png') left center;
-  &:hover {
-    animation: play 1.4s steps(48) infinite;
-  }
-}
 
 
 
