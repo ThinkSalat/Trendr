@@ -40,7 +40,7 @@ class LoginForm extends React.Component {
     return(
       <div className="session-page">
         <div className="session-page-form">
-          <div className="session-page-form-logo"/>
+        <div className="session-page-form-logo"> trendr. </div>
           <form className='session-form' onSubmit={this.handleSubmit}>
             <input type="text" placeholder="Username/Email" onChange={this.update('email')} value={this.state.email}/>
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
