@@ -1,7 +1,9 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+#top-session-form-input {
+  border-top: none;
+}
 .session-form {
   input {
     font-size: 16px;
@@ -33,6 +35,8 @@
   margin-bottom: 12px;
   box-sizing: border-box;
   text-align: center;
+  border: 0px !important; 
+
 }
 
 .session-page {
@@ -45,7 +49,8 @@
 }
 
 .session-page-form {
-  margin-top: -310px;
+  // margin-top: -310px;
+  margin-top: -210px;
   min-width: 289px;
   max-width: 50%;
   display: flex;
@@ -92,7 +97,6 @@
   font-size: 16px;
   font-weight: 250;
   color: #A7A7A7;
-  border: .1px solid grey;
   max-width: 298px;
   min-width: 298px;
   min-height: 45px;
@@ -103,6 +107,9 @@
   margin-bottom: 0px;
   padding-left: 8px;
   outline: none;
+  margin-top: -2px;
+  border: 0px;
+  border-top: 1px solid #e3e3e3;
   }
   
   
@@ -146,4 +153,22 @@
   65%{color: green;}
   85%{color: blue;}
   0%{color: orange;}	
+}
+
+
+@keyframes play {
+	100% { background-position: -1008px; }
+}
+
+.session-form-animation {
+  animation: aboutTumblrIntro .7s ease-out .5s;
+ animation-name: aboutTumblrIntro;
+ animation-duration: 0.7s;
+ animation-timing-function: ease-out;
+ animation-delay: 0.5s;
+ animation-iteration-count: initial;
+ animation-direction: initial;
+ animation-fill-mode: backwards;
+ animation-play-state: initial;
+ animation-fill-mode: backwards;
 }

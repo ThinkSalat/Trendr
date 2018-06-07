@@ -46,7 +46,7 @@ class SignUpForm extends React.Component {
               <br/>
           </div>
           <form className='session-form' onSubmit={this.handleSubmit}>
-            <input type='text' placeholder='Username' onChange={this.update('username')} value={this.state.username}/>
+            <input id='top-session-form-input' type='text' placeholder='Username' onChange={this.update('username')} value={this.state.username}/>
             <input type="text" placeholder="Email" onChange={this.update('email')} value={this.state.email}/>
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
             <ul className='session-form-error-container'>
