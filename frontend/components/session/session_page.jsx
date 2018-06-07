@@ -2,11 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default class SessionPage extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = this.props.currentUser;
-  }
-
   render() {
     return(
       <div className="session-page">
@@ -25,7 +20,7 @@ export default class SessionPage extends React.Component {
             <Link to="/login" onClick={() => this.props.clearErrors()} className="login-button">Log In</Link>
           </div>
           <div>
-            <Link to="/demo" className="demo-button">Demo Login</Link>
+            <Link to="/dashboard" onClick={() => this.props.demoLogin()} className="demo-button">Demo Login</Link>
           </div>
           {/* //github logo
           //linked in logo

@@ -27,7 +27,7 @@
                       'https://i.imgur.com/bMlYVw8.jpg'] %>
 
     <% imgUrl = backgrounds.sample %>
-    <% style =  "background-image: url('#{imgUrl}')" %>
+    <% style =  "background-image: linear-gradient(rgba(7, 8, 9, 0.20), rgba(0, 0, 0, 0.20)), url('#{imgUrl}'); " %>
   <body style="<%=style%>">
     <%= yield %>
   </body>

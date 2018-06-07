@@ -22,13 +22,13 @@ class SignUpForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then( res => this.props.history.push('/'));
+    this.props.processForm(user).then( res => this.props.history.push('/dashboards'));
   }
   renderErrors() {
     return(
       <ul>
         {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
+          <li className='session-form-error' key={`error-${i}`}>
             {error}
           </li>
         ))}
@@ -46,7 +46,7 @@ class SignUpForm extends React.Component {
             <input type="text" placeholder="Email" onChange={this.update('email')} value={this.state.email}/>
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
             {this.renderErrors()}
-            <input type="submit" value="Sign Up"/>
+            <input type="submit" value="Sign Up" className="signup-button"/>
           </form>
             {/* //github logo
             //linked in logo

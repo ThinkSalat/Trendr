@@ -30,14 +30,14 @@ export default class Header extends React.Component {
       return (
         <div className='header'>
           <div onMouseEnter={() => this.animate()} className='header-logo'></div>
-          <div>header</div>
+          <div> Search Tumblr</div>
         </div>
       );
     } else {
       return (
         <div className='header'>
           <div onMouseEnter={() => this.animate()} className='header-logo'></div>
-          <div>header</div>
+          <div>Search Tumblr</div>
           <button onClick={() => this.logout()}> Log out </button>
         </div>
       );
