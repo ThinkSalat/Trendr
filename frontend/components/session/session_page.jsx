@@ -11,7 +11,7 @@ export default class SessionPage extends React.Component {
     return(
       <div className="session-page">
         <div className="session-page-form">
-          <div className="session-page-form-logo"/>
+          <div className="session-page-form-logo"> trendr. </div>
           <div className="session-page-slogan">
             <p>Come for what you love.</p>
             <p>Stay for what you discover.</p>

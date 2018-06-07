@@ -13,6 +13,7 @@
 *= require_tree .
 *= require_self
 */
+
 body {
   -webkit-font-smoothing: antialiased;
 
@@ -82,7 +83,11 @@ body {
   align-items: center;
   
   .session-page-form-logo {
-    background-image: url('Logo.png');
+    // font-family: 'Bookman Old Style Bold';
+    // font-size: 60px;
+    // font-weight: bold;
+
+    background-image: image-url('Logo.png');
     background-repeat: no-repeat;
     background-size: 60% auto;
     height: 50px;
@@ -130,7 +135,9 @@ body {
   width: 21px;
   height: 35px;
   background: url('https://assets.tumblr.com/images/logo/hover-animations/2.png') left center;
-  animation: play 1.4s steps(48) infinite;
+  &:hover {
+    animation: play 1.4s steps(48) infinite;
+  }
 }
 
 @keyframes play {

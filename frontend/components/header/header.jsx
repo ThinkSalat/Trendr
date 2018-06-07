@@ -8,18 +8,35 @@ export default class Header extends React.Component {
   }
   // const header =  <Searchbar />
   //<Navbar /> ;
+
+  animate() {
+    //change sprite image
+    //tumblr loads all of them in img and then brings them up somehow
+    const logoSprites = [
+      'https://i.imgur.com/ASFA2Na.png',
+      'https://i.imgur.com/EAxlS5G.png',
+      'https://i.imgur.com/Xzk6P7w.png',
+      'https://i.imgur.com/Gv0N3ub.png',
+      'https://i.imgur.com/8SDVH5P.png'
+    ];
+    const logoSpriteUrl = logoSprites[Math.floor(Math.random()*5)];
+
+
+    
+  }
   render() {
+
     if (!this.currentUser) {
       return (
         <div className='header'>
-          <div onHover={() => this.animate} className='header-logo'></div>
+          <div onMouseEnter={() => this.animate()} className='header-logo'></div>
           <div>header</div>
         </div>
       );
     } else {
       return (
         <div className='header'>
-          <div onHover={() => this.animate()} className='header-logo'></div>
+          <div onMouseEnter={() => this.animate()} className='header-logo'></div>
           <div>header</div>
           <button onClick={() => this.logout()}> Log out </button>
         </div>
