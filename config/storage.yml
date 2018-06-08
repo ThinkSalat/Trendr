@@ -1,14 +1,17 @@
 test:
   service: Disk
   root: <%= Rails.root.join("tmp/storage") %>
-  CLOUD_NAME: "trendr"
-  UPLOAD_PRESET: "trendr"
 
 local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
-  CLOUD_NAME: "trendr"
-  UPLOAD_PRESET: "trendr"
+
+amazon:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
+  region: us-west-1
+  bucket: trendrmedia
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
