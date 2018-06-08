@@ -4,7 +4,7 @@ export default class SearchBar extends React.Component {
 
   render() {
     return(
-      <input type="text" placeholder='Search Trendr'/>
+      <input className='searchbar' type="text" placeholder='Search Trendr'/>
     );
   }
 }

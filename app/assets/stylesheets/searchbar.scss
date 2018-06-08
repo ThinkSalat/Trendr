@@ -1,0 +1,69 @@
+
+.searchbar {
+
+  position: relative;
+  padding-right: 0;
+  overflow: hidden;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  top: -2px;
+  left: 15px;
+  max-width: 540px;
+  margin-top: 15px;
+  outline: none;
+
+  transition: background .15s,color .15s;
+  color: hsla(0,0%,100%,.6);
+  background: rgba(0,0,0,.13);
+
+  padding-right: 10px;
+  padding-bottom: 2px;
+  padding-left: 39px;
+  font-weight: 600;
+  line-height: inherit;
+  font-size: 15px;
+  height: 34px;
+  width: 540px;
+  border: 0;
+  border-radius: 3px;
+  margin-top: 10px;
+
+
+  &:focus {
+    background-color: white;
+    color: black;
+    &::placeholder {
+      color: #8F8F8F;
+    }
+  }
+
+  &::placeholder {
+    color: hsla(0,0%,100%,.6);
+  }
+
+}
+
+.searchbar:before{
+  content: "\EA99";
+  transition: color .15s;
+  position: absolute;
+  font-size: 29px;
+  color: inherit;
+  z-index: 2;
+  left: 15px;
+  top: 8px;
+
+  font-family: tumblr-icons,Blank;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+
+}
+
