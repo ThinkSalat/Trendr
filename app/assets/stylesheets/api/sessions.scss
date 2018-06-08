@@ -4,6 +4,21 @@
 #top-session-form-input {
   border-top: none;
 }
+
+
+.session-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+
 .session-form {
   input {
     font-size: 16px;
@@ -41,18 +56,6 @@
     cursor: pointer;
   }
  
-}
-
-.session-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
 }
 
 .session-page-form {
