@@ -45,7 +45,9 @@
   padding-right: 13px;
   text-align: center;
   border-radius: 2px;
- 
+ &:hover {
+   cursor: pointer;
+ }
 }
 .header-right button {
   height: 35px;
