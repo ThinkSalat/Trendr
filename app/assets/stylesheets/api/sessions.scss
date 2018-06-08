@@ -169,13 +169,14 @@
   bottom: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  font-size: 100px;
+  justify-content: center;
+  font-size: 55px;
   width: 300px;
 
   position: absolute;
   bottom: -220px;
   i {
+    margin: 5px;
     color: black;
     &:visited {
       color: black;
