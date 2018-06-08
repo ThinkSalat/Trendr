@@ -165,6 +165,12 @@
     }
 }
 
+.personal-icons {
+  display: flex;
+  flex-direction: row;
+  font-size: 100px;
+}
+
 
 // source https://codepen.io/cabron/pen/OVXXmj
 @keyframes rainbow{

@@ -28,9 +28,9 @@ class Header extends React.Component {
       case '/dashboard':
         return <button className='header-session-link' onClick={() => this.props.logout()}> Log out </button>;
       case '/signup':
-        return <Link className='header-session-link' to='/login'> Log in </Link>;
+        return <Link className='header-session-link' to='/login' onClick={() => this.props.clearErrors()} > Log in </Link>;
       case '/login':
-        return <Link className='header-session-link' to='/signup'> Sign Up </Link>;
+        return <Link className='header-session-link' to='/signup' onClick={() => this.props.clearErrors()} > Sign Up </Link>;
       default:
         return;
     }  

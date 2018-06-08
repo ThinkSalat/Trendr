@@ -29,9 +29,11 @@ export default class SessionPage extends React.Component {
           <div>
             <Link to="/dashboard" onClick={() => this.props.demoLogin()} className="demo-button">Demo Login</Link>
           </div>
-          {/* //github logo
-          //linked in logo
-        //website logo */}
+          <div className='personal-icons'>
+            <i className="fab fa-github-square"></i>
+            <i className="fab fa-linkedin"></i>
+            <i className="fas fa-portrait"></i>
+          </div>
         </div>
       </div>
     )

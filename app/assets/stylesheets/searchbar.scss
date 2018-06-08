@@ -44,26 +44,14 @@
 
 }
 
-.searchbar:before{
-  content: "\EA99";
-  transition: color .15s;
+.searchbar-icon {
+  color: rgba(255, 255, 255, 0.6);
   position: absolute;
-  font-size: 29px;
-  color: inherit;
-  z-index: 2;
-  left: 15px;
-  top: 8px;
-
-  font-family: tumblr-icons,Blank;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: none;
-
+  left: 71px;
+  top: 21px;
+  font-size: 20px;
+  z-index: 3;
 }
-
+.searchbar:focus ~ i {
+  color: #8F8F8F;
+}

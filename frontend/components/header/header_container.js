@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import { logout } from '../../actions/session_actions';
+import { logout, clearErrors } from '../../actions/session_actions';
 import Header from './header';
 
 const mapStateToProps = ({ session, entities: { users } }) => {
@@ -11,6 +11,7 @@ const mapStateToProps = ({ session, entities: { users } }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
+  clearErrors: () => dispatch(clearErrors()),
   logout: () => dispatch(logout())
 });
 
