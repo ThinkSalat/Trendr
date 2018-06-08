@@ -176,16 +176,24 @@
   position: absolute;
   bottom: -220px;
   i {
+    &:hover {
+      color: #559FCA;
+    }
+    &:active {
+      color: #4e96c2;
+    }
     margin: 5px;
-    color: black;
+    color: rgba(0,0,0, .93);
     &:visited {
-      color: black;
+      color: rgba(0,0,0, .93);
     }
   }
 }
 
 .portfolio {
-  height: 87px;
+  i {
+    max-height: 30px;
+  }
 }
 
 
