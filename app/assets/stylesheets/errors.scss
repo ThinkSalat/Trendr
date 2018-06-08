@@ -7,11 +7,17 @@
   justify-content: center;
   align-items: center;
   .big-text {
+    
     padding: 20px;
     border-radius: 15px;
-    background-color: rgba(14, 12, 12, 0.829);
+    // background-color: rgba(14, 12, 12, 0.829);
     text-align: center;
-    font-size: 75px;
+    font-size: 36px;
     color: white;
+    h3 {
+      max-width: 440px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
   }
 }
