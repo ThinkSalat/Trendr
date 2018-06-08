@@ -51,9 +51,11 @@ class LoginForm extends React.Component {
 
             <input type="submit" value="Log In" className='session-submit-button'/>
           </form>
-            {/* //github logo
-            //linked in logo
-            //website logo */}
+          <div className='personal-icons'>
+            <a href='https://github.com/ThinkSalat' target='_blank'><i className="fab fa-github-square github"></i></a>
+            <a href='https://www.linkedin.com/in/shawnsalat/' target='_blank'><i className="fab fa-linkedin linkedin"></i></a>
+            <a href='http://thinksalat.com/' target='_blank'><i className="fas fa-portrait portfolio"></i></a>
+          </div>
         </div>
       </div>
     );
