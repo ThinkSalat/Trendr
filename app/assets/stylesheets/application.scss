@@ -16,19 +16,22 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-
   background-color: #37455C;
   color: #FFFFFF;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+}
+
+.full-page {
+
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
 }
-.full-page {
 
-}
 .main-feed-container {
+  background-color: #37455C;
   background-position: cover;
   height: 100vh;
   display: flex;

@@ -37,7 +37,7 @@ class SignUpForm extends React.Component {
   
   render() {
     return(
-      <div className="session-page">
+      <div className={`session-page`}>
         <div className="session-page-form">
           <div className="session-page-form-logo"> trendr. </div>
           <div className="session-page-slogan">

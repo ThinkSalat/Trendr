@@ -16,21 +16,28 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFromContainer from './session/signup_form_container';
 // imports folded
 
-const App = () => {
-
-  return (
-  <div className="full-page">  
-    <header>
-      <HeaderContainer />
-    </header>
-    <Switch>
-      <AuthRoute exact path="/login" component={LoginFormContainer} />
-      <AuthRoute exact path="/signup" component={SignupFromContainer} />
-      <AuthRoute exact path="/" component={SessionPage} />
-      <ProtectedRoute exact path="/dashboard" component={MainFeed} />
-      <ProtectedRoute exact path="/" component={MainFeed} />
-    </Switch>
-  </div>
-)};
-
-export default App;
+export default class App extends React.Component {
+  constructor() {
+    super()
+    
+    this.state = {
+      bg: `bg-${Math.floor(Math.random()*18)}`
+    };
+  }
+  render() {
+    return (
+      <div className={`full-page ${this.state.bg}`}>  
+        <header>
+          <HeaderContainer />
+        </header>
+        <Switch>
+          <AuthRoute exact path="/login" component={LoginFormContainer} />
+          <AuthRoute exact path="/signup" component={SignupFromContainer} />
+          <AuthRoute exact path="/" component={SessionPage} />
+          <ProtectedRoute exact path="/dashboard" component={MainFeed} />
+          <ProtectedRoute exact path="/" component={MainFeed} />
+        </Switch>
+      </div>
+    );
+  }
+}

@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default class SessionPage extends React.Component {
+
   render() {
     return(
-      <div className="session-page">
+      <div className={`session-page`}>
         <div className="session-page-form">
           <div className="session-page-form-logo"> trendr. </div>
           <div className="session-page-slogan">

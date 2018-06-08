@@ -24,6 +24,7 @@ class LoginForm extends React.Component {
     const user = Object.assign({}, this.state);
     this.props.processForm(user).then(res => this.props.history.push('/dashboard'));
   }
+
   renderErrors() {
     return(
         this.props.errors.map((error, i) => (
@@ -36,7 +37,7 @@ class LoginForm extends React.Component {
   render() {
     
     return(
-      <div className="session-page">
+      <div className={`session-page`}>
         <div className="session-page-form">
         <div className="session-page-form-logo"> trendr. </div>
           <form className='session-form' onSubmit={this.handleSubmit}>

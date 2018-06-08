@@ -1,15 +1,15 @@
 //automatically imported into application.scss through require_tree .
 
 .header-container {
-  // background-color:rgba(0, 0, 0, 0.589);
+  background-color:rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 15px;
-
+  position: absolute;
   min-height: 54px;
   max-height: 54px;
-  position: fixed;
+
   width: 100%;
 }
 
