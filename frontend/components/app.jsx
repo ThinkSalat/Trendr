@@ -14,6 +14,7 @@ import MainFeed from './main_feed_container';
 import SessionPage from './session/session_page_container';
 import LoginFormContainer from './session/login_form_container';
 import SignupFromContainer from './session/signup_form_container';
+import fourOhFour from './errorrs/404';
 // imports folded
 
 export default class App extends React.Component {
@@ -30,6 +31,7 @@ export default class App extends React.Component {
           <AuthRoute exact path="/" component={SessionPage} />
           <ProtectedRoute exact path="/dashboard" component={MainFeed} />
           <ProtectedRoute exact path="/" component={MainFeed} />
+          <Route path='/' component={fourOhFour} />
         </Switch>
       </div>
     );

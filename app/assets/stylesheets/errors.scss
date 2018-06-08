@@ -1,0 +1,17 @@
+.error-404 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .big-text {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(14, 12, 12, 0.829);
+    text-align: center;
+    font-size: 75px;
+    color: white;
+  }
+}
