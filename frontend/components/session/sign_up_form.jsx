@@ -7,7 +7,8 @@ class SignUpForm extends React.Component {
     this.state = {
       username: '',
       email: '',
-      password: ''
+      password: '',
+      bg: `bg-${Math.floor(Math.random()*18)}`
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -37,7 +38,7 @@ class SignUpForm extends React.Component {
   
   render() {
     return(
-      <div className={`session-page`}>
+      <div className={`session-page ${this.state.bg}`}>
         <div className="session-page-form">
           <div className="session-page-form-logo"> trendr. </div>
           <div className="session-page-slogan">

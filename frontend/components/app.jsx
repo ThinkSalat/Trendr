@@ -17,16 +17,10 @@ import SignupFromContainer from './session/signup_form_container';
 // imports folded
 
 export default class App extends React.Component {
-  constructor() {
-    super()
-    
-    this.state = {
-      bg: `bg-${Math.floor(Math.random()*18)}`
-    };
-  }
+  
   render() {
     return (
-      <div className={`full-page ${this.state.bg}`}>  
+      <div className={`full-page`}>  
         <header>
           <HeaderContainer />
         </header>
