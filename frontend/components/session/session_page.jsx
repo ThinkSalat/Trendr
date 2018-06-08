@@ -30,9 +30,9 @@ export default class SessionPage extends React.Component {
             <Link to="/dashboard" onClick={() => this.props.demoLogin()} className="demo-button">Demo Login</Link>
           </div>
           <div className='personal-icons'>
-            <i className="fab fa-github-square"></i>
-            <i className="fab fa-linkedin"></i>
-            <i className="fas fa-portrait"></i>
+            <a href='https://github.com/ThinkSalat' target='_blank'><i className="fab fa-github-square github"></i></a>
+            <a href='https://www.linkedin.com/in/shawnsalat/' target='_blank'><i className="fab fa-linkedin linkedin"></i></a>
+            <a href='http://thinksalat.com/' target='_blank'><i className="fas fa-portrait portfolio"></i></a>
           </div>
         </div>
       </div>

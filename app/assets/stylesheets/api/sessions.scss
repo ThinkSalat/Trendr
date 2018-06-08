@@ -166,9 +166,25 @@
 }
 
 .personal-icons {
+  bottom: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   font-size: 100px;
+  width: 300px;
+
+  position: absolute;
+  bottom: -220px;
+  i {
+    color: black;
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+.portfolio {
+  height: 87px;
 }
 
 
