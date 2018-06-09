@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //TEST
 window.gs = store.getState;
+window.dispatch = store.dispatch;
+window.post = {post_type: 'text', user_id: 1};
 // window.login = login;
 // window.logout = logout;
 // window.signup = signup;

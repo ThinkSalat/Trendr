@@ -29,6 +29,6 @@ const receivePost = post => ({
   post
 });
 const removePost = postId => ({
-  type: RECEIVE_ALL_POSTS,
+  type: REMOVE_POST,
   postId
 });
