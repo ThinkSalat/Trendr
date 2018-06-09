@@ -1,7 +1,9 @@
 class Post < ApplicationRecord
-
-  validates :type, presence :true
+  #  VALIDATIONS
+  validates :type, presence: :true
+  before_create :set_date
   
+  # ASSOCIATIONS
   belongs_to :user
 
   has_many_attached :images
@@ -13,6 +15,7 @@ class Post < ApplicationRecord
   # has_many :comments
   # has_many :reblogs
   
+  # METHODS
 
   private
 
