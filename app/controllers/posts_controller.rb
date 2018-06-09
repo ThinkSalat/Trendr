@@ -21,7 +21,8 @@ class PostsController < ApplicationController
   end
   
   def index
-    render json: current_user.followed_users.posts
+    # render json: current_user.followed_users.posts
+    render json: Post.all
   end
   
   def show
