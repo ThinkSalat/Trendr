@@ -1,4 +1,6 @@
 class Api::PostsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def create
     @post = Post.new(post_params)
     # @post.user_id = current_user.id
@@ -21,8 +23,9 @@ class Api::PostsController < ApplicationController
   end
   
   def index
-    # render json: current_user.followed_users.posts
-    render json: Post.all
+    @posts = Post.all
+    # @posts = current_user.followed_users.posts
+    render 'api/posts/index'
   end
   
   def show
@@ -39,6 +42,6 @@ class Api::PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :post_type, :summary, :body, :private, :photoset_layout, :caption, :source_url, :source_title)
+    params.require(:post).permit(:user_id, :title, :post_type, :summary, :body, :private, :photoset_layout, :caption, :source_url, :source_title)
   end
 end
