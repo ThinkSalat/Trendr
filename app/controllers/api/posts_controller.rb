@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+class Api::PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     # @post.user_id = current_user.id
@@ -11,10 +11,10 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:postId])
+    @post = Post.find(params[:id])
     
     if @post.update_attributes(post_params)
-      render "api/posts/#{@post.id}"
+      render "api/posts/show"
     else
       render json: @post.errors.full_messages, status: 422
     end
@@ -26,12 +26,12 @@ class PostsController < ApplicationController
   end
   
   def show
-    @post = Post.find(params[:postId])
-    render "api/posts/#{params[:id]}"
+    @post = Post.find(params[:id])
+    render "api/posts/show"
   end
   
   def destroy
-    @post = Post.find(params[:postId])
+    @post = Post.find(params[:id])
     @post.try(:destroy)
     render json: @post
   end
