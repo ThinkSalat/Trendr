@@ -32,7 +32,7 @@ class User < ApplicationRecord
   # has_many :posts
   # has_many :likes
   # has_many :followers
-  # has_many :followings
+  # has_many :followed_users
   def downcase_fields
     self.username.downcase!
     self.email.downcase!

@@ -2,12 +2,11 @@ class Api::UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def show
-    render "api/users/profile"
+    render "api/users/#{params[:id]}"
   end
 
   def create
     @user = User.new(user_params)
-    p @user
     if @user.save
       login(@user)
       render "api/users/show"

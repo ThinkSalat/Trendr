@@ -17,6 +17,9 @@ class Post < ApplicationRecord
   
   # METHODS
 
+  # post's state is unpublished until user hits submit, but is created once an image is uploaded
+  # if they submit, it's published.
+
   private
 
   def set_date
