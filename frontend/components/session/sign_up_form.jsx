@@ -38,8 +38,8 @@ class SignUpForm extends React.Component {
   
   render() {
     return(
-      <div className={`session-page ${this.state.bg}`}>
-        <div className="session-page-form">
+      <div className={`session-page ${this.state.bg} `}>
+        <div className="session-page-form animated fadeInUp">
           <div className="session-page-form-logo"> trendr. </div>
           <div className="session-page-slogan">
               <p>Come for what you love.</p>
@@ -50,7 +50,7 @@ class SignUpForm extends React.Component {
             <input id='top-session-form-input' type='text' placeholder='Username' onChange={this.update('username')} value={this.state.username}/>
             <input type="text" placeholder="Email" onChange={this.update('email')} value={this.state.email}/>
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
-            <ul className='session-form-error-container'>
+            <ul className='session-form-error-container animated fadeInUp'>
               {this.renderErrors()}
             </ul>
             <input type="submit" value="Sign Up" className="session-submit-button"/>
