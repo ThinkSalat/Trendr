@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_09_021159) do
+ActiveRecord::Schema.define(version: 2018_06_09_025054) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,7 +45,6 @@ ActiveRecord::Schema.define(version: 2018_06_09_021159) do
     t.boolean "private", default: false
     t.string "photoset_layout"
     t.string "caption"
-    t.date "date"
     t.string "source_url"
     t.string "source_title"
     t.string "slug"

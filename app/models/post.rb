@@ -1,10 +1,9 @@
 class Post < ApplicationRecord
   #  VALIDATIONS
   validates :post_type, presence: :true
-  before_create :set_date
   
   # ASSOCIATIONS
-  belongs_to :user
+  # belongs_to :user
 
   has_many_attached :images
 
@@ -19,10 +18,4 @@ class Post < ApplicationRecord
 
   # post's state is unpublished until user hits submit, but is created once an image is uploaded
   # if they submit, it's published.
-
-  private
-
-  def set_date
-    this.date = Time.now.to_datetime
-  end
 end
