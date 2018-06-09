@@ -12,6 +12,7 @@ export default class SessionPage extends React.Component {
   render() {
     return(
       <div className={`session-page ${this.state.bg}`}>
+        <div className="session-page-form-placeholder"></div>
         <div className="session-page-form  animated fadeInUp">
           <div className="session-page-form-logo"> trendr. </div>
           <div className="session-page-slogan">
