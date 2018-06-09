@@ -1,5 +1,7 @@
 class Post < ApplicationRecord
 
+  validates :type, presence :true
+  
   belongs_to :user
 
   has_many_attached :images
@@ -11,4 +13,10 @@ class Post < ApplicationRecord
   # has_many :comments
   # has_many :reblogs
   
+
+  private
+
+  def set_date
+    this.date = Time.now.to_datetime
+  end
 end
