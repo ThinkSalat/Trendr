@@ -4,7 +4,12 @@ import ReactDOM from 'react-dom';
 //Components
 import Root from './components/root';
 import configureStore from './store/store';
-
+import { 
+  fetchPosts,
+  fetchPost,
+  createPost,
+  updatePost,
+  deletePost} from './util/post_api_util';
 //TEST
 import { login, logout, signup } from './actions/session_actions';
 
@@ -33,6 +38,11 @@ window.gs = store.getState;
 window.login = login;
 window.logout = logout;
 window.signup = signup;
+window.fetchPosts = fetchPosts;
+window.fetchPost = fetchPost;
+window.createPost = createPost;
+window.updatePost = updatePost;
+window.deletePost = deletePost;
 //END TEST
 
 
