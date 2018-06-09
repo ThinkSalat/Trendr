@@ -10,11 +10,11 @@ import {
 
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HeaderContainer from './header/header_container';
-import MainFeed from './main_feed_container';
+import MainFeed from './feed/main_feed_container';
 import SessionPage from './session/session_page_container';
 import LoginFormContainer from './session/login_form_container';
 import SignupFromContainer from './session/signup_form_container';
-import fourOhFour from './errorrs/404';
+import fourOhFour from './errors/404';
 // imports folded
 
 export default class App extends React.Component {
