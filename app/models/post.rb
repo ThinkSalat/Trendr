@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   #  VALIDATIONS
-  validates :type, presence: :true
+  validates :post_type, presence: :true
   before_create :set_date
   
   # ASSOCIATIONS
