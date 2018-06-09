@@ -4,15 +4,20 @@ import ReactDOM from 'react-dom';
 //Components
 import Root from './components/root';
 import configureStore from './store/store';
+//TEST
+// import { login, logout, signup } from './actions/session_actions';
+//     import { 
+//       fetchPosts,
+//       fetchPost,
+//       createPost,
+//       updatePost,
+//       deletePost} from './util/post_api_util';
 import { 
   fetchPosts,
   fetchPost,
   createPost,
   updatePost,
-  deletePost} from './util/post_api_util';
-//TEST
-import { login, logout, signup } from './actions/session_actions';
-
+  deletePost} from './actions/post_actions';
 //END TEST
 
 
@@ -35,9 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //TEST
 window.gs = store.getState;
-window.login = login;
-window.logout = logout;
-window.signup = signup;
+// window.login = login;
+// window.logout = logout;
+// window.signup = signup;
+// window.fetchPosts = fetchPosts;
+// window.fetchPost = fetchPost;
+// window.createPost = createPost;
+// window.updatePost = updatePost;
+// window.deletePost = deletePost;
+
 window.fetchPosts = fetchPosts;
 window.fetchPost = fetchPost;
 window.createPost = createPost;
