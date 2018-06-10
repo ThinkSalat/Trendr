@@ -46,8 +46,7 @@ class LoginForm extends React.Component {
             <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
 
             <ul className='session-form-error-container animated fadeInUp'>
-            <li>{this.props.errors[0]}</li>
-              {/* {this.renderErrors()} */}
+              {this.renderErrors()}
             </ul>
 
             <input type="submit" value="Log In" className='session-submit-button'/>
