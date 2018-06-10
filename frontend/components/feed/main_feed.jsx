@@ -12,6 +12,7 @@ import AudioForm from '../forms/audio_form';
 import VideoForm from '../forms/video_form';
 
 import NewPostNavContainer from './new_post_nav_container';
+import FormContainer from '../forms/forms_container';
 
 export default class MainFeed extends React.Component {
 
@@ -24,13 +25,13 @@ export default class MainFeed extends React.Component {
             <img className='test' src="/images/post_type_div.png" alt=""/>
               <NewPostNavContainer />
               <Switch>
-                <ProtectedRoute exact path='/new/text' component={TextForm} text={'test'}/>
-                <ProtectedRoute exact path='/new/photo' component={PhotoForm}/>
-                <ProtectedRoute exact path='/new/quote' component={QuoteForm}/>
-                <ProtectedRoute exact path='/new/link' component={LinkForm}/>
-                <ProtectedRoute exact path='/new/chat' component={ChatForm}/>
-                <ProtectedRoute exact path='/new/audio' component={AudioForm}/>
-                <ProtectedRoute exact path='/new/video' component={VideoForm}/>
+                <ProtectedRoute exact path='/new/text' render={() => <FormContainer postType={'text'}/>}/>
+                <ProtectedRoute exact path='/new/photo' render={() => <FormContainer postType={'photo'}/>}/>
+                <ProtectedRoute exact path='/new/quote' render={() => <FormContainer postType={'quote'}/>}/>
+                <ProtectedRoute exact path='/new/link' render={() => <FormContainer postType={'link'}/>}/>
+                <ProtectedRoute exact path='/new/chat' render={() => <FormContainer postType={'chat'}/>}/>
+                <ProtectedRoute exact path='/new/audio' render={() => <FormContainer postType={'audio'}/>}/>
+                <ProtectedRoute exact path='/new/video' render={() => <FormContainer postType={'video'}/>}/>
               </Switch>
             <div className='main-feed'>  {/*  <MainFeedContainer /> */}
               <div>avatar</div>

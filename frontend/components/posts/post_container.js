@@ -1,12 +1,14 @@
 import { connect } from 'react-redux';
 
-import { fetchPost, updatePost, deletPost } from '../../util/post_api_util';
+import { fetchPost, updatePost, deletPost } from '../../actions/post_actions';
 
 import Post from './post';
 
-const mapStateToProps = ({ entities: { posts } }, { match: { params: { postId } } }) => {
+const mapStateToProps = ({ entities: { posts }, session: { currentUser } }, { match: { params: { postId } } }) => {
   return {
-    post: posts[postId]
+    post: posts[postId],
+    postId,
+    currentUser
   };
 };
 

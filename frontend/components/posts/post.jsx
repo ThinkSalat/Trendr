@@ -1,22 +1,31 @@
 import React from 'react';
-import { log } from 'util';
 
 export default class Post extends React.Component {
 
   constructor(props) {
     super(props);
-    }
+    console.log(props);
+  }
 
   componentDidMount() {
-   this.props.fetchPost(this.props.match.params.postId);
+    this.props.fetchPost(this.props.postId);
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.postId !== this.props.postId) {
+      this.props.fetchPost(newProps.postId);
+    }
   }
 
   render() {
+
+    // if (!post) return <div>not working</div>;
+
     const post = this.props.post;
-    console.log(post);
-    
+    console.log(post.title);
     return(
-      <div>{post}</div>
+      // <div>hi</div>
+      <div>{post.title}</div>
     );
    }
 }
