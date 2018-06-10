@@ -9,39 +9,33 @@ export default class NewPostNav extends React.Component {
   render() {
 
     return(
-      <nav className='new-post-nav'>
-        <Link to='/'> 
-        {/* text */}
+      <nav className='new-post-nav ${'>
+        <Link to='/new/text'> 
           <i className='logo-text'>&#60023;</i>
           <span>Text</span>
         </Link>
-        <Link to='/'> 
+        <Link to='/new/photo'> 
         {/* photo */}
           <i className='logo-photo'>&#60019;</i>
           <span>Photo</span>
         </Link>
-        <Link to='/'> 
-        {/* quote */}
+        <Link to='/new/quote'> 
           <i className='logo-quote'>&#60021;</i>
           <span>Quote</span>
         </Link>
-        <Link to='/'> 
-        {/* link */}
+        <Link to='/new/link'> 
           <i className='logo-link'>&#60016;</i>
           <span>Link</span>
         </Link>
-        <Link to='/'> 
-        {/* chat */}
+        <Link to='/new/chat'> 
           <i className='logo-chat'>&#60012;</i>
           <span>Chat</span>
         </Link>
-        <Link to='/'> 
-        {/* audio */}
+        <Link to='/new/audio'> 
           <i className='logo-audio'>&#60010;</i>
           <span>Audio</span>
         </Link>
-        <Link to='/'> 
-        {/* video */}
+        <Link to='/new/video'> 
           <i className='logo-video'>&#60025;</i>
           <span>Video</span>
         </Link>

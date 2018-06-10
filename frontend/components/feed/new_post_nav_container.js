@@ -9,13 +9,13 @@ import {
   createPost
 } from '../../actions/post_actions';
 
-const mapStateToProps = state => {
-  return ({
-    currentUser: state.currentUser
-  });
+const mapStateToProps = ({ session, entities: { users } }) => {
+  return {
+    currentUser: users[session.id]
+  };
 };
 
-const mapDispatchToProps = state => {
+const mapDispatchToProps = dispatch => {
   return ({
     fetchPost: id => dispatch(fetchPost(id)),
     createPost: post => dispatch(createPost(post))
