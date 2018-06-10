@@ -11,6 +11,7 @@ export default class MainFeed extends React.Component {
         <div className='main-content'>
           <div className='main-content-feed col-1'>
             <div> user avatar</div>
+            <img className='test' src="/images/post_type_div.png" alt=""/>
             <NewPostNavContainer />
             <div className='main-feed'>  {/*  <MainFeedContainer /> */}
               <div>avatar</div>

@@ -48,6 +48,12 @@
  &:hover {
    cursor: pointer;
  }
+
+//  change to active if want to turn white om pressing. can't really tell though.
+ &:hover {
+  background-color: white;
+    color: black;
+ }
 }
 .header-right button {
   height: 35px;

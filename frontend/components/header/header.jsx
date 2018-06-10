@@ -25,6 +25,7 @@ class Header extends React.Component {
       return (
         <div className='header-container'>
           <div className='header-left'>
+          {/* below is the basic way to get logo sprites working. doesn't work yet */}
             {/* <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link> */}
             <Logo />
             <SearchBarContainer />

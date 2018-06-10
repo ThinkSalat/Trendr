@@ -1,17 +1,25 @@
-import { connect } from 'react-redux';
+import {
+  connect
+} from 'react-redux';
 
 import NewPostNav from './new_post_nav';
 
+import {
+  fetchPost,
+  createPost
+} from '../../actions/post_actions';
+
 const mapStateToProps = state => {
-  return({
-    'hey': 'hey'
+  return ({
+    currentUser: state.currentUser
   });
 };
 
 const mapDispatchToProps = state => {
-  return({
-    'hey': 'hey'
+  return ({
+    fetchPost: id => dispatch(fetchPost(id)),
+    createPost: post => dispatch(createPost(post))
   });
 };
 
-export default connect(mapStateToProps,mapDispatchToProps)(NewPostNav);
+export default connect(mapStateToProps, mapDispatchToProps)(NewPostNav);
