@@ -13,7 +13,8 @@ import HeaderContainer from './header/header_container';
 import MainFeed from './feed/main_feed_container';
 import SessionPage from './session/session_page_container';
 import LoginFormContainer from './session/login_form_container';
-import SignupFromContainer from './session/signup_form_container';
+import SignupFormContainer from './session/signup_form_container';
+import PostContainer from './posts/post_container';
 import fourOhFour from './errors/404';
 // imports folded
 
@@ -27,10 +28,12 @@ export default class App extends React.Component {
         </header>
         <Switch>
           <AuthRoute exact path="/login" component={LoginFormContainer} />
-          <AuthRoute exact path="/signup" component={SignupFromContainer} />
+          <AuthRoute exact path="/signup" component={SignupFormContainer} />
           <AuthRoute exact path="/" component={SessionPage} />
+          <Route path='/posts/:postId' component={PostContainer} />
           <ProtectedRoute exact path="/dashboard" component={MainFeed} />
           <ProtectedRoute exact path="/" component={MainFeed} />
+          <ProtectedRoute path="/new/" component={MainFeed} />
           <Route path='/' component={fourOhFour} />
         </Switch>
       </div>

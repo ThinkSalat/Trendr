@@ -24,7 +24,7 @@ export default class MainFeed extends React.Component {
             <img className='test' src="/images/post_type_div.png" alt=""/>
               <NewPostNavContainer />
               <Switch>
-                <ProtectedRoute exact path='/new/text' component={TextForm}/>
+                <ProtectedRoute exact path='/new/text' component={TextForm} text={'test'}/>
                 <ProtectedRoute exact path='/new/photo' component={PhotoForm}/>
                 <ProtectedRoute exact path='/new/quote' component={QuoteForm}/>
                 <ProtectedRoute exact path='/new/link' component={LinkForm}/>

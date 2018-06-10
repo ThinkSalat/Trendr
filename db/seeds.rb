@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# json = ActiveSupport::JSON.decode(File.read('db/seeds/countries.json'))
+
+# json.each do |a|
+#   Country.create!(a['country'], without_protection: true)
+# end
+
+User.create!({username: 'Demo User', email: 'Demo@email.com', password: 'password'})

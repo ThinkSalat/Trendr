@@ -28,6 +28,9 @@ class User < ApplicationRecord
   
   before_save :downcase_fields
   before_validation :ensure_session_token
+
+  has_one_attached :avatar
+
   
   # has_many :posts
   # has_many :likes
