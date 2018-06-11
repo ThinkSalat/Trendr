@@ -2,15 +2,6 @@ import React from 'react';
 import { Switch } from 'react-router-dom';
 import { ProtectedRoute } from '../../util/route_util';
 
-// COMPONENTS 
-import TextForm from '../forms/text_form';
-import PhotoForm from '../forms/photo_form';
-import QuoteForm from '../forms/quote_form';
-import LinkForm from '../forms/link_form';
-import ChatForm from '../forms/chat_form';
-import AudioForm from '../forms/audio_form';
-import VideoForm from '../forms/video_form';
-
 import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';
 
@@ -25,13 +16,13 @@ export default class MainFeed extends React.Component {
             <img className='test' src="/images/post_type_div.png" alt=""/>
               <NewPostNavContainer />
               <Switch>
-                <ProtectedRoute exact path='/new/text' render={() => <FormContainer postType={'text'}/>}/>
-                <ProtectedRoute exact path='/new/photo' render={() => <FormContainer postType={'photo'}/>}/>
-                <ProtectedRoute exact path='/new/quote' render={() => <FormContainer postType={'quote'}/>}/>
-                <ProtectedRoute exact path='/new/link' render={() => <FormContainer postType={'link'}/>}/>
-                <ProtectedRoute exact path='/new/chat' render={() => <FormContainer postType={'chat'}/>}/>
-                <ProtectedRoute exact path='/new/audio' render={() => <FormContainer postType={'audio'}/>}/>
-                <ProtectedRoute exact path='/new/video' render={() => <FormContainer postType={'video'}/>}/>
+                <ProtectedRoute exact path='/new/text' component={(props) => <FormContainer {...props} postType={'text'} />}  />
+                <ProtectedRoute exact path='/new/photo' component={(props) => <FormContainer {...props} postType={'photo'} />}  />
+                <ProtectedRoute exact path='/new/quote' component={(props) => <FormContainer {...props} postType={'quote'} />}  />
+                <ProtectedRoute exact path='/new/link' component={(props) => <FormContainer {...props} postType={'link'} />}  />
+                <ProtectedRoute exact path='/new/chat' component={(props) => <FormContainer {...props} postType={'chat'} />}  />
+                <ProtectedRoute exact path='/new/audio' component={(props) => <FormContainer {...props} postType={'audio'} />}  />
+                <ProtectedRoute exact path='/new/video' component={(props) => <FormContainer {...props} postType={'video'} />}  />
               </Switch>
             <div className='main-feed'>  {/*  <MainFeedContainer /> */}
               <div>avatar</div>

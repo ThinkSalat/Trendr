@@ -15,7 +15,6 @@ export default class NewPostNav extends React.Component {
           <span>Text</span>
         </Link>
         <Link to='/new/photo'> 
-        {/* photo */}
           <i className='logo-photo'>&#60019;</i>
           <span>Photo</span>
         </Link>

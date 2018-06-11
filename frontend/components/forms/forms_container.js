@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import NewPostForm from './new_post_form';
 
 import { createPost } from '../../actions/post_actions';
-import { STATUS_CODES } from 'http';
 
-const mapStateToProps = (state, { postType }) => {
+const mapStateToProps = (state, ownProps) => {
+  const postType = ownProps.postType;
   return {
     postType,
     currentUser: state.session.currentUser
@@ -19,3 +19,4 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(mapStateToProps,mapDispatchToProps)(NewPostForm);
+
