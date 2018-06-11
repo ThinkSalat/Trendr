@@ -24,7 +24,8 @@ export default class NewPostForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    this.props.form_submit_action(this.state);
+    this.props.form_submit_action(this.state)
+      .then(this.props.history.push('/'));
     // .then( do something )
     // .catch( error handling )
   }

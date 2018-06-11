@@ -4,10 +4,8 @@ import NewPostForm from './new_post_form';
 
 import { createPost } from '../../actions/post_actions';
 
-const mapStateToProps = (state, ownProps) => {
-  const postType = ownProps.postType;
+const mapStateToProps = state => {
   return {
-    postType,
     currentUser: state.session.currentUser
   };
 };
