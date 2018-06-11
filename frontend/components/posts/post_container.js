@@ -7,11 +7,13 @@ import Post from './post';
 const mapStateToProps = ({ entities: { posts, users }, session: { currentUser } }, { match: { params: { postId } } }) => {
   const post = posts[postId] || {};
   const author = users[post.userId] || {};
+  currentUser = currentUser || {};
+
   return {
     post,
     author,
     postId,
-    currentUser: currentUser || {}
+    currentUser
   };
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
-import { debug } from 'util';
+import { merge } from 'lodash';
 
 export default class NewPostForm extends React.Component {
   constructor(props) {
@@ -17,7 +17,6 @@ export default class NewPostForm extends React.Component {
       source_title: '',
       slug: '',
       state: 'unpublished',
-      photos: [],
       images: []
     };
 
@@ -31,10 +30,19 @@ export default class NewPostForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    debugger
-    const post = this.state;
+    const post = merge({},this.state);
     post.state = 'published';
-    this.props.submitPost(post)
+    const data = new FormData();
+
+    Object.keys(this.state).map(key => {
+      if (key !== 'images') {
+        return data.append(key,this.state[key]);
+      } 
+    });
+
+    this.state.images.forEach(image => data.append('images[]', image));
+
+    this.props.submitPost(data)
       .then(this.props.history.push('/'));
       // might handle errors here
   }
@@ -46,15 +54,23 @@ export default class NewPostForm extends React.Component {
   }
 
   onDrop(acceptedFiles, rejectedFiles) {
-    const photos = [...this.state.photos, ...acceptedFiles];
-    const images = photos.map
-    this.setState({ photos, images });
+    const images = [...this.state.images, ...acceptedFiles];
+    this.setState({ images });
+   }
+
+   selfieCam() {
+    var video = document.getElementById('selfie-cam');
+    if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+     navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+     video.src = window.URL.createObjectURL(stream);
+     video.play();
+     });
+    }
    }
 
 
-
   render() {
-    const photoPreviews = this.state.photos.map((photo, i) => {
+    const photoPreviews = this.state.images.map((photo, i) => {
       return (
         <li  key={i}>
           <img className='photo-upload-preview' src={photo.preview}/>
@@ -64,10 +80,13 @@ export default class NewPostForm extends React.Component {
 
 
     let dropzoneStyle;
+    let urlStyle;
     if (photoPreviews.length) {
       dropzoneStyle = 'small-dropzone';
+      urlStyle = 'hidden';
     } else {
       dropzoneStyle = 'large-dropzone';
+      urlStyle = 'photo-url-upload';
     }
 
     switch(this.props.postType) {
@@ -75,11 +94,21 @@ export default class NewPostForm extends React.Component {
         return(
           <form  className='post-form-container' onSubmit={this.handleSubmit}>
             <ul> {photoPreviews}</ul>
-            <Dropzone className={dropzoneStyle} onDrop={(files) => this.onDrop(files)} accept={'image/*'}>
-              <div className='file-upload-container'>
-                <div className='file-upload-icon'>&#60027;</div>
+            <div className='photo-upload-cells'>
+              <Dropzone className={dropzoneStyle} onDrop={(files) => this.onDrop(files)} accept={'image/*'}>
+                <div className='file-upload-container'>
+                  <div className='file-upload-icon'>&#60027;</div>
+                  <div>Upload Image</div>
+                  <div className="selfie-upload" onClick={() => this.selfieCam()}>:)</div>
+                </div>
+              </Dropzone>
+              <div className={urlStyle}>
+                <div className="file-upload-container">
+                  <div className='file-upload-icon'>&#60036;</div>
+                  <div>Upload from Url</div>
+                </div>
               </div>
-            </Dropzone>
+            </div>
             <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Add a caption, if you like'/>
             <input type="submit" name="" id=""/>
           </form>

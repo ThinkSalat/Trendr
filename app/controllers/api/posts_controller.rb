@@ -2,8 +2,8 @@ class Api::PostsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def create
+    params[:post] = params
     @post = Post.new(post_params)
-    # @post.user_id = current_user.id
 
     if @post.save
       render 'api/posts/show'
@@ -42,6 +42,19 @@ class Api::PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:user_id, :title, :post_type, :summary, :body, :private, :photoset_layout, :caption, :source_url, :source_title)
+    
+    params.require(:post).permit(
+      :user_id, 
+      :title, 
+      :post_type, 
+      :summary, 
+      :body, 
+      :private, 
+      :photoset_layout, 
+      :caption, 
+      :source_url, 
+      :source_title, 
+      images: []
+      )
   end
 end

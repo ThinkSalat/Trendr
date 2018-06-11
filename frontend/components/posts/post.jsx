@@ -31,6 +31,14 @@ export default class Post extends React.Component {
       );
     }
 
+    // const photoPreviews = this.props.map((photo, i) => {
+    //   return (
+    //     <li  key={i}>
+    //       <img className='photo-upload-preview' src={photo}/>
+    //     </li>
+    //   );
+    // });
+
     const {post, author} = this.props;
 
     console.log('avail', this.state.isAvailable);

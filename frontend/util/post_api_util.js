@@ -7,13 +7,22 @@ export const fetchPosts = filter => (
 
 export const fetchPost = id => $.get(`api/posts/${id}`);
 
-export const createPost = post => (
-  $.post({
-    url: `api/posts`,
-    data: { post }
-  })
-);
+export const createPost = post => {
+  return(
+    $.post({
+      url: `api/posts`,
+      contentType: false,
+      processData: false,
+      dataType: 'json',
+      data: post
+    })
+  );
+};
 
+// for photos
+
+
+//update this to match createPost
 export const updatePost = post => (
   $.ajax({
     method: "PATCH",

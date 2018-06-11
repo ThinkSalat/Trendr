@@ -1,0 +1,123 @@
+.post-form-container {
+  margin: 0 auto;
+  width: 540px;
+
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  input, textarea {
+    width: 540px;
+  }
+  textarea {
+    box-sizing: border-box;
+    height: 70px;
+    width: 540px;
+    resize: none;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.photo-upload-cells {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 540px;
+  height: 200px;
+  background: #f2f2f2;
+  color:#989898;
+  border-top: 3px dotted #989898;
+  border-bottom: 3px dotted #989898;
+  overflow: hidden;
+}
+
+.large-dropzone {
+  height: 200px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid #989898;
+
+  .file-upload-icon {
+    font-family: 'icon-font';
+    font-size: 60px;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    top: -18px;
+    left: -9px;
+  }
+}
+
+.small-dropzone {
+  height: 40px;
+
+  .file-upload-icon {
+    &:after {
+      content: "Add another photo here";
+    }
+    font-family: 'icon-font';
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+  }
+};
+
+.photo-url-upload {
+  height: 200px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .file-upload-icon {
+    font-family: 'icon-font';
+    font-size: 60px;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    top: -18px;
+    left: -9px;
+  }
+}
+
+.selfie-upload {
+  z-index: 3;
+
+  &:hover {
+    cursor: pointer;
+    content: 'Take a selfie!'
+  }
+  #video {
+
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.photo-upload-preview {
+  display: block;
+  width: 540px;
+  height: auto;
+}

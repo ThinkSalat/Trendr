@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resource :search, only: [:show, :index]
   end
 
-  resources :images, ony: [:show]
+  resources :images, only: [:show]
 
   root "static_pages#root"
 end
