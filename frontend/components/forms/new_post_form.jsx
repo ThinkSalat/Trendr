@@ -8,8 +8,6 @@ export default class NewPostForm extends React.Component {
       body: '',
       summary: '',
       post_type: this.props.postType,
-      user_id: this.props.currentUser.id,
-      private: this.props.currentUser.private_posts,
       photoset_layout: '',
       source_url: '',
       source_title: '',
@@ -27,8 +25,7 @@ export default class NewPostForm extends React.Component {
     post.state = 'published';
     this.props.submitPost(post)
       .then(this.props.history.push('/'));
-    // .then( do something )
-    // .catch( error handling )
+      // might handle errors here
   }
 
   update(field) {    

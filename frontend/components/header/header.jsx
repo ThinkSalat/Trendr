@@ -7,7 +7,6 @@ import Logo from './logo';
 class Header extends React.Component {
 
   //conditionally render navbar
-
   renderHeaderSessionButton() {
     switch (this.props.location.pathname){
       // case '/dashboard':

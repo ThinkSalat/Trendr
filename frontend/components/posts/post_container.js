@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 
 import { fetchPost, updatePost, deletPost } from '../../actions/post_actions';
-import {fetchUser} from '../../actions/session_actions';
 
 import Post from './post';
 
@@ -12,7 +11,7 @@ const mapStateToProps = ({ entities: { posts, users }, session: { currentUser } 
     post,
     author,
     postId,
-    currentUser
+    currentUser: currentUser || {}
   };
 };
 
