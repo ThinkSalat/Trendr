@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  // justify-content: space-around;
   padding-left: 15px;
   position: absolute;
   min-height: 54px;
@@ -14,10 +15,9 @@
 
   &.logged-in {
     padding: 3px 0 3px 15px;
-    border-bottom: 0.25px solid rgba(255,255,255,0.8);
-    border-top: 0.25px solid rgba(255,255,255,0.8);
-    background-color: #37455C;
-    z-index: 3;
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.13);
+    z-index: 90;
+    background-color: #36465d;
   }
 }
 .header-left {

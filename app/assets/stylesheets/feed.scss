@@ -9,6 +9,29 @@
   background-color: transparent;
   padding:  92px 5px 0 5px;
 
+  margin: 0 auto;
 
 
+}
+
+.main-content {
+  position: relative;
+  left: 85px;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-feed-avatar {
+
+  display: block;
+  height: 64px;
+  width: 64px;
 }
