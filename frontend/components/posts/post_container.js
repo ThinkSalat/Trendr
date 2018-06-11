@@ -1,12 +1,16 @@
 import { connect } from 'react-redux';
 
 import { fetchPost, updatePost, deletPost } from '../../actions/post_actions';
+import {fetchUser} from '../../actions/session_actions';
 
 import Post from './post';
 
-const mapStateToProps = ({ entities: { posts }, session: { currentUser } }, { match: { params: { postId } } }) => {
+const mapStateToProps = ({ entities: { posts, users }, session: { currentUser } }, { match: { params: { postId } } }) => {
+  const post = posts[postId] || {};
+  const author = users[post.userId] || {};
   return {
-    post: posts[postId] || {},
+    post,
+    author,
     postId,
     currentUser
   };
