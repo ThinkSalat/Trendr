@@ -72,7 +72,7 @@ export default class NewPostForm extends React.Component {
   render() {
     const photoPreviews = this.state.images.map((photo, i) => {
       return (
-        <li  key={i}>
+        <li key={i}>
           <img className='photo-upload-preview' src={photo.preview}/>
         </li>
       );

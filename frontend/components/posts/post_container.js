@@ -4,13 +4,15 @@ import { fetchPost, updatePost, deletPost } from '../../actions/post_actions';
 
 import Post from './post';
 
-const mapStateToProps = ({ entities: { posts, users }, session: { currentUser } }, { match: { params: { postId } } }) => {
+const mapStateToProps = ({ entities: { posts, users, images }, session: { currentUser } }, { match: { params: { postId } } }) => {
   const post = posts[postId] || {};
+  images = images || [];
   const author = users[post.userId] || {};
   currentUser = currentUser || {};
 
   return {
     post,
+    images,
     author,
     postId,
     currentUser
