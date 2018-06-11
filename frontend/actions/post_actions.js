@@ -24,10 +24,11 @@ const receivePosts = posts => ({
   type: RECEIVE_ALL_POSTS,
   posts 
 });
-const receivePost = res => ({
+const receivePost = ({ post, user, images }) => ({
   type: RECEIVE_POST,
-  post: res.post,
-  user: res.user
+  post,
+  user,
+  images
 });
 const removePost = postId => ({
   type: REMOVE_POST,
