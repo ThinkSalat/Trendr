@@ -23,8 +23,9 @@ export default class NewPostForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-
-    this.props.form_submit_action(this.state)
+    const post = this.state;
+    post.state = 'published';
+    this.props.submitPost(post)
       .then(this.props.history.push('/'));
     // .then( do something )
     // .catch( error handling )
@@ -36,10 +37,15 @@ export default class NewPostForm extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const focusedInput = document.getElementById('new-post-form-title');
+    focusedInput.focus();
+  }
+
   render() {
     return(
       <form onSubmit={this.handleSubmit}>
-        <input type="text" value={this.state.title} onChange={this.update('title')} placeholder='Title'/>
+        <input id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Title'/>
         <input type="text" value={this.state.body} onChange={this.update('body')} placeholder='Your text here'/>
 
         <input type="submit" name="" id=""/>

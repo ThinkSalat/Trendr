@@ -12,7 +12,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    form_submit_action: post => dispatch(createPost(post))
+    submitPost: post => dispatch(createPost(post))
   };
 };
 
