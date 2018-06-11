@@ -31,14 +31,24 @@ export default class Post extends React.Component {
       );
     }
 
-    const { post, author, images } = this.props;
+    let { post, author, images } = this.props;
+
+    images = images.map((image,i) => (
+      <li key={i} className='photoset-photo'>
+        <img src={image.url}/>
+      </li>
+    ));
     return(
       <div className={`post-container`}>
         <div>
           <div>
             <ul>
               <li>post header. Author of post: {author.username}</li>
-              <li>post medias</li>
+              <li>
+                <ul>
+                  {images}
+                </ul>
+              </li>
               <li>post title: {post.title}</li>
               <li>post description/summary/body: {post.body || post.summary}</li>
               <li>post nav: Component goes here </li>

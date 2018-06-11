@@ -13,3 +13,11 @@
   background-color: white;
   color: #444444;
 }
+
+.photoset-photo img {
+  min-width: 540px;
+  max-width: 540px;
+  display: block;
+
+  height: auto;
+}
