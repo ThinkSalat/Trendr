@@ -5,7 +5,7 @@ class Post < ApplicationRecord
   # ASSOCIATIONS
   belongs_to :user
 
-  has_many_attached :images
+  has_many_attached :images, dependent: :purge_later
 
   # notes
   # has_many :likes

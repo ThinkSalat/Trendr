@@ -1,0 +1,58 @@
+.post-form-container {
+  margin: 0 auto;
+  width: 540px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  input, textarea {
+    width: 540px;
+  }
+  textarea {
+    height: 70px;
+  }
+}
+
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.large-dropzone {
+  height: 80px;
+
+  .file-upload-icon {
+    font-family: 'icon-font';
+    font-size: 60px;
+    height: 45px;
+    width: 45px;
+  }
+}
+
+.small-dropzone {
+  height: 40px;
+
+  .file-upload-icon {
+    &:after {
+      content: "Add another photo here";
+    }
+    font-family: 'icon-font';
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+  }
+};
+
+
+
+
+
+.photo-upload-preview {
+  display: block;
+  width: 540px;
+  height: auto;
+}
