@@ -3,7 +3,7 @@ class Post < ApplicationRecord
   validates :post_type, presence: :true
   
   # ASSOCIATIONS
-  # belongs_to :user
+  belongs_to :user
 
   has_many_attached :images
 
