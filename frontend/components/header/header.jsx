@@ -10,20 +10,24 @@ class Header extends React.Component {
 
   renderHeaderSessionButton() {
     switch (this.props.location.pathname){
-      case '/dashboard':
-        return <button className='header-session-link' onClick={() => this.props.logout()}> Log out </button>;
+      // case '/dashboard':
+      //   return <button className='header-session-link' onClick={() => this.props.logout()}> Log out </button>;
       case '/signup':
         return <Link className='header-session-link' to='/login' onClick={() => this.props.clearErrors()} > Log in </Link>;
       case '/login':
         return <Link className='header-session-link' to='/signup' onClick={() => this.props.clearErrors()} > Sign Up </Link>;
       default:
-        return;
+        if (this.props.currentUser) {
+          return <button className='header-session-link' onClick={() => this.props.logout()}> Log out </button>;
+        } else {
+          return;
+        }
     }  
   }
 
   render() {
       return (
-        <div className='header-container'>
+        <div className={`header-container ${this.props.currentUser ? "logged-in" : "" }`}>
           <div className='header-left'>
           {/* below is the basic way to get logo sprites working. doesn't work yet */}
             {/* <Link to="/" onMouseEnter={() => this.animate()} className='header-logo'></Link> */}

@@ -11,8 +11,15 @@
   max-height: 54px;
   position: fixed;
   width: 100%;
-}
 
+  &.logged-in {
+    padding: 3px 0 3px 15px;
+    border-bottom: 0.25px solid rgba(255,255,255,0.8);
+    border-top: 0.25px solid rgba(255,255,255,0.8);
+    background-color: #37455C;
+    z-index: 3;
+  }
+}
 .header-left {
   display: flex;
   justify-content: space-between;
