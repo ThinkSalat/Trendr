@@ -4,9 +4,9 @@ import NewPostForm from './new_post_form';
 
 import { createPost } from '../../actions/post_actions';
 
-const mapStateToProps = state => {
+const mapStateToProps = ({ session, entities: {users}}) => {
   return {
-    currentUser: state.session.currentUser || {}
+    currentUser: users[session.id] || {}
   };
 };
 
