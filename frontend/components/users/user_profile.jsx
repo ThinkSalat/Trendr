@@ -32,7 +32,6 @@ export default class UserProfile extends React.Component {
     }
 
     let { posts, user } = this.props;
-    console.log(posts);
     const postCopmonents = Object.keys(posts).map( id => {
       let post = posts[id];
       return <li key={post.id}>

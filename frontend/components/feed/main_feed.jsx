@@ -16,14 +16,12 @@ export default class MainFeed extends React.Component {
   }
 
    render() {
-    console.log('posts,', this.props.posts);
     const { posts } = this.props;
     const postComponents = Object.keys(posts).map(postId => {
       let post = posts[postId];
-      console.log(post);
       return (
         <li key={post.id}>
-          {/* <FeedPostContainer post={post} /> */}
+          <FeedPostContainer post={post}/>
         </li>
       );
     });
@@ -48,7 +46,7 @@ export default class MainFeed extends React.Component {
               <div>post</div>
             </div>
             <ul>
-              {posts}
+              {postComponents}
             </ul>
           </ol>
         </div>

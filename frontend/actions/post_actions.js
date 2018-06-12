@@ -6,7 +6,7 @@ export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 export const REMOVE_POST = 'REMOVE_POST';
 
 export const fetchPosts = () => dispatch => (
-  PostAPIUtil.fetchPosts().then(posts => dispatch(receivePosts(posts)))
+  PostAPIUtil.fetchPosts().then(res => dispatch(receivePosts(res)))
 );
 export const fetchPost = postId => dispatch => (
   PostAPIUtil.fetchPost(postId).then(res => dispatch(receivePost(res)))
@@ -21,9 +21,10 @@ export const deletePost = postId => dispatch => (
   PostAPIUtil.deletePost(postId).then(post => dispatch(removePost(post.id)))
 );
 
-const receivePosts = ({ posts }) => ({
+const receivePosts = ({ posts, users }) => ({
   type: RECEIVE_POSTS,
-  posts
+  posts,
+  users
 })
 
 const receivePost = ({ post, user }) => {
