@@ -6,12 +6,12 @@ import Root from './components/root';
 import configureStore from './store/store';
 //TEST
 // import { login, logout, signup } from './actions/session_actions';
-//     import { 
-//       fetchPosts,
-//       fetchPost,
-//       createPost,
-//       updatePost,
-//       deletePost} from './util/post_api_util';
+    // import { 
+    //   fetchPosts,
+    //   fetchPost,
+    //   createPost,
+    //   updatePost,
+    //   deletePost} from './util/post_api_util';
 import { 
   fetchPosts,
   fetchPost,

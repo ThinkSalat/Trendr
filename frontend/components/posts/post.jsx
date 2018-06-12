@@ -33,9 +33,9 @@ export default class Post extends React.Component {
       );
     }
 
-    let { post, author, images } = this.props;
+    let { post, author } = this.props;
 
-    images = images.map((image,i) => (
+    const images = post.images.map((image,i) => (
       <li key={i} className='photoset-photo'>
         <img src={image.url}/>
       </li>

@@ -6,14 +6,13 @@ import { fetchUser } from '../../actions/user_actions';
 const mapStateToProps = ({ entities: { users, posts }, session: { id }}, { match: { params: { userId } } }) => {
   posts = posts || {};
   const user = users[userId] || {};
-  // console.log(user,posts,userId);
   return {
     posts,
     user,
     userId
   };
 };
-//fetchUser gets their posts
+
 const mapDispatchToProps = dispatch => {
   return {
     fetchUser: userId => dispatch(fetchUser(userId))

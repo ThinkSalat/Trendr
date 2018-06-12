@@ -4,9 +4,29 @@ import { ProtectedRoute } from '../../util/route_util';
 
 import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';
+import FeedPostContainer from '../posts/feed_post_container';
+
 
 export default class MainFeed extends React.Component {
-  render() {
+
+  componentDidMount() {
+    // will take in a user id. 
+    // eventually will return things in order but for now just randomly
+    this.props.fetchPosts();
+  }
+
+   render() {
+    console.log('posts,', this.props.posts);
+    const { posts } = this.props;
+    const postComponents = Object.keys(posts).map(postId => {
+      let post = posts[postId];
+      console.log(post);
+      return (
+        <li key={post.id}>
+          {/* <FeedPostContainer post={post} /> */}
+        </li>
+      );
+    });
     return (
       <div className='main-feed-container'>
         <div className='main-content'>
@@ -28,7 +48,7 @@ export default class MainFeed extends React.Component {
               <div>post</div>
             </div>
             <ul>
-              <li>post items</li>
+              {posts}
             </ul>
           </ol>
         </div>

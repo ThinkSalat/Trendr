@@ -11,8 +11,6 @@ json.user do
   :private_followings
 end
 
-images = []
-
 json.posts do
   json.array! @user.posts.take(5) do |post|
     json.extract! post, :id, :user_id, :title, :slug, :state, :post_type, :summary, :body, :private, :photoset_layout, :caption, :source_url, :source_title

@@ -4,6 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.1'
 gem 'image_processing', '~> 1.2'
+
+# allows easy searching models by specified columns 
+gem 'pg_search'
+
 # gem 'mini_magick'
 gem "aws-sdk-s3", require: false 
 # JQuery for old times' sake

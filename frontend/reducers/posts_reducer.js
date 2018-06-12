@@ -3,7 +3,8 @@ import { merge } from 'lodash';
 import { 
   RECEIVE_ALL_POSTS,
   RECEIVE_POST,
-  REMOVE_POST } from '../actions/post_actions';
+  REMOVE_POST,
+  RECEIVE_POSTS } from '../actions/post_actions';
 import { RECEIVE_USER } from '../actions/user_actions';
 
 const postsReducer = (state = {}, action) => {
@@ -13,6 +14,8 @@ const postsReducer = (state = {}, action) => {
       return action.posts;
     case RECEIVE_POST:
       return merge({}, state, { [action.post.id]: action.post });
+    case RECEIVE_POSTS:
+      return action.posts;
     case REMOVE_POST: 
       const newState = merge({}, state);
       delete newState[action.postId];
