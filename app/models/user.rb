@@ -26,7 +26,7 @@ class User < ApplicationRecord
   validates :username, length: { in: 5..30 }
   validates :password, length: { minimum: 6, allow_nil: true }
   
-  before_save :downcase_fields
+  before_validation :downcase_fields
   before_validation :ensure_session_token
 
   has_one_attached :avatar
