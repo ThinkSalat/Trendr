@@ -40,10 +40,10 @@ export default class MainFeed extends React.Component {
               <ProtectedRoute exact path='/new/video' component={(props) => <FormContainer {...props} postType={'video'} />}  />
             </Switch></li>
 
-            <div className='main-content-feed-avatar'> user avatar</div>
+            <div className='main-content-feed-avatar'></div>
             <div className='main-feed'>  {/*  <MainFeedContainer /> */}
-              <div>avatar</div>
-              <div>post</div>
+              <div></div>
+              <div></div>
             </div>
             <ul>
               {postComponents}
@@ -51,7 +51,7 @@ export default class MainFeed extends React.Component {
           </ol>
         </div>
         <div className='main-content-sidebar col-2'>
-          <div>sidebar</div>
+          <div></div>
         </div>
       </div>
     );
