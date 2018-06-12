@@ -2,7 +2,8 @@ class Api::UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def show
-    render "api/users/#{params[:id]}"
+    @user = User.find(params[:id])
+    render "api/users/profile"
   end
 
   def create
@@ -16,7 +17,7 @@ class Api::UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:userId])
+    @user = User.find(params[:id])
 
     if @user.update_attributes(update_user_params)
       render "api/users/show"

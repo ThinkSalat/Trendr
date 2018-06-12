@@ -1,0 +1,1 @@
+export const fetchUser = userId => $.get(`api/users/${userId}`);

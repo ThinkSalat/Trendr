@@ -6,7 +6,6 @@ import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';
 
 export default class MainFeed extends React.Component {
-
   render() {
     return (
       <div className='main-feed-container'>
