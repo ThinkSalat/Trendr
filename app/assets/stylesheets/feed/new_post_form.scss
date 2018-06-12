@@ -11,8 +11,12 @@
 
   input, textarea {
     width: 540px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 20px;
   }
   textarea {
+
     box-sizing: border-box;
     height: 70px;
     width: 540px;
@@ -29,7 +33,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .photo-upload-cells {
@@ -67,15 +70,24 @@
 
 .small-dropzone {
   height: 40px;
-
+  width: 540px;
   .file-upload-icon {
-    &:after {
-      content: "Add another photo here";
-    }
+    position: relative;
     font-family: 'icon-font';
-    font-size: 20px;
+    font-size: 24px;
     height: 20px;
     width: 20px;
+    top: 7px;
+    left: -59px;
+    span {
+      width: 100px;
+      display: inline-block;
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      position: relative;
+      top: -26px;
+      right: -30px;
+    }
   }
 };
 
@@ -103,21 +115,33 @@
 
   &:hover {
     cursor: pointer;
-    content: 'Take a selfie!'
   }
   #video {
 
   }
 }
 
-
-.hidden {
-  display: none;
-}
-
-
 .photo-upload-preview {
   display: block;
   width: 540px;
   height: auto;
+  
+}
+
+.small-photo-upload-cell {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 540px;
+  background: #f2f2f2;
+  color:#989898;
+  border-top: 3px dotted #989898;
+  border-bottom: 3px dotted #989898;
+  overflow: hidden;
+
+}
+
+.hidden-photo-upload {
+  display: none;
 }

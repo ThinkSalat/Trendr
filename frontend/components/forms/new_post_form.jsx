@@ -79,14 +79,17 @@ export default class NewPostForm extends React.Component {
     });
 
 
-    let dropzoneStyle;
-    let urlStyle;
+    let dropzoneStyle, urlStyle, hidden, photoUploadCellStyle, addAnotherPhoto;
     if (photoPreviews.length) {
       dropzoneStyle = 'small-dropzone';
-      urlStyle = 'hidden';
+      urlStyle = 'hidden-photo-upload';
+      hidden = 'hidden-photo-upload';
+      photoUploadCellStyle = 'small-photo-upload-cell';
+      addAnotherPhoto = 'Add Another';
     } else {
       dropzoneStyle = 'large-dropzone';
       urlStyle = 'photo-url-upload';
+      photoUploadCellStyle = 'photo-upload-cells';
     }
 
     switch(this.props.postType) {
@@ -94,18 +97,18 @@ export default class NewPostForm extends React.Component {
         return(
           <form  className='post-form-container' onSubmit={this.handleSubmit}>
             <ul> {photoPreviews}</ul>
-            <div className='photo-upload-cells'>
+            <div className={photoUploadCellStyle}>
               <Dropzone className={dropzoneStyle} onDrop={(files) => this.onDrop(files)} accept={'image/*'}>
                 <div className='file-upload-container'>
-                  <div className='file-upload-icon'>&#60027;</div>
-                  <div>Upload Image</div>
-                  <div className="selfie-upload" onClick={() => this.selfieCam()}>:)</div>
+                  <div className='file-upload-icon'>&#60027; <span>{addAnotherPhoto}</span> </div>
+                  <div className={hidden}>Upload Image</div>
+                  <div className={`selfie-upload ${hidden}`} onClick={() => this.selfieCam()}>:)</div>
                 </div>
               </Dropzone>
               <div className={urlStyle}>
-                <div className="file-upload-container">
+                <div className={`file-upload-container ${hidden}`}>
                   <div className='file-upload-icon'>&#60036;</div>
-                  <div>Upload from Url</div>
+                  <div className={hidden}>Upload from Url</div>
                 </div>
               </div>
             </div>
