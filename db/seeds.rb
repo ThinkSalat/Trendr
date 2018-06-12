@@ -97,22 +97,11 @@ Dir.foreach('./db/blogs') do |file|
   file = JSON.parse(file)
   
   
-  # User creation
-  email = file['response']['blog']['email']
-  # user = {}
-  # user['username'] = userdata['name']
-  # user['username'] += '    ' if user['username'].length < 5
-  # user['title'] = userdata['title']
-  # user['description'] = userdata['description']
-  # user['email'] = userdata['name'] + '@gmail.com'
-  # user['password'] = 'password'
-  # print 'Username: '
-  # puts user['username']
-  # User.create!(user)
-  # user_id = User.last.id
-  # print "User id: "
-  # puts user_id
+  email = file['response']['blog']['name'] + '@gmail.com'
+  puts email
+
   user_id = User.find_by_email(email).id
+  
   # Post Creation
   puts '---------Post Creation-------------'
   seed_posts = file['response']['posts']
