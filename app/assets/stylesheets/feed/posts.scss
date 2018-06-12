@@ -9,7 +9,7 @@
   top: 75px;
   width: 540px;
   margin: 0 auto;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: white;
   color: #444444;
 }
@@ -20,4 +20,64 @@
   display: block;
 
   height: auto;
+}
+
+.post-header {
+  height: 45px;
+  padding: 0 20px 0 20px;
+  
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-media {
+  
+}
+.post-title {
+  font-size: 16px;
+  padding: 20px 20px 0 20px;
+
+}
+.post-body {
+  font-size: 16px;
+  padding: 0 20px 0 20px;
+
+  
+}
+.post-bottom-nav {
+  height: 45px;
+  padding: 0 20px 0 20px;
+
+  // font-family: 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .post-bottom-nav-icons {
+    text-align: right;
+    white-space: nowrap;
+    display: table-cell;
+    width: 100%;
+    line-height: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    // display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .post-control {
+      top: 13px;
+      font-family: 'icon-font';
+      font-size: 30px;
+      margin: 10px 0 10px 12px;
+      display: inline-block;
+      position: relative;
+      text-align: left;
+      height: 24px;
+      width: 24px;
+      cursor: pointer;
+    }
+  }
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
+import PostBottomNav from './post_bottom_nav';
+
 export default class Post extends React.Component {
 
   constructor(props) {
@@ -39,22 +41,21 @@ export default class Post extends React.Component {
       </li>
     ));
     return(
-      <div className={`post-container`}>
-        <div>
-          <div>
-            <ul>
-              <li>post header. Author of post: {author.username}</li>
-              <li>
-                <ul>
-                  {images}
-                </ul>
-              </li>
-              <li>post title: {post.title}</li>
-              <li>post description/summary/body: {post.body || post.summary}</li>
-              <li>post nav: Component goes here </li>
+      <div className='post-container'>
+        <ul>
+          <li className='post-header' >
+            <span>{author.username}</span>
+          </li>
+          <li>
+            <ul className='post-media' >
+              {images}
             </ul>
-          </div>
-        </div>
+          </li>
+          <li className='post-title' >{post.title}</li>
+          <li className='post-body' >{post.body || post.summary}</li>
+          {/* Post-nav can be replaced by component  */}
+          <li><PostBottomNav post={post}/></li>
+        </ul>
       </div>
     );
    }
