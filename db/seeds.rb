@@ -55,23 +55,25 @@ Dir.foreach('./db/blogs') do |file|
     post = {}
     post['user_id'] = user_id
     post['post_type'] = seed_post['type']
-    seed_post['type'] == 'text' ? post['body'] = seed_post['summary'] : post['summary'] = seed_post['summary']
+    seed_post['type'] == 'text' ? post['body'] = seed_post['caption'] : post['summary'] = seed_post['caption']
     post['title'] = seed_post['title']
     post['source_url'] = seed_post['source_url']
     post['source_title'] = seed_post['source_title']
     post['slug'] = seed_post['slug']
-    post['caption'] = "<p>#{post['summary']}</p>"
+    post['caption'] = seed_post['caption']
     post['post_type'] = seed_post['type']
     post['state'] = 'published'
     Post.create!(post)
     
-    puts '-------Post Created!--------'
+    puts '-------Post Created!----------'
 
     puts '-----Uploading Post Media-----'
+    puts user['username'] + "'s post"
     post = Post.last
     seed_post['photos'].each do |photo|
       print 'downloading '
-      puts photo['original_size']['url'].slice(0,70) + '...'
+      puts photo['original_size']['url'].slice(17)
+        
       media = open(photo['original_size']['url'])
       i = 0
       post.images.attach(
