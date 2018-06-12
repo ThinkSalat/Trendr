@@ -5,7 +5,7 @@ export const RECEIVE_USER = 'RECEIVE_USER';
 export const fetchUser = userId => dispatch => UserAPIUtil.fetchUser(userId).then(data => dispatch(receiveUser(data)));
 
 const receiveUser = ({ user, posts}) => ({
-  action: RECEIVE_USER,
+  type: RECEIVE_USER,
   user,
   posts
 });

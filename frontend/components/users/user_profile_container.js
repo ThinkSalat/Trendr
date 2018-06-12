@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 import UserProfile from './user_profile';
 import { fetchUser } from '../../actions/user_actions';
 
-const mapStateToProps = (state, ownProps) => {
-  const posts = posts || {};
-  const user = user || {};
+const mapStateToProps = ({ entities: { users, posts }, session: { id }}, { match: { params: { userId } } }) => {
+  posts = posts || {};
+  const user = users[userId] || {};
+  // console.log(user,posts,userId);
   return {
     posts,
-    user
+    user,
+    userId
   };
 };
 //fetchUser gets their posts

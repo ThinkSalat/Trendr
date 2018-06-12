@@ -1,4 +1,6 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
+
 import ProfilePostContainer from '../posts/profile_post_container';
 
 export default class UserProfile extends React.Component {
@@ -6,9 +8,19 @@ export default class UserProfile extends React.Component {
     super(props);
 
     this.state = {
-      isAvailable: true,
-      posts: this.props.posts,
-      user: this.props.user
+      isAvailable: true
+    };
+  }
+
+  componentDidMount() {
+    this.props.fetchUser(this.props.userId)
+      .then( null, err => this.setState({isAvailable: false}));
+  }
+  
+  componentWillReceiveProps(newProps) {
+    if (newProps.userId !== this.props.userId) {
+      this.props.fetchUser(newProps.userId)
+      .then( null, err => this.setState({isAvailable: false}));
     }
   }
 
@@ -18,12 +30,18 @@ export default class UserProfile extends React.Component {
         <Redirect to="/404" />
       );
     }
-    const posts = this.props.posts.map( post => {
-      return <ProfilePostContainer post={post} author={this.props.user}/>;
+
+    let { posts, user } = this.props;
+    console.log(posts);
+    const postCopmonents = Object.keys(posts).map( id => {
+      let post = posts[id];
+      return <li key={post.id}>
+        <ProfilePostContainer post={post} author={this.props.user}/>
+      </li>;
     });
     return(
       <div className='user-profile-container'>
-
+        <ul>{postCopmonents}</ul>
       </div>
     );
    }
