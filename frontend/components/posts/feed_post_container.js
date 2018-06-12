@@ -6,7 +6,7 @@ import Post from './post';
 
 const mapStateToProps = ({ entities: { posts, users }, session: { id } }, {post, author}) => {
   const currentUser = users[id] || {};
-  author = author || users[post.user_id] || {};
+  author = author || users[post.userId];
   return {
     post,
     author,
