@@ -48,9 +48,7 @@ export default class NewPostForm extends React.Component {
   }
 
   update(field) {    
-    return e => { 
-      this.setState({[field]: e.target.value});
-    };
+    return e => this.setState({[field]: e.target.value});
   }
 
   onDrop(acceptedFiles, rejectedFiles) {
@@ -95,7 +93,7 @@ export default class NewPostForm extends React.Component {
     switch(this.props.postType) {
       case 'photo':
         return(
-          <form  className='post-form-container' onSubmit={this.handleSubmit}>
+          <form  className='post-form-container animated slideDownIn' onSubmit={this.handleSubmit}>
             <ul> {photoPreviews}</ul>
             <div className={photoUploadCellStyle}>
               <Dropzone className={dropzoneStyle} onDrop={(files) => this.onDrop(files)} accept={'image/*'}>
@@ -113,17 +111,23 @@ export default class NewPostForm extends React.Component {
               </div>
             </div>
             <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Add a caption, if you like'/>
-            <input type="submit" name="" id=""/>
+            <input type="submit" disabled={!this.state.images.length}/>
           </form>
         );
-      default: 
+      case 'text': 
         return(
           <form  className='post-form-container' onSubmit={this.handleSubmit}>
-          <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Title'/>
-          <textarea type="text" value={this.state.body} onChange={this.update('body')} placeholder='Your text here'/>
-          <input type="submit" name="" id=""/>
-        </form>
-        )
+            <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Title'/>
+            <textarea type="text" value={this.state.body} onChange={this.update('body')} placeholder='Your text here'/>
+            <input type="submit" disabled={!(['title', 'body', 'summary'].some( el => this.state[el]))}/>
+          </form>
+        );
+      default:
+        return(
+          <div id='new-post-form-title'>
+            Not implemented yet!
+          </div>
+        );
     }
 
     
