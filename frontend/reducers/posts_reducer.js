@@ -9,19 +9,22 @@ import { RECEIVE_USER } from '../actions/user_actions';
 
 const postsReducer = (state = {}, action) => {
   Object.freeze(state);
+  let newState;
   switch (action.type) {
     case RECEIVE_ALL_POSTS:
-      return action.posts;
+    case RECEIVE_POSTS:
+    case RECEIVE_USER:
+      newState = {};
+      action.posts.forEach(post => {
+        newState[post.id] = post;
+      });
+      return newState;
     case RECEIVE_POST:
       return merge({}, state, { [action.post.id]: action.post });
-    case RECEIVE_POSTS:
-      return action.posts;
     case REMOVE_POST: 
-      const newState = merge({}, state);
+      newState = merge({}, state);
       delete newState[action.postId];
       return newState;
-    case RECEIVE_USER:
-      return action.posts;
     default:
       return state;
   }

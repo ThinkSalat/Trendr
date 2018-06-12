@@ -18,7 +18,8 @@ export default class UserProfile extends React.Component {
   }
   
   componentWillReceiveProps(newProps) {
-    if (newProps.userId !== this.props.userId) {
+    if (newProps.match.params.userId !== this.props.userId) {
+      debugger
       this.props.fetchUser(newProps.userId)
       .then( null, err => this.setState({isAvailable: false}));
     }
@@ -32,15 +33,17 @@ export default class UserProfile extends React.Component {
     }
 
     let { posts, user } = this.props;
-    const postCopmonents = Object.keys(posts).map( id => {
+    const postComponents = Object.keys(posts).map( id => {
       let post = posts[id];
+      console.log(id);
+      if (post.userId !== user.id) return;
       return <li key={post.id}>
         <ProfilePostContainer post={post} author={this.props.user}/>
       </li>;
     });
     return(
       <div className='user-profile-container'>
-        <ul>{postCopmonents}</ul>
+        <ul>{postComponents}</ul>
       </div>
     );
    }
