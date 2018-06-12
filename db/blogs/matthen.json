@@ -1,1 +1,1818 @@
-{"meta":{"status":200,"msg":"OK"},"response":{"blog":{"ask":true,"ask_anon":true,"ask_page_title":"Send a Message","can_subscribe":false,"description":"maths and science animations","is_adult":false,"is_nsfw":false,"name":"matthen","posts":355,"reply_conditions":"3","share_likes":false,"subscribed":false,"title":"blog.matthen.com","total_posts":355,"updated":1521994551,"url":"http://blog.matthen.com/","is_optout_ads":false},"posts":[{"type":"photo","blog_name":"matthen","id":172240828581,"post_url":"http://blog.matthen.com/post/172240828581/a-simulation-of-a-wave-inside-a-stadium-a","slug":"a-simulation-of-a-wave-inside-a-stadium-a","date":"2018-03-25 16:15:51 GMT","timestamp":1521994551,"state":"published","format":"html","reblog_key":"V7bpdAZE","tags":["science","math","gif","maths","quantum","animation"],"short_url":"https://tmblr.co/ZzJ5xx2WQMdYb","summary":"A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":172,"caption":"<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br/></p>","reblog":{"comment":"<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br></p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"172240828581"},"content_raw":"<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br></p>","content":"<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br /></p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/172240828581","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_400.gif","width":360,"height":188},"alt_sizes":[{"url":"https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_400.gif","width":360,"height":188},{"url":"https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_250.gif","width":250,"height":131},{"url":"https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_100.gif","width":100,"height":52},{"url":"https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":172161201761,"post_url":"http://blog.matthen.com/post/172161201761/rolling-ellipses-of-different-dimensions-to","slug":"rolling-ellipses-of-different-dimensions-to","date":"2018-03-23 05:40:32 GMT","timestamp":1521783632,"state":"published","format":"html","reblog_key":"N1PrOTvl","tags":["math","science","gif","maths","mathematics","geometry","ellipse"],"short_url":"https://tmblr.co/ZzJ5xx2WLctPX","summary":"Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":649,"caption":"<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions. [<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br/></p>","reblog":{"comment":"<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions. [<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br></p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"172161201761"},"content_raw":"<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions. [<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br></p>","content":"<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions.&nbsp;[<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br /></p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/172161201761","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_400.gif","width":300,"height":511},"alt_sizes":[{"url":"https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_400.gif","width":300,"height":511},{"url":"https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_250.gif","width":235,"height":400},{"url":"https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_100.gif","width":100,"height":170},{"url":"https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":172128282461,"post_url":"http://blog.matthen.com/post/172128282461/the-perimeter-of-a-squashed-square-drops-linearly","slug":"the-perimeter-of-a-squashed-square-drops-linearly","date":"2018-03-22 06:22:38 GMT","timestamp":1521699758,"state":"published","format":"html","reblog_key":"QyyBc4nC","tags":["math","mathematics","science","gif","animation","geometry","ellipse","elliptical function"],"short_url":"https://tmblr.co/ZzJ5xx2WJfITT","summary":"The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":342,"caption":"<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>","reblog":{"comment":"<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"172128282461"},"content_raw":"<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>","content":"<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/172128282461","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_400.gif","width":300,"height":380},"alt_sizes":[{"url":"https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_400.gif","width":300,"height":380},{"url":"https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_250.gif","width":250,"height":317},{"url":"https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_100.gif","width":100,"height":127},{"url":"https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":169874171716,"post_url":"http://blog.matthen.com/post/169874171716/these-three-loops-cannot-be-taken-apart-but-if","slug":"these-three-loops-cannot-be-taken-apart-but-if","date":"2018-01-19 04:33:28 GMT","timestamp":1516336408,"state":"published","format":"html","reblog_key":"fFDTT9u7","tags":["gif","science","animation","math","mathematics","maths","rings","topology"],"short_url":"https://tmblr.co/ZzJ5xx2UDIYT4","summary":"These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":317,"caption":"<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it’s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>","reblog":{"comment":"<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it’s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"169874171716"},"content_raw":"<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it’s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>","content":"<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it&rsquo;s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/169874171716","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_500.gif","width":500,"height":500},"alt_sizes":[{"url":"https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_500.gif","width":500,"height":500},{"url":"https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_400.gif","width":400,"height":400},{"url":"https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":154267786051,"post_url":"http://blog.matthen.com/post/154267786051/drawing-shapes-using-waves","slug":"drawing-shapes-using-waves","date":"2016-12-10 01:26:03 GMT","timestamp":1481333163,"state":"published","format":"html","reblog_key":"cxidAGTu","tags":["gif","math","waves","geometry","animation","science"],"short_url":"https://tmblr.co/ZzJ5xx2Fh4vj3","summary":"drawing shapes using waves","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":194,"caption":"<p>drawing shapes using waves</p>","reblog":{"comment":"<p>drawing shapes using waves</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"154267786051"},"content_raw":"<p>drawing shapes using waves</p>","content":"<p>drawing shapes using waves</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/154267786051","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_400.gif","width":350,"height":350},"alt_sizes":[{"url":"https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_400.gif","width":350,"height":350},{"url":"https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":153854399911,"post_url":"http://blog.matthen.com/post/153854399911/shining-a-flashlight-reveals-the-conic-sections","slug":"shining-a-flashlight-reveals-the-conic-sections","date":"2016-11-30 07:42:10 GMT","timestamp":1480491730,"state":"published","format":"html","reblog_key":"4y45tiok","tags":["math","conic","gif","animation","vr","visualization","circle","ellipse","hyperbola","parabola","science","mathematics"],"short_url":"https://tmblr.co/ZzJ5xx2FIRzMd","summary":"Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":65,"caption":"<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a> Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>","reblog":{"comment":"<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a> Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"153854399911"},"content_raw":"<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a> Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>","content":"<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I&rsquo;ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a>&nbsp;Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/153854399911","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_250.gif","width":196,"height":348},"alt_sizes":[{"url":"https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_250.gif","width":196,"height":348},{"url":"https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_100.gif","width":100,"height":178},{"url":"https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":148282198266,"post_url":"http://blog.matthen.com/post/148282198266/water-streaming-inwards-from-a-spinning-tube","slug":"water-streaming-inwards-from-a-spinning-tube","date":"2016-08-01 04:53:39 GMT","timestamp":1470027219,"state":"published","format":"html","reblog_key":"Fht4BbJk","tags":["exploratorium","gif","science","animation","geometry","velocity"],"short_url":"https://tmblr.co/ZzJ5xx2A6JiZw","summary":"Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":218,"caption":"<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"148282198266"},"content_raw":"<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>","content":"<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/148282198266","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_400.gif","width":360,"height":360},"alt_sizes":[{"url":"https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_400.gif","width":360,"height":360},{"url":"https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":144687963121,"post_url":"http://blog.matthen.com/post/144687963121/patterns-of-lines-emerging-from-looking-at-a-cubic","slug":"patterns-of-lines-emerging-from-looking-at-a-cubic","date":"2016-05-21 05:41:13 GMT","timestamp":1463809273,"state":"published","format":"html","reblog_key":"3rX2xEdf","tags":["math","science","gif","cube","geometry","animation"],"short_url":"https://tmblr.co/ZzJ5xx26m4nln","summary":"Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":614,"caption":"<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"144687963121"},"content_raw":"<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>","content":"<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/144687963121","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_400.gif","width":360,"height":360},"alt_sizes":[{"url":"https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_400.gif","width":360,"height":360},{"url":"https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":144543698841,"post_url":"http://blog.matthen.com/post/144543698841/the-area-of-two-ellipses-whose-heights-are-half","slug":"the-area-of-two-ellipses-whose-heights-are-half","date":"2016-05-18 07:13:15 GMT","timestamp":1463555595,"state":"published","format":"html","reblog_key":"Mfl4oE58","tags":["geometry","science","math","gif","animation","ellipse","area"],"short_url":"https://tmblr.co/ZzJ5xx26dUS_P","summary":"The area of two ellipses, whose heights are half their widths, adding up to a single circle. [code]","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":1345,"caption":"<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"144543698841"},"content_raw":"<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>","content":"<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/144543698841","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_400.gif","width":274,"height":432},"alt_sizes":[{"url":"https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_400.gif","width":274,"height":432},{"url":"https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_250.gif","width":250,"height":394},{"url":"https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_100.gif","width":100,"height":158},{"url":"https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":144384785211,"post_url":"http://blog.matthen.com/post/144384785211/a-reuleaux-triangle-is-built-from-three-circles","slug":"a-reuleaux-triangle-is-built-from-three-circles","date":"2016-05-15 05:52:54 GMT","timestamp":1463291574,"state":"published","format":"html","reblog_key":"drunKFY6","tags":["gif","animation","geometry","math","science","triangle"],"short_url":"https://tmblr.co/ZzJ5xx26U0Fix","summary":"A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":2138,"caption":"<p>A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"144384785211"},"content_raw":"<p>A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>","content":"<p>A&nbsp;Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/144384785211","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_500.gif","width":500,"height":500},"alt_sizes":[{"url":"https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_500.gif","width":500,"height":500},{"url":"https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_400.gif","width":400,"height":400},{"url":"https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":143974612161,"post_url":"http://blog.matthen.com/post/143974612161/a-visual-proof-that-¼-116-164-13","slug":"a-visual-proof-that-¼-116-164-13","date":"2016-05-07 04:04:17 GMT","timestamp":1462593857,"state":"published","format":"html","reblog_key":"DbepigPJ","tags":["math","science","gif","animation","geometric","triangle","infinite","sum"],"short_url":"https://tmblr.co/ZzJ5xx265ZZp1","summary":"a visual proof that 1/4 + 1/16 + 1/64 + ... = 1/3 [code] ","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":894,"caption":"<p>a visual proof that &frac14; + 1/16 + 1/64 + &hellip; = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>] </p>","reblog":{"comment":"<p>a visual proof that ¼ + 1/16 + 1/64 + … = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>] </p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"143974612161"},"content_raw":"<p>a visual proof that ¼ + 1/16 + 1/64 + … = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>] </p>","content":"<p>a visual proof that &frac14; + 1/16 + 1/64 + &hellip; = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>]&nbsp;</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/143974612161","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_500.gif","width":500,"height":437},"alt_sizes":[{"url":"https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_500.gif","width":500,"height":437},{"url":"https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_400.gif","width":400,"height":350},{"url":"https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_250.gif","width":250,"height":219},{"url":"https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_100.gif","width":100,"height":87},{"url":"https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":142909645521,"post_url":"http://blog.matthen.com/post/142909645521/each-dot-chases-the-one-before-it-at-a-constant","slug":"each-dot-chases-the-one-before-it-at-a-constant","date":"2016-04-16 19:18:58 GMT","timestamp":1460834338,"state":"published","format":"html","reblog_key":"NW6Pu8lB","tags":["math","science","spiral","geometry","circles","gif","animation"],"short_url":"https://tmblr.co/ZzJ5xx25652BH","summary":"Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":969,"caption":"<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"142909645521"},"content_raw":"<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>","content":"<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/142909645521","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_400.gif","width":320,"height":320},"alt_sizes":[{"url":"https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_400.gif","width":320,"height":320},{"url":"https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":141734108866,"post_url":"http://blog.matthen.com/post/141734108866/a-dodecahedron-tumbling-inside-a-circumscribing","slug":"a-dodecahedron-tumbling-inside-a-circumscribing","date":"2016-03-26 19:43:49 GMT","timestamp":1459021429,"state":"published","format":"html","reblog_key":"UXbZQP2U","tags":["math","science","gif","geometry","animation"],"short_url":"https://tmblr.co/ZzJ5xx2400jx2","summary":"A dodecahedron tumbling inside a circumscribing circle. [code]","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":658,"caption":"<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"141734108866"},"content_raw":"<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>","content":"<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/141734108866","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_500.gif","width":500,"height":499},"alt_sizes":[{"url":"https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_500.gif","width":500,"height":499},{"url":"https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_400.gif","width":400,"height":399},{"url":"https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":141190100916,"post_url":"http://blog.matthen.com/post/141190100916/the-primes-are-often-thought-of-as-behaving-like-a","slug":"the-primes-are-often-thought-of-as-behaving-like-a","date":"2016-03-17 06:55:27 GMT","timestamp":1458197727,"state":"published","format":"html","reblog_key":"TkJhvCcS","tags":["primes","maths","mathematics","gif","animation","science","numbers"],"short_url":"https://tmblr.co/ZzJ5xx23VbVUq","summary":"The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":1564,"caption":"<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes).  [<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a> [<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes).  [<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a> [<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"141190100916"},"content_raw":"<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes).  [<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a> [<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>","content":"<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes). &nbsp;[<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a>&nbsp;[<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/141190100916","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_400.gif","width":360,"height":359},"alt_sizes":[{"url":"https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_400.gif","width":360,"height":359},{"url":"https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_250.gif","width":250,"height":249},{"url":"https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"link","blog_name":"matthen","id":141069437176,"post_url":"http://blog.matthen.com/post/141069437176/changus","slug":"changus","date":"2016-03-15 03:37:20 GMT","timestamp":1458013040,"state":"published","format":"html","reblog_key":"uys1mbD9","tags":[],"short_url":"https://tmblr.co/ZzJ5xx23OPCZu","summary":"changus","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":26,"title":"changus","url":"http://www.changus.com/domains/","link_image":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_540.jpg","link_image_dimensions":{"width":540,"height":284},"link_author":null,"excerpt":"name first - idea later. share good available domain names.","publisher":"changus.com","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_1280.jpg","width":540,"height":284},"alt_sizes":[{"url":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_540.jpg","width":540,"height":284},{"url":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_500.jpg","width":500,"height":263},{"url":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_400.jpg","width":400,"height":210},{"url":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_250.jpg","width":250,"height":131},{"url":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_100.jpg","width":100,"height":53},{"url":"https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_75sq.jpg","width":75,"height":75}]}],"description":"<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>","reblog":{"comment":"<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"141069437176"},"content_raw":"<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>","content":"<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>","is_current_item":true,"is_root_item":true}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":139957790976,"post_url":"http://blog.matthen.com/post/139957790976/rolling-a-circle-in-a-circle-to-draw-a-cosine-wave","slug":"rolling-a-circle-in-a-circle-to-draw-a-cosine-wave","date":"2016-02-25 07:00:39 GMT","timestamp":1456383639,"state":"published","format":"html","reblog_key":"L2opzACL","tags":["math","gif","geometry","cosine","sine","wave","circle","animation"],"short_url":"https://tmblr.co/ZzJ5xx22M8ca0","summary":"Rolling a circle in a circle to draw a cosine wave [code]","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":2207,"caption":"<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"139957790976"},"content_raw":"<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>","content":"<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/139957790976","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_400.gif","width":360,"height":108},"alt_sizes":[{"url":"https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_400.gif","width":360,"height":108},{"url":"https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_250.gif","width":250,"height":75},{"url":"https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_100.gif","width":100,"height":30},{"url":"https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":128665374201,"post_url":"http://blog.matthen.com/post/128665374201/the-focus-of-a-rolling-parabola-traces-out-a","slug":"the-focus-of-a-rolling-parabola-traces-out-a","date":"2015-09-08 22:31:19 GMT","timestamp":1441751479,"state":"published","format":"html","reblog_key":"zL6fmfKv","tags":["geometry","parabola","animation","gif","math","science","catenary","curve"],"short_url":"https://tmblr.co/ZzJ5xx1tr3Stv","summary":"The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [code] [more]","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":367,"caption":"<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>","reblog":{"comment":"<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"128665374201"},"content_raw":"<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>","content":"<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/128665374201","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_400.gif","width":360,"height":275},"alt_sizes":[{"url":"https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_400.gif","width":360,"height":275},{"url":"https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_250.gif","width":250,"height":191},{"url":"https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_100.gif","width":100,"height":76},{"url":"https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":128409945246,"post_url":"http://blog.matthen.com/post/128409945246/in-mc-eschers-metamorphose-he-transforms-square","slug":"in-mc-eschers-metamorphose-he-transforms-square","date":"2015-09-05 15:47:17 GMT","timestamp":1441468037,"state":"published","format":"html","reblog_key":"9Aj02GLV","tags":["escher","animation","math","gif","tiling","geometry","squares","hexagons","science"],"short_url":"https://tmblr.co/ZzJ5xx1tbr4IU","summary":"In MC Escher’s Metamorphose, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":459,"caption":"<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher’s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher’s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"128409945246"},"content_raw":"<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher’s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>","content":"<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher&rsquo;s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/128409945246","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_400.gif","width":360,"height":262},"alt_sizes":[{"url":"https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_400.gif","width":360,"height":262},{"url":"https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_250.gif","width":250,"height":182},{"url":"https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_100.gif","width":100,"height":73},{"url":"https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":128283794116,"post_url":"http://blog.matthen.com/post/128283794116/each-square-growing-out-from-the-centre-is-rotated","slug":"each-square-growing-out-from-the-centre-is-rotated","date":"2015-09-03 20:52:32 GMT","timestamp":1441313552,"state":"published","format":"html","reblog_key":"H1ZZ9aGR","tags":["science","math","animation","gif","broccoli","fibonacci","spiral","biology","maths","mathematica"],"short_url":"https://tmblr.co/ZzJ5xx1tUJrh4","summary":"Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":201,"caption":"<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the <a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a> to evenly spread out the disgusting-tasting broccoli florets as they grow. [<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>] </p>","reblog":{"comment":"<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the <a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a> to evenly spread out the disgusting-tasting broccoli florets as they grow. [<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>] </p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"128283794116"},"content_raw":"<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the <a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a> to evenly spread out the disgusting-tasting broccoli florets as they grow. [<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>] </p>","content":"<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the&nbsp;<a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a>&nbsp;to evenly spread out the disgusting-tasting broccoli florets as they grow.&nbsp;[<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>]&nbsp;</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/128283794116","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_400.gif","width":360,"height":360},"alt_sizes":[{"url":"https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_400.gif","width":360,"height":360},{"url":"https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true},{"type":"photo","blog_name":"matthen","id":127667976236,"post_url":"http://blog.matthen.com/post/127667976236/each-disk-is-ten-times-larger-than-the-previous","slug":"each-disk-is-ten-times-larger-than-the-previous","date":"2015-08-26 23:00:20 GMT","timestamp":1440630020,"state":"published","format":"html","reblog_key":"TbofbDNy","tags":["universe","science","math","gif","animation","mathematics","scale","mathematica","zoom"],"short_url":"https://tmblr.co/ZzJ5xx1svchWi","summary":"Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the...","is_blocks_post_format":false,"recommended_source":null,"recommended_color":null,"note_count":550,"caption":"<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe.   [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>","reblog":{"comment":"<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe.   [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>","tree_html":""},"trail":[{"blog":{"name":"matthen","active":true,"theme":{"avatar_shape":"circle","background_color":"#F6F6F6","body_font":"Helvetica Neue","header_bounds":0,"header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27","header_stretch":true,"link_color":"#529ECC","show_avatar":true,"show_description":true,"show_header_image":true,"show_title":true,"title_color":"#444444","title_font":"Helvetica Neue","title_font_weight":"bold"},"share_likes":false,"share_following":false,"can_be_followed":true},"post":{"id":"127667976236"},"content_raw":"<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe.   [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>","content":"<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe. &nbsp; [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>","is_current_item":true,"is_root_item":true}],"image_permalink":"http://blog.matthen.com/image/127667976236","photos":[{"caption":"","original_size":{"url":"https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_400.gif","width":400,"height":400},"alt_sizes":[{"url":"https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_400.gif","width":400,"height":400},{"url":"https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_250.gif","width":250,"height":250},{"url":"https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_100.gif","width":100,"height":100},{"url":"https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_75sq.gif","width":75,"height":75}]}],"can_like":false,"can_reblog":false,"can_send_in_message":true,"can_reply":false,"display_avatar":true}],"total_posts":355}}
+{
+  "meta": {
+    "status": 200,
+    "msg": "OK"
+  },
+  "response": {
+    "blog": {
+      "ask": true,
+      "ask_anon": true,
+      "ask_page_title": "Send a Message",
+      "can_subscribe": false,
+      "description": "maths and science animations",
+      "is_adult": false,
+      "is_nsfw": false,
+      "name": "matthen",
+      "posts": 355,
+      "reply_conditions": "3",
+      "share_likes": false,
+      "subscribed": false,
+      "title": "blog.matthen.com",
+      "total_posts": 355,
+      "updated": 1521994551,
+      "url": "http://blog.matthen.com/",
+      "is_optout_ads": false
+    },
+    "posts": [{
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 172240828581,
+      "post_url": "http://blog.matthen.com/post/172240828581/a-simulation-of-a-wave-inside-a-stadium-a",
+      "slug": "a-simulation-of-a-wave-inside-a-stadium-a",
+      "date": "2018-03-25 16:15:51 GMT",
+      "timestamp": 1521994551,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "V7bpdAZE",
+      "tags": ["science", "math", "gif", "maths", "quantum", "animation"],
+      "short_url": "https://tmblr.co/ZzJ5xx2WQMdYb",
+      "summary": "A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 172,
+      "caption": "<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br/></p>",
+      "reblog": {
+        "comment": "<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br></p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "172240828581"
+        },
+        "content_raw": "<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br></p>",
+        "content": "<p>A simulation of a wave inside a stadium- a rectangle and two semicircles. Although it is a very simple shape, the wave function cannot be exactly solved and becomes chaotic. The simulation is actually computed on a rectangular grid of pixels as a cellular automaton- note the checkerboard patterns and pixelated edges. [<a href=\"http://dhushara.com/DarkHeart/QStad/QStad.htm\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/Dtgekfu9\" target=\"_blank\">code</a>]<br /></p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/172240828581",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_400.gif",
+          "width": 360,
+          "height": 188
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_400.gif",
+          "width": 360,
+          "height": 188
+        }, {
+          "url": "https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_250.gif",
+          "width": 250,
+          "height": 131
+        }, {
+          "url": "https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_100.gif",
+          "width": 100,
+          "height": 52
+        }, {
+          "url": "https://78.media.tumblr.com/1dcc5808d6395af09a2e30d46d5d9efc/tumblr_p65m69Zuz41qfg7o3o1_r1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 172161201761,
+      "post_url": "http://blog.matthen.com/post/172161201761/rolling-ellipses-of-different-dimensions-to",
+      "slug": "rolling-ellipses-of-different-dimensions-to",
+      "date": "2018-03-23 05:40:32 GMT",
+      "timestamp": 1521783632,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "N1PrOTvl",
+      "tags": ["math", "science", "gif", "maths", "mathematics", "geometry", "ellipse"],
+      "short_url": "https://tmblr.co/ZzJ5xx2WLctPX",
+      "summary": "Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 649,
+      "caption": "<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions. [<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br/></p>",
+      "reblog": {
+        "comment": "<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions. [<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br></p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "172161201761"
+        },
+        "content_raw": "<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions. [<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br></p>",
+        "content": "<p>Rolling ellipses of different dimensions to measure their perimeters. The red line is the curve of perimeter versus how squashed the ellipse is. The curve is defined by an <a href=\"https://en.wikipedia.org/wiki/Elliptic_integral\" target=\"_blank\">elliptic integral</a>, and cannot be expressed with elementary functions.&nbsp;[<a href=\"https://pastebin.com/q4HpB39R\" target=\"_blank\">code</a>]<br /></p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/172161201761",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_400.gif",
+          "width": 300,
+          "height": 511
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_400.gif",
+          "width": 300,
+          "height": 511
+        }, {
+          "url": "https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_250.gif",
+          "width": 235,
+          "height": 400
+        }, {
+          "url": "https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 170
+        }, {
+          "url": "https://78.media.tumblr.com/bfabc796d06c90fa991c454bb2033cbb/tumblr_p613h807C81qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 172128282461,
+      "post_url": "http://blog.matthen.com/post/172128282461/the-perimeter-of-a-squashed-square-drops-linearly",
+      "slug": "the-perimeter-of-a-squashed-square-drops-linearly",
+      "date": "2018-03-22 06:22:38 GMT",
+      "timestamp": 1521699758,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "QyyBc4nC",
+      "tags": ["math", "mathematics", "science", "gif", "animation", "geometry", "ellipse", "elliptical function"],
+      "short_url": "https://tmblr.co/ZzJ5xx2WJfITT",
+      "summary": "The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 342,
+      "caption": "<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>",
+      "reblog": {
+        "comment": "<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "172128282461"
+        },
+        "content_raw": "<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>",
+        "content": "<p>The perimeter of a squashed square drops linearly with how much it is squashed. For a pentagon, the perimeter varies in a more complicated curve. As the number of sides increases, the shapes get closer and closer to squashed circles, or ellipses. There is no closed form equation for the perimeter of an ellipse, so this curve is just defined as an <i>elliptical function</i>. [<a href=\"https://pastebin.com/G62xETXE\" target=\"_blank\">code</a>] [<a href=\"https://www.mathsisfun.com/geometry/ellipse-perimeter.html\" target=\"_blank\">more</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/172128282461",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_400.gif",
+          "width": 300,
+          "height": 380
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_400.gif",
+          "width": 300,
+          "height": 380
+        }, {
+          "url": "https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 317
+        }, {
+          "url": "https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 127
+        }, {
+          "url": "https://78.media.tumblr.com/3605f381bcb82c0c8b23ab62d43c99e8/tumblr_p5zatuhBkN1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 169874171716,
+      "post_url": "http://blog.matthen.com/post/169874171716/these-three-loops-cannot-be-taken-apart-but-if",
+      "slug": "these-three-loops-cannot-be-taken-apart-but-if",
+      "date": "2018-01-19 04:33:28 GMT",
+      "timestamp": 1516336408,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "fFDTT9u7",
+      "tags": ["gif", "science", "animation", "math", "mathematics", "maths", "rings", "topology"],
+      "short_url": "https://tmblr.co/ZzJ5xx2UDIYT4",
+      "summary": "These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 317,
+      "caption": "<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it’s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>",
+      "reblog": {
+        "comment": "<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it’s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "169874171716"
+        },
+        "content_raw": "<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it’s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>",
+        "content": "<p>These three loops cannot be taken apart, but if you remove any one of them the other two will be disconnected. When any two loops are pulled apart, it&rsquo;s clear that the other loop is the only thing keeping them together. These are called Borromean rings. [<a href=\"https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-borromean-rings/\" target=\"_blank\">more</a>] [<a href=\"https://pastebin.com/qDFJPCAT\" target=\"_blank\">messy code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/169874171716",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_500.gif",
+          "width": 500,
+          "height": 500
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_500.gif",
+          "width": 500,
+          "height": 500
+        }, {
+          "url": "https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_400.gif",
+          "width": 400,
+          "height": 400
+        }, {
+          "url": "https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/15c046ba02c61a33e28c167f5d01c164/tumblr_p2scduquRX1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 154267786051,
+      "post_url": "http://blog.matthen.com/post/154267786051/drawing-shapes-using-waves",
+      "slug": "drawing-shapes-using-waves",
+      "date": "2016-12-10 01:26:03 GMT",
+      "timestamp": 1481333163,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "cxidAGTu",
+      "tags": ["gif", "math", "waves", "geometry", "animation", "science"],
+      "short_url": "https://tmblr.co/ZzJ5xx2Fh4vj3",
+      "summary": "drawing shapes using waves",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 194,
+      "caption": "<p>drawing shapes using waves</p>",
+      "reblog": {
+        "comment": "<p>drawing shapes using waves</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "154267786051"
+        },
+        "content_raw": "<p>drawing shapes using waves</p>",
+        "content": "<p>drawing shapes using waves</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/154267786051",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_400.gif",
+          "width": 350,
+          "height": 350
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_400.gif",
+          "width": 350,
+          "height": 350
+        }, {
+          "url": "https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/062e2dc38b02aed57ee08751e0709385/tumblr_ohy3y2bBPt1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 153854399911,
+      "post_url": "http://blog.matthen.com/post/153854399911/shining-a-flashlight-reveals-the-conic-sections",
+      "slug": "shining-a-flashlight-reveals-the-conic-sections",
+      "date": "2016-11-30 07:42:10 GMT",
+      "timestamp": 1480491730,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "4y45tiok",
+      "tags": ["math", "conic", "gif", "animation", "vr", "visualization", "circle", "ellipse", "hyperbola", "parabola", "science", "mathematics"],
+      "short_url": "https://tmblr.co/ZzJ5xx2FIRzMd",
+      "summary": "Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 65,
+      "caption": "<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a> Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>",
+      "reblog": {
+        "comment": "<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a> Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "153854399911"
+        },
+        "content_raw": "<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I’ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a> Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>",
+        "content": "<p>Shining a flashlight reveals the conic sections - circles, ellipses, parabolas and hyperbolas. I&rsquo;ve been working on an interactive visualization of this that uses the orientation of your phone to aim the flashlight. <a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">Please try it out by visiting this link!</a>&nbsp;Can you get a parabola from intersecting the cone of light with the plane below? [<a href=\"https://github.com/matthen/mathvr/blob/master/js/conic.js\" target=\"_blank\">code</a>] [<a href=\"http://vr.matthen.com/vis/conic.html\" target=\"_blank\">link</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/153854399911",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_250.gif",
+          "width": 196,
+          "height": 348
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_250.gif",
+          "width": 196,
+          "height": 348
+        }, {
+          "url": "https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 178
+        }, {
+          "url": "https://78.media.tumblr.com/435ac61fea57d604327fa3d7d98ea3f8/tumblr_ohg2h3kynQ1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 148282198266,
+      "post_url": "http://blog.matthen.com/post/148282198266/water-streaming-inwards-from-a-spinning-tube",
+      "slug": "water-streaming-inwards-from-a-spinning-tube",
+      "date": "2016-08-01 04:53:39 GMT",
+      "timestamp": 1470027219,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "Fht4BbJk",
+      "tags": ["exploratorium", "gif", "science", "animation", "geometry", "velocity"],
+      "short_url": "https://tmblr.co/ZzJ5xx2A6JiZw",
+      "summary": "Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 218,
+      "caption": "<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "148282198266"
+        },
+        "content_raw": "<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>Water streaming inwards from a spinning tube appears to curve ahead of the spin. All individual particles travel in a straight line once they have left the tube, where they have a faster tangential speed relative to the points closer to the centre. [inspired by the <a href=\"http://exploratorium.tumblr.com/\" target=\"_blank\">exploratorium</a>] [<a href=\"http://pastebin.com/np9isTXj\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/148282198266",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 360
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 360
+        }, {
+          "url": "https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/20fbe74c6f2cf78a1e653278760383f3/tumblr_ob7rynJQGe1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 144687963121,
+      "post_url": "http://blog.matthen.com/post/144687963121/patterns-of-lines-emerging-from-looking-at-a-cubic",
+      "slug": "patterns-of-lines-emerging-from-looking-at-a-cubic",
+      "date": "2016-05-21 05:41:13 GMT",
+      "timestamp": 1463809273,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "3rX2xEdf",
+      "tags": ["math", "science", "gif", "cube", "geometry", "animation"],
+      "short_url": "https://tmblr.co/ZzJ5xx26m4nln",
+      "summary": "Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 614,
+      "caption": "<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "144687963121"
+        },
+        "content_raw": "<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>Patterns of lines emerging from looking at a cubic lattice of points. The black lines form along directions in the cube where the eye can see unobstructed to the other side. [<a href=\"http://pastebin.com/vPEHvSSM\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/144687963121",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 360
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 360
+        }, {
+          "url": "https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/b03130fadd650b894c6e4402054b5cad/tumblr_o7iibiZTOZ1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 144543698841,
+      "post_url": "http://blog.matthen.com/post/144543698841/the-area-of-two-ellipses-whose-heights-are-half",
+      "slug": "the-area-of-two-ellipses-whose-heights-are-half",
+      "date": "2016-05-18 07:13:15 GMT",
+      "timestamp": 1463555595,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "Mfl4oE58",
+      "tags": ["geometry", "science", "math", "gif", "animation", "ellipse", "area"],
+      "short_url": "https://tmblr.co/ZzJ5xx26dUS_P",
+      "summary": "The area of two ellipses, whose heights are half their widths, adding up to a single circle. [code]",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 1345,
+      "caption": "<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "144543698841"
+        },
+        "content_raw": "<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>The area of two ellipses, whose heights are half their widths, adding up to a single circle. [<a href=\"http://pastebin.com/u5u751BV\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/144543698841",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_400.gif",
+          "width": 274,
+          "height": 432
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_400.gif",
+          "width": 274,
+          "height": 432
+        }, {
+          "url": "https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 394
+        }, {
+          "url": "https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 158
+        }, {
+          "url": "https://78.media.tumblr.com/84c1f477c8d7d97a636959744bc5246a/tumblr_o7d2q3NJSL1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 144384785211,
+      "post_url": "http://blog.matthen.com/post/144384785211/a-reuleaux-triangle-is-built-from-three-circles",
+      "slug": "a-reuleaux-triangle-is-built-from-three-circles",
+      "date": "2016-05-15 05:52:54 GMT",
+      "timestamp": 1463291574,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "drunKFY6",
+      "tags": ["gif", "animation", "geometry", "math", "science", "triangle"],
+      "short_url": "https://tmblr.co/ZzJ5xx26U0Fix",
+      "summary": "A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 2138,
+      "caption": "<p>A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "144384785211"
+        },
+        "content_raw": "<p>A Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>A&nbsp;Reuleaux triangle is built from three circles. As it rolls, its height is always the radius of one of the circles - a constant. This makes it a <i>curve of constant width</i>, just like a circle. [<a href=\"https://en.wikipedia.org/wiki/Reuleaux_triangle\" target=\"_blank\">more</a>] [<a href=\"http://pastebin.com/C28CRz6N\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/144384785211",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_500.gif",
+          "width": 500,
+          "height": 500
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_500.gif",
+          "width": 500,
+          "height": 500
+        }, {
+          "url": "https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_400.gif",
+          "width": 400,
+          "height": 400
+        }, {
+          "url": "https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/287ad65e0c4c431297902b93c351f10a/tumblr_o77f06OBr31qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 143974612161,
+      "post_url": "http://blog.matthen.com/post/143974612161/a-visual-proof-that-¼-116-164-13",
+      "slug": "a-visual-proof-that-¼-116-164-13",
+      "date": "2016-05-07 04:04:17 GMT",
+      "timestamp": 1462593857,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "DbepigPJ",
+      "tags": ["math", "science", "gif", "animation", "geometric", "triangle", "infinite", "sum"],
+      "short_url": "https://tmblr.co/ZzJ5xx265ZZp1",
+      "summary": "a visual proof that 1/4 + 1/16 + 1/64 + ... = 1/3 [code] ",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 894,
+      "caption": "<p>a visual proof that &frac14; + 1/16 + 1/64 + &hellip; = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>] </p>",
+      "reblog": {
+        "comment": "<p>a visual proof that ¼ + 1/16 + 1/64 + … = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>] </p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "143974612161"
+        },
+        "content_raw": "<p>a visual proof that ¼ + 1/16 + 1/64 + … = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>] </p>",
+        "content": "<p>a visual proof that &frac14; + 1/16 + 1/64 + &hellip; = 1/3 [<a href=\"http://pastebin.com/nr4AzGcq\" target=\"_blank\">code</a>]&nbsp;</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/143974612161",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_500.gif",
+          "width": 500,
+          "height": 437
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_500.gif",
+          "width": 500,
+          "height": 437
+        }, {
+          "url": "https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_400.gif",
+          "width": 400,
+          "height": 350
+        }, {
+          "url": "https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 219
+        }, {
+          "url": "https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 87
+        }, {
+          "url": "https://78.media.tumblr.com/a6f4dd8684bbe98a121c70d1474e6f79/tumblr_o6sgn5iydL1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 142909645521,
+      "post_url": "http://blog.matthen.com/post/142909645521/each-dot-chases-the-one-before-it-at-a-constant",
+      "slug": "each-dot-chases-the-one-before-it-at-a-constant",
+      "date": "2016-04-16 19:18:58 GMT",
+      "timestamp": 1460834338,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "NW6Pu8lB",
+      "tags": ["math", "science", "spiral", "geometry", "circles", "gif", "animation"],
+      "short_url": "https://tmblr.co/ZzJ5xx25652BH",
+      "summary": "Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 969,
+      "caption": "<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "142909645521"
+        },
+        "content_raw": "<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>Each dot chases the one before it at a constant speed, slower than the one it is chasing by a fixed ratio. As a result each dot converges to a smaller circle inside the one it is chasing. If they had the same speed, they would get closer and closer to catching up, but would take infinitely long to do so. If they were faster then they would catch up with each other in a finite length of time. What kind of spiral is traced by joining the dots? [<a href=\"http://pastebin.com/jgUEbQhx\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/142909645521",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_400.gif",
+          "width": 320,
+          "height": 320
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_400.gif",
+          "width": 320,
+          "height": 320
+        }, {
+          "url": "https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/0685fec10e064bf346b0799741fff7cb/tumblr_o5qqgkDeFT1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 141734108866,
+      "post_url": "http://blog.matthen.com/post/141734108866/a-dodecahedron-tumbling-inside-a-circumscribing",
+      "slug": "a-dodecahedron-tumbling-inside-a-circumscribing",
+      "date": "2016-03-26 19:43:49 GMT",
+      "timestamp": 1459021429,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "UXbZQP2U",
+      "tags": ["math", "science", "gif", "geometry", "animation"],
+      "short_url": "https://tmblr.co/ZzJ5xx2400jx2",
+      "summary": "A dodecahedron tumbling inside a circumscribing circle. [code]",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 658,
+      "caption": "<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "141734108866"
+        },
+        "content_raw": "<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>A dodecahedron tumbling inside a circumscribing circle. [<a href=\"http://pastebin.com/b4MukLEe\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/141734108866",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_500.gif",
+          "width": 500,
+          "height": 499
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_500.gif",
+          "width": 500,
+          "height": 499
+        }, {
+          "url": "https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_400.gif",
+          "width": 400,
+          "height": 399
+        }, {
+          "url": "https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/243fba0a6c4c54e9b516ce783fd835ca/tumblr_o4nvxwi1hu1qfg7o3o1_r1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 141190100916,
+      "post_url": "http://blog.matthen.com/post/141190100916/the-primes-are-often-thought-of-as-behaving-like-a",
+      "slug": "the-primes-are-often-thought-of-as-behaving-like-a",
+      "date": "2016-03-17 06:55:27 GMT",
+      "timestamp": 1458197727,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "TkJhvCcS",
+      "tags": ["primes", "maths", "mathematics", "gif", "animation", "science", "numbers"],
+      "short_url": "https://tmblr.co/ZzJ5xx23VbVUq",
+      "summary": "The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 1564,
+      "caption": "<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes).  [<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a> [<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes).  [<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a> [<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "141190100916"
+        },
+        "content_raw": "<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes).  [<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a> [<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>The primes are often thought of as behaving like a random sequence, but there are patterns in their digits. The first frame shows how many of the first 100 primes end in 1, 3, 7 and 9. They all occur roughly the same number of times, so the four squares are almost exactly the same shade of red. The next frame shows how frequently a prime ending in 1 is followed by a prime ending in 3 - and so on. A structured pattern emerges, with the final frame showing the distribution of final digits in strings of 8 consecutive primes (for the first 2 million primes). &nbsp;[<a href=\"http://www.independent.co.uk/news/science/maths-experts-stunned-as-they-crack-a-pattern-for-prime-numbers-a6933156.html\" target=\"_blank\">recent news]</a>&nbsp;[<a href=\"http://adsabs.harvard.edu/abs/2002CSF....13.1295K\" target=\"_blank\">visualization from</a>] [<a href=\"http://pastebin.com/ZXTWgEqS\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/141190100916",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_400.gif",
+          "width": 360,
+          "height": 359
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_400.gif",
+          "width": 360,
+          "height": 359
+        }, {
+          "url": "https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_250.gif",
+          "width": 250,
+          "height": 249
+        }, {
+          "url": "https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/ad829cc3cb9eb9559263f72a5aeb9675/tumblr_o46715A6qv1qfg7o3o1_r2_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "link",
+      "blog_name": "matthen",
+      "id": 141069437176,
+      "post_url": "http://blog.matthen.com/post/141069437176/changus",
+      "slug": "changus",
+      "date": "2016-03-15 03:37:20 GMT",
+      "timestamp": 1458013040,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "uys1mbD9",
+      "tags": [],
+      "short_url": "https://tmblr.co/ZzJ5xx23OPCZu",
+      "summary": "changus",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 26,
+      "title": "changus",
+      "url": "http://www.changus.com/domains/",
+      "link_image": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_540.jpg",
+      "link_image_dimensions": {
+        "width": 540,
+        "height": 284
+      },
+      "link_author": null,
+      "excerpt": "name first - idea later. share good available domain names.",
+      "publisher": "changus.com",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_1280.jpg",
+          "width": 540,
+          "height": 284
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_540.jpg",
+          "width": 540,
+          "height": 284
+        }, {
+          "url": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_500.jpg",
+          "width": 500,
+          "height": 263
+        }, {
+          "url": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_400.jpg",
+          "width": 400,
+          "height": 210
+        }, {
+          "url": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_250.jpg",
+          "width": 250,
+          "height": 131
+        }, {
+          "url": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_100.jpg",
+          "width": 100,
+          "height": 53
+        }, {
+          "url": "https://78.media.tumblr.com/d63fecec765f01ba3056643a70cc34bf/tumblr_o42a28vFQ81qfg7o3_r1_og_75sq.jpg",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "description": "<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>",
+      "reblog": {
+        "comment": "<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "141069437176"
+        },
+        "content_raw": "<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>",
+        "content": "<p>what is set to be the hottest social network of March 2016 - and what I have been working on in my free time recently</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 139957790976,
+      "post_url": "http://blog.matthen.com/post/139957790976/rolling-a-circle-in-a-circle-to-draw-a-cosine-wave",
+      "slug": "rolling-a-circle-in-a-circle-to-draw-a-cosine-wave",
+      "date": "2016-02-25 07:00:39 GMT",
+      "timestamp": 1456383639,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "L2opzACL",
+      "tags": ["math", "gif", "geometry", "cosine", "sine", "wave", "circle", "animation"],
+      "short_url": "https://tmblr.co/ZzJ5xx22M8ca0",
+      "summary": "Rolling a circle in a circle to draw a cosine wave [code]",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 2207,
+      "caption": "<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "139957790976"
+        },
+        "content_raw": "<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>Rolling a circle in a circle to draw a cosine wave [<a href=\"http://pastebin.com/w1GuX3XC\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/139957790976",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_400.gif",
+          "width": 360,
+          "height": 108
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_400.gif",
+          "width": 360,
+          "height": 108
+        }, {
+          "url": "https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_250.gif",
+          "width": 250,
+          "height": 75
+        }, {
+          "url": "https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_100.gif",
+          "width": 100,
+          "height": 30
+        }, {
+          "url": "https://78.media.tumblr.com/8bd9eff96601196adb516171d7301a3f/tumblr_o33ct3VEse1qfg7o3o1_r1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 128665374201,
+      "post_url": "http://blog.matthen.com/post/128665374201/the-focus-of-a-rolling-parabola-traces-out-a",
+      "slug": "the-focus-of-a-rolling-parabola-traces-out-a",
+      "date": "2015-09-08 22:31:19 GMT",
+      "timestamp": 1441751479,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "zL6fmfKv",
+      "tags": ["geometry", "parabola", "animation", "gif", "math", "science", "catenary", "curve"],
+      "short_url": "https://tmblr.co/ZzJ5xx1tr3Stv",
+      "summary": "The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [code] [more]",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 367,
+      "caption": "<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>",
+      "reblog": {
+        "comment": "<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "128665374201"
+        },
+        "content_raw": "<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>",
+        "content": "<p>The focus of a rolling parabola traces out a catenary, the curve of a hanging chain held by its ends. [<a href=\"http://pastebin.com/0Nr5QLEh\" target=\"_blank\">code</a>] [<a href=\"http://mathworld.wolfram.com/Catenary.html\" target=\"_blank\">more</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/128665374201",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 275
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 275
+        }, {
+          "url": "https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 191
+        }, {
+          "url": "https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 76
+        }, {
+          "url": "https://78.media.tumblr.com/aedda0b7a0ca431eb4be28a23fa52981/tumblr_nudqei4ZvS1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 128409945246,
+      "post_url": "http://blog.matthen.com/post/128409945246/in-mc-eschers-metamorphose-he-transforms-square",
+      "slug": "in-mc-eschers-metamorphose-he-transforms-square",
+      "date": "2015-09-05 15:47:17 GMT",
+      "timestamp": 1441468037,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "9Aj02GLV",
+      "tags": ["escher", "animation", "math", "gif", "tiling", "geometry", "squares", "hexagons", "science"],
+      "short_url": "https://tmblr.co/ZzJ5xx1tbr4IU",
+      "summary": "In MC Escher’s Metamorphose, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 459,
+      "caption": "<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher’s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher’s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "128409945246"
+        },
+        "content_raw": "<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher’s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>In <a href=\"http://www.mcescher.com/Gallery/switz-bmp/LW320B.jpg\" target=\"_blank\">MC Escher&rsquo;s Metamorphose</a>, he transforms square tiles into hexagons by manipulating his iconic lizard pattern. These then go on to become honeycombs and three dimensional buildings. Inspired by Escher, this animation also alternates between a chessboard and a three-coloured hexagonal tessellation, and between 2 and 3 dimensions. [<a href=\"http://pastebin.com/DUycfGaL\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/128409945246",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 262
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 262
+        }, {
+          "url": "https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 182
+        }, {
+          "url": "https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 73
+        }, {
+          "url": "https://78.media.tumblr.com/a9944daa7ff1b9c168cf9bc144418e9d/tumblr_nu7ngdfZfV1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 128283794116,
+      "post_url": "http://blog.matthen.com/post/128283794116/each-square-growing-out-from-the-centre-is-rotated",
+      "slug": "each-square-growing-out-from-the-centre-is-rotated",
+      "date": "2015-09-03 20:52:32 GMT",
+      "timestamp": 1441313552,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "H1ZZ9aGR",
+      "tags": ["science", "math", "animation", "gif", "broccoli", "fibonacci", "spiral", "biology", "maths", "mathematica"],
+      "short_url": "https://tmblr.co/ZzJ5xx1tUJrh4",
+      "summary": "Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 201,
+      "caption": "<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the <a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a> to evenly spread out the disgusting-tasting broccoli florets as they grow. [<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>] </p>",
+      "reblog": {
+        "comment": "<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the <a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a> to evenly spread out the disgusting-tasting broccoli florets as they grow. [<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>] </p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "128283794116"
+        },
+        "content_raw": "<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the <a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a> to evenly spread out the disgusting-tasting broccoli florets as they grow. [<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>] </p>",
+        "content": "<p>Each square growing out from the centre is rotated a fixed angle from the previous one. For most angles, this creates visible structure such as defined spiral arms. But at the golden angle the corners are spread out relatively evenly. Nature takes advantage of this in plants like the&nbsp;<a href=\"http://mathforum.org/mathimages/index.php/Romanesco_Broccoli\" target=\"_blank\">Romanesco Broccoli</a>&nbsp;to evenly spread out the disgusting-tasting broccoli florets as they grow.&nbsp;[<a href=\"http://pastebin.com/ikeLbJH6\" target=\"_blank\">code</a>]&nbsp;</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/128283794116",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 360
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_400.gif",
+          "width": 360,
+          "height": 360
+        }, {
+          "url": "https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/1fb8dc5f4bd1379bfe4fd3ae05e6abdb/tumblr_nu4c8of15D1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }, {
+      "type": "photo",
+      "blog_name": "matthen",
+      "id": 127667976236,
+      "post_url": "http://blog.matthen.com/post/127667976236/each-disk-is-ten-times-larger-than-the-previous",
+      "slug": "each-disk-is-ten-times-larger-than-the-previous",
+      "date": "2015-08-26 23:00:20 GMT",
+      "timestamp": 1440630020,
+      "state": "published",
+      "format": "html",
+      "reblog_key": "TbofbDNy",
+      "tags": ["universe", "science", "math", "gif", "animation", "mathematics", "scale", "mathematica", "zoom"],
+      "short_url": "https://tmblr.co/ZzJ5xx1svchWi",
+      "summary": "Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the...",
+      "is_blocks_post_format": false,
+      "recommended_source": null,
+      "recommended_color": null,
+      "note_count": 550,
+      "caption": "<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe.   [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>",
+      "reblog": {
+        "comment": "<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe.   [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>",
+        "tree_html": ""
+      },
+      "trail": [{
+        "blog": {
+          "name": "matthen",
+          "active": true,
+          "theme": {
+            "avatar_shape": "circle",
+            "background_color": "#F6F6F6",
+            "body_font": "Helvetica Neue",
+            "header_bounds": 0,
+            "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_12.png?_v=66d5962d3469ecad376c5ae8c13d5a27",
+            "header_stretch": true,
+            "link_color": "#529ECC",
+            "show_avatar": true,
+            "show_description": true,
+            "show_header_image": true,
+            "show_title": true,
+            "title_color": "#444444",
+            "title_font": "Helvetica Neue",
+            "title_font_weight": "bold"
+          },
+          "share_likes": false,
+          "share_following": false,
+          "can_be_followed": true
+        },
+        "post": {
+          "id": "127667976236"
+        },
+        "content_raw": "<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe.   [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>",
+        "content": "<p>Each disk is ten times larger than the previous one. If the first disk you see is the size of the palm of your hand, then the second is the size of a coffee table, the third the size of a room. The seventh is the size of Belgium. The ninth is the size of the Earth. The 23rd is around the size of the galaxy, and less than 2 minutes into watching, the 28th is the size of the Universe. &nbsp; [<a href=\"http://pastebin.com/J6nHutCy\" target=\"_blank\">code</a>]</p>",
+        "is_current_item": true,
+        "is_root_item": true
+      }],
+      "image_permalink": "http://blog.matthen.com/image/127667976236",
+      "photos": [{
+        "caption": "",
+        "original_size": {
+          "url": "https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_400.gif",
+          "width": 400,
+          "height": 400
+        },
+        "alt_sizes": [{
+          "url": "https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_400.gif",
+          "width": 400,
+          "height": 400
+        }, {
+          "url": "https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_250.gif",
+          "width": 250,
+          "height": 250
+        }, {
+          "url": "https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_100.gif",
+          "width": 100,
+          "height": 100
+        }, {
+          "url": "https://78.media.tumblr.com/0e694cc8343194acb848b41375dbcc48/tumblr_ntpoh5lygq1qfg7o3o1_75sq.gif",
+          "width": 75,
+          "height": 75
+        }]
+      }],
+      "can_like": false,
+      "can_reblog": false,
+      "can_send_in_message": true,
+      "can_reply": false,
+      "display_avatar": true
+    }],
+    "total_posts": 355
+  }
+}

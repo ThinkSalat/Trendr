@@ -53,7 +53,7 @@ export default class Post extends React.Component {
           </li>
           <li className='post-title' >{post.title}</li>
           {/* <li className='post-body' >{post.body || post.summary}</li> */}
-          <li className='post-body' > {post.body || post.summary}</li>
+          <li className='post-body' dangerouslySetInnerHTML={{__html: (post.body || post.summary)}}></li>
           {/* Post-nav can be replaced by component  */}
           <li><PostBottomNav post={post}/></li>
         </ul>
