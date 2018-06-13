@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 import SearchBarContainer from './searchbar_container';
+import HeaderNavContainer from './header_nav_container';
 import Logo from './logo';
 
 class Header extends React.Component {
@@ -17,7 +18,12 @@ class Header extends React.Component {
         return <Link className='header-session-link' to='/signup' onClick={() => this.props.clearErrors()} > Sign Up </Link>;
       default:
         if (this.props.currentUser) {
-          return <button className='header-session-link' onClick={() => this.props.logout()}> Log out </button>;
+          return (
+            <div className='header-nav-container'>
+              <HeaderNavContainer currentUser={this.props.currentUser}/>
+              <button className='header-session-link' onClick={() => this.props.logout()}> Log out </button>
+            </div>
+            );
         } else {
           return;
         }
