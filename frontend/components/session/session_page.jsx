@@ -6,7 +6,7 @@ export default class SessionPage extends React.Component {
     super()
     
     this.state = {
-      bg: `bg-${Math.floor(Math.random()*28)}`
+      bg: `bg-${Math.floor(Math.random()*37)}`
     };
   }
   render() {

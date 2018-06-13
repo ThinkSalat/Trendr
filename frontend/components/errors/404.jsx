@@ -4,7 +4,7 @@ export default class fourOhFour extends React.Component {
 constructor(props) {
   super(props);
   this.state = {
-    bg: `bg-${Math.floor(Math.random()*28)}`
+    bg: `bg-${Math.floor(Math.random()*37)}`
   };
 }
   render() {

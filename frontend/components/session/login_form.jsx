@@ -8,7 +8,7 @@ class LoginForm extends React.Component {
       username: '',
       email: '',
       password: '',
-      bg: `bg-${Math.floor(Math.random()*28)}`
+      bg: `bg-${Math.floor(Math.random()*37)}`
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);

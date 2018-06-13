@@ -91,7 +91,7 @@ class User < ApplicationRecord
   end
 
   def ensure_following_self
-    Following.create(follower_id: id,followed_id: id)
+    Following.create(follower_id: id,followed_id: id) if Following.where(follower_id: id,followed_id: id).empty?
   end
 
   def ensure_avatar
