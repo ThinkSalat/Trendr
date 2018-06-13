@@ -9,6 +9,7 @@ end
 
 json.user do
   json.extract! @post.user, :id, :username, :title, :description, :avatar
+  json.avatar @post.user.avatar.service_url
 end
 # json.array! @post.likes
 # json.array! @post.reblogs

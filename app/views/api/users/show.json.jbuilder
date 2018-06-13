@@ -8,3 +8,4 @@ json.extract! @user,
 :private_likes, 
 :private_followers, 
 :private_followings
+json.avatar @user.avatar.service_url
