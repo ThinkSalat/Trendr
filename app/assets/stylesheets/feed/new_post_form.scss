@@ -3,6 +3,9 @@
   width: 540px;
 
   background: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
 
   display: flex;
   flex-direction: column;
@@ -169,6 +172,8 @@
   padding-left: 20px;
   padding-top: 20px;
   line-height: 53px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   margin: 0 auto;
   &:disabled {
     background-color: #989898;
@@ -176,4 +181,8 @@
   &:hover {
     cursor: pointer;
   }  
+}
+
+.post-nav-header-container {
+  border-radius: 3px;
 }

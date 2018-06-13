@@ -4,12 +4,16 @@ import { Link } from 'react-router-dom';
 export default class NewPostNav extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props, 'here are the props');
   }
 
-  render() {
-
+  render() { 
+    let formStatus;
+    if (this.props.location.pathname === '/dashboard') {
+      formStatus = 'form-closed';
+    }
     return(
-      <nav className='new-post-nav ${'>
+      <nav className={`new-post-nav ${formStatus}`}>
         <Link to='/new/text'> 
           <i className='logo-text'>&#60023;</i>
           <span>Text</span>

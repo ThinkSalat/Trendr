@@ -1,6 +1,7 @@
 import {
   connect
 } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import NewPostNav from './new_post_nav';
 
@@ -22,4 +23,4 @@ const mapDispatchToProps = dispatch => {
   });
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewPostNav);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(NewPostNav));
