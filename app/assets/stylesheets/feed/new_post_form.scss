@@ -145,3 +145,35 @@
 .hidden-photo-upload {
   display: none;
 }
+
+.submit-button {
+  // margin-bottom: 45px;
+  // padding: 124px;
+  background-color: #559FCA;
+  color: white;
+  z-index: 999;
+  font-size: 25px;
+  font-weight: 700;
+  max-width: 298px;
+  min-width: 298px;
+  min-height: 45px;
+  line-height: 4;
+  display: block;
+  text-decoration: none;
+  padding: 0 !important;
+  box-sizing: border-box;
+  text-align: center;
+  border: 0px !important; 
+  min-width: 540px;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 20px;
+  line-height: 53px;
+  margin: 0 auto;
+  &:disabled {
+    background-color: #989898;
+  }
+  &:hover {
+    cursor: pointer;
+  }  
+}

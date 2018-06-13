@@ -122,7 +122,7 @@ export default class NewPostForm extends React.Component {
               </div>
             </div>
             <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Add a caption, if you like'/>
-            <input type="submit" disabled={!this.state.images.length}/>
+            <input   className='submit-button' type="submit" disabled={!this.state.images.length}/>
           </form>
         );
       case 'text': 
@@ -130,7 +130,7 @@ export default class NewPostForm extends React.Component {
           <form  className='post-form-container' onSubmit={this.handleSubmit}>
             <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Title'/>
             <textarea type="text" value={this.state.body} onChange={this.update('body')} placeholder='Your text here'/>
-            <input type="submit" disabled={!(['title', 'body', 'summary'].some( el => this.state[el]))}/>
+            <input  className='submit-button'  type="submit" disabled={!(['title', 'body', 'summary'].some( el => this.state[el]))}/>
           </form>
         );
       default:
