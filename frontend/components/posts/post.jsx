@@ -28,9 +28,7 @@ export default class Post extends React.Component {
   }
 
   isMainFeed() {
-    console.log(this.props.location.pathname.slice(0,6));
     if (this.props.location.pathname.slice(0,6) !== '/users') {
-      console.log('here');
       return 'main-feed-margin-left';
     } else {
       return 'user-profile-left';

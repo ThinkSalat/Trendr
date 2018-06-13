@@ -26,7 +26,7 @@ import {
   deletePost} from './actions/post_actions';
 
   // import { fetchUser } from './actions/user_actions';
-  import { fetchUser } from './actions/user_actions';
+  import { fetchUser } from './util/user_api_util';
 //END TEST
 
 

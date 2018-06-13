@@ -236,12 +236,18 @@
 
 
 // source https://codepen.io/cabron/pen/OVXXmj
+// @keyframes rainbow{
+//   25%{color: rgb(248, 66, 25);}
+//   50%{color: #FFBB00;}
+//   75%{color: rgb(111, 207, 26);}	
+//   0%{color: rgb(248, 23, 154);}
+// }
 @keyframes rainbow{
-  5%{color: red;}
-  35%{color: yellow;}
-  65%{color: green;}
-  85%{color: blue;}
-  0%{color: orange;}	
+  5%{color: rgb(248, 66, 25);}
+  35%{color: #FFBB00;}
+  65%{color: rgb(111, 207, 26);}
+  85%{color: rgb(46, 116, 221);}
+  0%{color: rgb(248, 23, 154);}	
 }
 
 

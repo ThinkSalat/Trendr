@@ -10,7 +10,9 @@ json.user do
   :private_followers, 
   :private_followings
   json.avatar @user.avatar.service_url
-  json.followed_users json.array! @user.followed_users.pluck(:id)
+  json.followed_users do
+     json.array! @user.followed_users.pluck(:id)
+  end
 end
 
 json.posts do
