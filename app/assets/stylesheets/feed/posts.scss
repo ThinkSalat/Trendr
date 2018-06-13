@@ -33,6 +33,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  a {
+    text-decoration: none;
+    color: #444444;
+
+    &:visited {
+      color: #444444;
+
+    }
+  }
 }
 .post-media {
   
