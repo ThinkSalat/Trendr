@@ -19,7 +19,7 @@
   min-width: 540px;
   max-width: 540px;
   display: block;
-
+  margin: 0 auto;
   height: auto;
 }
 
@@ -33,6 +33,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  span {
+    position: absolute;
+    left: 20px;
+  }
   a {
     text-decoration: none;
     color: #444444;
