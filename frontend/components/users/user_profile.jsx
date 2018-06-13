@@ -47,7 +47,6 @@ export default class UserProfile extends React.Component {
           <li className='user-profile-info-container'>
             <img src={this.props.user.avatar} alt={this.props.user.username}/>
             <ul>
-              <li>{this.props.user.username}</li>
               <li>{this.props.user.title}</li>
               <li>{this.props.user.description}</li>
               {/* followers, following, likes etc. num followers could go here */}
