@@ -29,6 +29,8 @@ export default class Post extends React.Component {
   isMainFeed() {
     if (this.props.location.pathname === '/dashboard') {
       return 'main-feed-margin-left';
+    } else {
+      return 'user-profile-left';
     }
   }
   
@@ -58,15 +60,15 @@ export default class Post extends React.Component {
     }
 
     return(
-      <div className='post-and-avatar-container'>
-        <div className={`post-container ${this.isMainFeed()}`}>
+      <div className={`post-and-avatar-container ${this.isMainFeed()}`}>
+        <div className='post-avatar'>
+          <Link to={`/users/${author.id}`}>
+            <img src={author.avatar}></img>
+          </Link>
+        </div>
+        <div className={`post-container`}>
           <ul>
             <li className='post-header'>
-              <div className='post-avatar'>
-                <Link to={`/users/${author.id}`}>
-                  <img src={author.avatar}></img>
-                </Link>
-              </div>
               <span>
                 <Link to={`/users/${author.id}`}>{author.username}</Link>
               </span>
