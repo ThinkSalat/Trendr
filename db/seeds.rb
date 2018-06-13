@@ -12,7 +12,7 @@
 #   Country.create!(a['country'], without_protection: true)
 # end
 
-# require 'open-uri'
+require 'open-uri'
 
 
 # User.delete_all
@@ -87,3 +87,8 @@
 #   end
 # end
 
+User.all.each do |user|
+  uri = 'https://randomuser.me/api/?format=json&inc=picture&results=1'
+  avatar = open(JSON.parse(open(uri).string).first.last.first['picture']['large'])
+  user.avatar.attach(io: avatar, filename: "#{user.email}_avatar")
+end

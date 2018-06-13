@@ -40,6 +40,13 @@ export default class Post extends React.Component {
         <img src={image.url}/>
       </li>
     ));
+    let postBody;
+    if (post.postType === 'text') {
+      postBody = <li className='text-post-body' dangerouslySetInnerHTML={{__html: post.body}}></li>;
+    } else {
+     postBody = <li className='post-body' dangerouslySetInnerHTML={{__html: post.summary}}></li>;
+    }
+
     return(
       <div className='post-container'>
         <ul>
@@ -52,7 +59,7 @@ export default class Post extends React.Component {
             </ul>
           </li>
           <li className='post-title' >{post.title}</li>
-          <li className='post-body' dangerouslySetInnerHTML={{__html: (post.body || post.summary)}}></li>
+          {postBody}
           <li><PostBottomNav post={post}/></li>
         </ul>
       </div>
