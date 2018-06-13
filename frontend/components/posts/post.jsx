@@ -15,6 +15,7 @@ export default class Post extends React.Component {
   }
 
   componentDidMount() {
+    console.log('mountd!');
     this.props.fetchPost(this.props.postId)
       .then( null, err => this.setState({isAvailable: false}));
   }
@@ -32,14 +33,18 @@ export default class Post extends React.Component {
         <Redirect to="/404" />
       );
     }
-
+ 
     let { post, author } = this.props;
-    
-    const images = post.images.map((image,i) => (
+
+    let images;
+    if(Object.keys(post).length !== 0) {
+      images = post.images.map((image,i) => (
       <li key={i} className='photoset-photo'>
         <img src={image.url}/>
       </li>
     ));
+    }
+    
     let postBody;
     if (post.postType === 'text') {
       postBody = <li className='text-post-body' dangerouslySetInnerHTML={{__html: post.body}}></li>;
