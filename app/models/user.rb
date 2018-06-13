@@ -28,10 +28,27 @@ class User < ApplicationRecord
   
   before_validation :downcase_fields
   before_validation :ensure_session_token
-  before_save :ensure_avatar
+  before_save :ensure_avatar, :ensure_following_self
 
   has_one_attached :avatar
 
+  has_many :followed_user_records,
+    class_name: :Following,
+    foreign_key: :followed_id,
+    primary_key: :id
+
+  has_many :follower_records,
+    class_name: :Following,
+    foreign_key: :follower_id,
+    primary_key: :id
+
+  has_many :followers,
+    through: :follower_records,
+    source: :follower
+
+  has_many :followed_users,
+    through: :followed_user_records,
+    source: :followed
   
   has_many :posts
     -> {order('created_at desc')}
@@ -39,8 +56,7 @@ class User < ApplicationRecord
   #   -> {order('created_at desc').limit(15) },
   #   class_name: :Post
   # has_many :likes
-  # has_many :followers
-  # has_many :followed_users
+
   def downcase_fields
     self.username.downcase!
     self.email.downcase!
@@ -72,6 +88,10 @@ class User < ApplicationRecord
 
   def ensure_session_token
     self.session_token ||= token
+  end
+
+  def ensure_following_self
+    Following.create(follower_id: id,followed_id: id)
   end
 
   def ensure_avatar
