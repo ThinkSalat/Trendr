@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 
 import PostBottomNav from './post_bottom_nav';
+import { log } from 'util';
 
 export default class Post extends React.Component {
 
@@ -27,7 +28,9 @@ export default class Post extends React.Component {
   }
 
   isMainFeed() {
-    if (this.props.location.pathname === '/dashboard') {
+    console.log(this.props.location.pathname.slice(0,6));
+    if (this.props.location.pathname.slice(0,6) !== '/users') {
+      console.log('here');
       return 'main-feed-margin-left';
     } else {
       return 'user-profile-left';

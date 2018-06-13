@@ -29,9 +29,9 @@ export default class MainFeed extends React.Component {
       <div className='main-feed-container'>
         <div className='main-content'>
           <ol className='main-content-feed col-1'>
-            <div className='new-post-nav-avatar'> 
+            <li className='new-post-nav-avatar'> 
               <Link to={`/users/${this.props.currentUser.id}`}><img src={this.props.currentUser.avatar}></img></Link> 
-            </div>
+            </li>
             <li className='post-nav-header-container'>
               <NewPostNavContainer />
               <Switch>
