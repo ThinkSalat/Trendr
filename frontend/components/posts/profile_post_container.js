@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import { fetchPost, updatePost, deletPost } from '../../actions/post_actions';
 
@@ -25,4 +26,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps,mapDispatchToProps)(Post);
+export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Post));

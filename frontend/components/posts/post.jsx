@@ -25,6 +25,12 @@ export default class Post extends React.Component {
       .then( null, err => this.setState({isAvailable: false}));
     }
   }
+
+  isMainFeed() {
+    if (this.props.location.pathname === '/dashboard') {
+      return 'main-feed-margin-left';
+    }
+  }
   
   render() {
     if (!this.state.isAvailable) {
@@ -52,20 +58,31 @@ export default class Post extends React.Component {
     }
 
     return(
-      <div className='post-container'>
-        <ul>
-          <li className='post-header' >
-            <span> <Link to={`/users/${author.id}`}>{author.username}</Link> </span>
-          </li>
-          <li>
-            <ul className='post-media' >
-              {images}
-            </ul>
-          </li>
-          <li className='post-title' >{post.title}</li>
-          {postBody}
-          <li><PostBottomNav post={post}/></li>
-        </ul>
+      <div className='post-and-avatar-container'>
+        <div className={`post-container ${this.isMainFeed()}`}>
+          <ul>
+            <li className='post-header'>
+              <div className='post-avatar'>
+                <Link to={`/users/${author.id}`}>
+                  <img src={author.avatar}></img>
+                </Link>
+              </div>
+              <span>
+                <Link to={`/users/${author.id}`}>{author.username}</Link>
+              </span>
+            </li>
+            <li>
+              <ul className='post-media'>
+                {images}
+              </ul>
+            </li>
+            <li className='post-title'>{post.title}</li>
+            {postBody}
+            <li>
+              <PostBottomNav post={post}/>
+            </li>
+          </ul>
+        </div>
       </div>
     );
    }

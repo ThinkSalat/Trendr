@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export default class NewPostNav extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props, 'here are the props');
   }
 
   render() { 

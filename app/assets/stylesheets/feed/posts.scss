@@ -6,13 +6,16 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
   top: 75px;
   width: 540px;
+
   margin: 0 auto;
+
   border-radius: 3px;
   background-color: white;
   color: #444444;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .photoset-photo img {
@@ -113,4 +116,34 @@
       cursor: pointer;
     }
   }
+}
+
+.post-and-avatar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 75px;
+  width: 655px;
+  margin: 0 auto;
+ 
+}
+.post-avatar {
+  position: relative;
+  bottom: 136px;
+
+  top: 11px;
+  right: 107px;
+
+  img {
+    border-radius: 5px;
+    display: block;
+    max-height: 64px;
+    max-width: 64px;
+  }
+}
+
+.main-feed-margin-left {
+  margin-left: 0px;
 }

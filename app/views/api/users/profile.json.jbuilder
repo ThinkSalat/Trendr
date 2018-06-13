@@ -13,7 +13,7 @@ json.user do
 end
 
 json.posts do
-  @user.posts.take(10).each do |post|
+  @user.posts.take(3).each do |post|
     json.set! post.id do
       json.extract! post, :id, :user_id, :title, :slug, :state, :post_type, :summary, :body, :private, :photoset_layout, :caption, :source_url, :source_title
       json.images do 
