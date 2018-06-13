@@ -50,6 +50,10 @@ class User < ApplicationRecord
     through: :followed_user_records,
     source: :followed
   
+    has_many :followed_users_posts,
+    through: :followed_users,
+    source: :posts
+    
   has_many :posts
     -> {order('created_at desc')}
   # has_many :recent_posts_15,
