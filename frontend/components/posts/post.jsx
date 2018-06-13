@@ -15,7 +15,6 @@ export default class Post extends React.Component {
   }
 
   componentDidMount() {
-    console.log('mountd!');
     this.props.fetchPost(this.props.postId)
       .then( null, err => this.setState({isAvailable: false}));
   }
@@ -44,7 +43,7 @@ export default class Post extends React.Component {
       </li>
     ));
     }
-    
+
     let postBody;
     if (post.postType === 'text') {
       postBody = <li className='text-post-body' dangerouslySetInnerHTML={{__html: post.body}}></li>;

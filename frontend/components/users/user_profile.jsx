@@ -35,7 +35,6 @@ export default class UserProfile extends React.Component {
     let { posts, user } = this.props;
     const postComponents = Object.keys(posts).map( id => {
       let post = posts[id];
-      console.log(id);
       if (post.userId !== user.id) return;
       return <li key={post.id}>
         <ProfilePostContainer post={post} author={this.props.user}/>

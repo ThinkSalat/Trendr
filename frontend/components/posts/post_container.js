@@ -8,7 +8,7 @@ const mapStateToProps = ({ entities: { posts, users }, session: { id } }, { matc
   const post = posts[postId] || {};
   const author = users[post.userId] || {};
   const currentUser = users[id] || {};
-  // debugger
+
   return {
     post,
     author,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch } from 'react-router-dom';
+import { Switch, Link } from 'react-router-dom';
 import { ProtectedRoute } from '../../util/route_util';
 
 import NewPostNavContainer from './new_post_nav_container';
@@ -40,7 +40,9 @@ export default class MainFeed extends React.Component {
               <ProtectedRoute exact path='/new/video' component={(props) => <FormContainer {...props} postType={'video'} />}  />
             </Switch></li>
 
-            <div className='main-content-feed-avatar'></div>
+            <div className='new-post-nav-avatar'> 
+              <Link to={`/users/${this.props.currentUser.id}`}><img src={this.props.currentUser.avatar}></img></Link> 
+            </div>
             <div className='main-feed'>  {/*  <MainFeedContainer /> */}
               <div></div>
               <div></div>

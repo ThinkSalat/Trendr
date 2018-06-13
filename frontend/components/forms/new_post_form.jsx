@@ -17,7 +17,8 @@ export default class NewPostForm extends React.Component {
       source_title: '',
       slug: '',
       state: 'unpublished',
-      images: []
+      images: [],
+      uploaded_image_urls: []
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -66,16 +67,26 @@ export default class NewPostForm extends React.Component {
     }
    }
 
+  renderImageUrlPreviews() {
+      return this.state.images.map((photo, i) => <li key={i}><img className='photo-upload-preview' src={photo.preview}/></li>);
+  }
+
+   renderImageUploadPreviews() {
+      return this.state.images.map((photo, i) => (
+          <li key={i}>
+            <img className='photo-upload-preview' src={photo.preview}/>
+          </li>
+        ));
+   }
 
   render() {
-    const photoPreviews = this.state.images.map((photo, i) => {
-      return (
-        <li key={i}>
-          <img className='photo-upload-preview' src={photo.preview}/>
-        </li>
-      );
-    });
+    let photoPreviews; 
 
+    if (this.state.images.length) {
+      photoPreviews = this.renderImageUploadPreviews();
+    } else {
+      photoPreviews = this.renderImageUrlPreviews();
+    }
 
     let dropzoneStyle, urlStyle, hidden, photoUploadCellStyle, addAnotherPhoto;
     if (photoPreviews.length) {
@@ -129,7 +140,5 @@ export default class NewPostForm extends React.Component {
           </div>
         );
     }
-
-    
    }
 }

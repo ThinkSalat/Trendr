@@ -29,7 +29,17 @@
   flex-direction: column;
 }
 
-.main-content-feed-avatar {
+.new-post-nav-avatar img {
+  bottom: 90px;
+  right: 85px;
+  border-radius: 3px;
+  display: block;
+  max-height: 64px;
+  max-width: 64px;
+  position: relative;
+}
+
+.main-feed-avatar {
 
   display: block;
   height: 64px;
