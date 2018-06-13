@@ -183,14 +183,15 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 55px;
+  font-size: 70px;
   width: 300px;
 
   position: absolute;
   bottom: -220px;
   i {
     &:hover {
-      color: #559FCA;
+      // color: #559FCA;
+      animation: rainbow 1s infinite;
     }
     &:active {
       color: #4e96c2;
