@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 import PostBottomNav from './post_bottom_nav';
 
@@ -44,7 +44,7 @@ export default class Post extends React.Component {
       <div className='post-container'>
         <ul>
           <li className='post-header' >
-            <span>{author.username}</span>
+            <span> <Link to={`/users/${author.id}`}>{author.username}</Link> </span>
           </li>
           <li>
             <ul className='post-media' >

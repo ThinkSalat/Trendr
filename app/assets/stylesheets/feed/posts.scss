@@ -45,9 +45,15 @@
 .post-body {
   font-size: 16px;
   padding: 0 20px 0 20px;
-
-  
+ 
 }
+.text-post-body {
+    width: 540px;
+  overflow: auto; 
+  font-size: 16px;
+  padding: 0 20px 0 20px;
+}
+
 .post-bottom-nav {
   height: 45px;
   padding: 0 20px 0 20px;
