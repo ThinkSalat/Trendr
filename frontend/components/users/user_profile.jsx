@@ -50,7 +50,8 @@ export default class UserProfile extends React.Component {
               <li>{this.props.user.username}</li>
               <li>{this.props.user.title}</li>
               <li>{this.props.user.description}</li>
-              <li></li>
+              {/* followers, following, likes etc. num followers could go here */}
+              {/* last post created at date */}
             </ul>
           </li>
           {postComponents}

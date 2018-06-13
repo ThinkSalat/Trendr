@@ -17,6 +17,12 @@
 .main-content {
   position: relative;
   left: 85px;
+  bottom: 60px;
+}
+
+.feed-posts {
+  position: relative;
+  bottom: 45px;
 }
 
 .col-1 {
@@ -30,7 +36,7 @@
 }
 
 .new-post-nav-avatar img {
-  bottom: 90px;
+  top: 65px;
   right: 85px;
   border-radius: 3px;
   display: block;

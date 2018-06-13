@@ -29,6 +29,9 @@ export default class MainFeed extends React.Component {
       <div className='main-feed-container'>
         <div className='main-content'>
           <ol className='main-content-feed col-1'>
+            <div className='new-post-nav-avatar'> 
+              <Link to={`/users/${this.props.currentUser.id}`}><img src={this.props.currentUser.avatar}></img></Link> 
+            </div>
             <li><NewPostNavContainer />
             <Switch>
               <ProtectedRoute exact path='/new/text' component={(props) => <FormContainer {...props} postType={'text'} />}  />
@@ -40,14 +43,11 @@ export default class MainFeed extends React.Component {
               <ProtectedRoute exact path='/new/video' component={(props) => <FormContainer {...props} postType={'video'} />}  />
             </Switch></li>
 
-            <div className='new-post-nav-avatar'> 
-              <Link to={`/users/${this.props.currentUser.id}`}><img src={this.props.currentUser.avatar}></img></Link> 
-            </div>
             <div className='main-feed'>  {/*  <MainFeedContainer /> */}
               <div></div>
               <div></div>
             </div>
-            <ul>
+            <ul className='feed-posts'>
               {postComponents}
             </ul>
           </ol>
