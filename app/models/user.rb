@@ -28,6 +28,7 @@ class User < ApplicationRecord
   
   before_validation :downcase_fields
   before_validation :ensure_session_token
+  before_save :ensure_avatar
 
   has_one_attached :avatar
 
@@ -71,5 +72,22 @@ class User < ApplicationRecord
 
   def ensure_session_token
     self.session_token ||= token
+  end
+
+  def ensure_avatar
+    unless self.avatar.attached?
+      require 'open-uri'
+      avatars = ['https://imgur.com/jnGiG1S.jpeg',
+                  'https://i.imgur.com/PDkdrm6.png',
+                  'https://i.imgur.com/QtFQt8p.png',
+                  'https://i.imgur.com/piyqSHU.png',
+                  'https://i.imgur.com/aEr4I1D.png',
+                  'https://i.imgur.com/08sSlrI.png',
+                  'https://i.imgur.com/klaH0DO.png',
+                  'https://i.imgur.com/lzJzuN2.png',
+                  'https://i.imgur.com/3nhqo4F.png',
+                  'https://i.imgur.com/OpW7qCd.png']
+      self.avatar.attach(io: open(avatars.sample), filename: 'default')
+    end
   end
 end

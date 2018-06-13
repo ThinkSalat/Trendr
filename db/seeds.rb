@@ -87,8 +87,8 @@ require 'open-uri'
 #   end
 # end
 
-User.all.each do |user|
-  uri = 'https://randomuser.me/api/?format=json&inc=picture&results=1'
-  avatar = open(JSON.parse(open(uri).string).first.last.first['picture']['large'])
-  user.avatar.attach(io: avatar, filename: "#{user.email}_avatar")
-end
+# User.all.each do |user|
+#   uri = 'https://randomuser.me/api/?format=json&inc=picture&results=1'
+#   avatar = open(JSON.parse(open(uri).string).first.last.first['picture']['large'])
+#   user.avatar.attach(io: avatar, filename: "#{user.email}_avatar")
+# end
