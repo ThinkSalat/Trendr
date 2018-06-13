@@ -5,7 +5,7 @@ import { ProtectedRoute } from '../../util/route_util';
 import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';
 import FeedPostContainer from '../posts/feed_post_container';
-
+import SideBarContainer from '../feed/side_bar_container.js';
 
 export default class MainFeed extends React.Component {
 
@@ -55,7 +55,7 @@ export default class MainFeed extends React.Component {
           </ol>
         </div>
         <div className='main-content-sidebar col-2'>
-          <div></div>
+          <SideBarContainer />
         </div>
       </div>
     );
