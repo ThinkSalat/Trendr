@@ -34,12 +34,12 @@ class User < ApplicationRecord
 
   has_many :followed_user_records,
     class_name: :Following,
-    foreign_key: :followed_id,
+    foreign_key: :follower_id,
     primary_key: :id
 
   has_many :follower_records,
     class_name: :Following,
-    foreign_key: :follower_id,
+    foreign_key: :followed_id,
     primary_key: :id
 
   has_many :followers,

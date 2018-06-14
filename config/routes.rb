@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'follows/:create'
+  get 'follows/:destroy'
+  get 'follows/:index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :api, defaults: {format: :json} do
     resource :session, only: [:create, :destroy, :show]

@@ -6,10 +6,12 @@ import { fetchUser } from '../../actions/user_actions';
 const mapStateToProps = ({ entities: { users, posts }, session: { id }}, { match: { params: { userId } } }) => {
   posts = posts || {};
   const user = users[userId] || {};
+  const currentUser = users[id] || {}
   return {
     posts,
     user,
-    userId
+    userId,
+    currentUser
   };
 };
 

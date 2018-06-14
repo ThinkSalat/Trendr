@@ -10,6 +10,9 @@ end
 json.user do
   json.extract! @post.user, :id, :username, :title, :description, :avatar
   json.avatar @post.user.avatar.service_url
+  json.followed_users do
+    json.array! @post.user.followed_users.pluck(:id)
+ end
 end
 # json.array! @post.likes
 # json.array! @post.reblogs

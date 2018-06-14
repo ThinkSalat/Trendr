@@ -3,11 +3,17 @@
   border-radius: 3px;
 
   max-width: 540px;
-  height: 150px;
+  height: 175px;
   position: relative;
   top: 95px;
   margin: 0 auto;
   margin-bottom: 60px;
+
+  .large-avatar {
+    border-radius: 0px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
 
   ul {
     color: #444444;
@@ -31,4 +37,44 @@
   li:first-child {
     font-weight: bold;
   }
+}
+
+.following-switcher {
+
+  font-size: 16px;
+  font-weight: 550;
+  text-decoration: none;
+  padding: 5px 0px 5px 0px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 0px !important; 
+
+  position: relative;
+  top: 7px;
+  left: 10px;
+  z-index: 99;
+  max-width: 128px;
+  min-width: 128px;
+  width: 64px;
+  border-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #559FCA;
+  color: white;
+  outline: none;
+  &:active {
+    outline: none;
+    background-color: #4e96c2;
+    color: #e3ecf3;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.user-profile-info-container-container {
+  position: relative;
+  bottom: 13px;}
+
+.user-profile-container {
+
 }

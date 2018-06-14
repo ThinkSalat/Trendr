@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 
 import ProfilePostContainer from '../posts/profile_post_container';
+import FollowingButtonContainer from './following_button_container';
 
 export default class UserProfile extends React.Component {
   constructor(props) {
@@ -19,7 +20,6 @@ export default class UserProfile extends React.Component {
   
   componentWillReceiveProps(newProps) {
     if (newProps.match.params.userId !== this.props.userId) {
-      debugger
       this.props.fetchUser(newProps.userId)
       .then( null, err => this.setState({isAvailable: false}));
     }
@@ -31,7 +31,7 @@ export default class UserProfile extends React.Component {
         <Redirect to="/404" />
       );
     }
-
+   
     let { posts, user } = this.props;
     const postComponents = Object.keys(posts).map( id => {
       let post = posts[id];
@@ -42,10 +42,10 @@ export default class UserProfile extends React.Component {
     });
     return(
       <div className='user-profile-container'>
-
-        <ul>
+        <ul className='user-profile-info-container-container'>
           <li className='user-profile-info-container'>
-            <img src={this.props.user.avatar} alt={this.props.user.username}/>
+            <img  className='large-avatar' src={this.props.user.avatar} alt={this.props.user.username}/>
+            <FollowingButtonContainer currentUser={this.props.currentUser} userId={this.props.userId}/>
             <ul className='user-profile-info'>
               <li>{this.props.user.title}</li>
               <li>{this.props.user.description}</li>
