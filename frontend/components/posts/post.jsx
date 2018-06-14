@@ -1,14 +1,12 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 
-import PostBottomNav from './post_bottom_nav';
-import { log } from 'util';
+import PostBottomNavContainer from './post_bottom_nav_container';
 
 export default class Post extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       isAvailable: true,
       post: this.props.post
@@ -82,7 +80,7 @@ export default class Post extends React.Component {
             <li className='post-title'>{post.title}</li>
             {postBody}
             <li>
-              <PostBottomNav post={post}/>
+              <PostBottomNavContainer postId={this.props.postId}/>
             </li>
           </ul>
         </div>

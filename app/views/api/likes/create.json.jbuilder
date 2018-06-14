@@ -9,14 +9,3 @@ json.post do
     json.array! @post.users_who_like_post_ids
   end
 end
-
-json.user do
-  json.extract! @post.user, :id, :username, :title, :description, :avatar
-  json.avatar @post.user.avatar.service_url
-  json.followed_users do
-    json.array! @post.user.followed_users.pluck(:id)
- end
-end
-
-# json.array! @post.reblogs
-# json.array! @post.comments

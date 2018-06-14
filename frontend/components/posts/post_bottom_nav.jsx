@@ -3,6 +3,19 @@ import React from 'react';
 export default class PostBottomNav extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      liked: props.post.likes.includes(props.currentUser.id)
+    };
+  }
+
+  likeIcon() {
+    if (this.state.liked) {
+      return <li className='post-control'>&#59982;</li>;
+    } else if (!this.state.liked) {
+      return <li className='post-control'>&#59982;</li>;
+    } else {
+      return <li className='post-control'>&#59982;</li>;
+    }
   }
 
   render() {
@@ -15,7 +28,7 @@ export default class PostBottomNav extends React.Component {
             <li className='post-control'>&#60054;</li>
             <li className='post-control'>&#60047;</li>
             {/* show cog for configure post if user's otherwise show like button */}
-            <li className='post-control'>&#59982;</li>
+            {this.likeIcon()}
           </ul>
         </li>
       </ul>

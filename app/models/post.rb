@@ -6,7 +6,9 @@ class Post < ApplicationRecord
   belongs_to :user
   has_many_attached :images, dependent: :purge_later
   has_many :likes
-
+  has_many :users_who_like_post,
+    through: :likes,
+    source: :user
   # notes
   # has_many :tags
   # has_many :notes
