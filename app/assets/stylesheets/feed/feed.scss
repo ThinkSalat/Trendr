@@ -1,7 +1,7 @@
 .main-feed-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   height: 100vh;
   max-width: 990px;
   min-width: 990px;
@@ -16,8 +16,9 @@
 
 .main-content {
   position: relative;
-  left: 85px;
   bottom: 60px;
+  padding-left: 85px;
+  max-width: 540px;
 }
 
 .feed-posts {
@@ -33,6 +34,7 @@
 .col-2 {
   display: flex;
   flex-direction: column;
+  margin-left: 45px;
 }
 
 .new-post-nav-avatar img {
