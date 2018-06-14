@@ -32,7 +32,7 @@ export default class App extends React.Component {
           <AuthRoute exact path="/signup" component={SignupFormContainer} />
           <AuthRoute exact path="/" component={SessionPage} />
           <Route path='/posts/:postId' component={PostContainer} />
-          <Route path='/users/:userId' component={UserProfileContainer} />
+          <Route exact path='/users/:userId' component={UserProfileContainer} />
           <ProtectedRoute exact path="/dashboard" component={MainFeed} />
           <ProtectedRoute exact path="/likes" component={LikesIndexContainer} />
           <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer}/>

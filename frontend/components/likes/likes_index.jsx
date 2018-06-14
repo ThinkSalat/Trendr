@@ -13,6 +13,12 @@ export default class LikesIndex extends React.Component {
     this.props.getLikedPosts(this.props.userId);
   }
 
+  componentWillReceiveProps(newProps) {
+    if (newProps.userId !== this.props.userId) {
+      this.props.getLikedPosts(this.props.userId);
+    }
+  }
+
   render() {
     // if (!this.state.isAvailable) {
     //   return(
@@ -26,7 +32,6 @@ export default class LikesIndex extends React.Component {
     const postComponents = Object.keys(posts).map(postId => {
       let post = posts[postId];
       let author = users[post.userId];
-      debugger
       return (
         <li key={post.id}>
           <FeedPostContainer post={post} author={author}/>
