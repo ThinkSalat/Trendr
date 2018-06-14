@@ -61,6 +61,7 @@
   border-right: 1px solid #989898;
 
   .file-upload-icon {
+    user-select: none;
     font-family: 'icon-font';
     font-size: 60px;
     height: 45px;
@@ -75,6 +76,7 @@
   height: 40px;
   width: 540px;
   .file-upload-icon {
+    user-select: none;
     position: relative;
     font-family: 'icon-font';
     font-size: 24px;

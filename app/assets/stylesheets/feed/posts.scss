@@ -99,6 +99,7 @@
   justify-content: space-between;
   align-items: center;
   .post-bottom-nav-icons {
+    user-select: none;
     text-align: right;
     white-space: nowrap;
     display: table-cell;

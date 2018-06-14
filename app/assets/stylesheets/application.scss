@@ -30,6 +30,11 @@ span {
 
 }
 
+img { 
+  user-select: none;
+}
+
+
 .main-feed-container {
   background-color: #36465d;
   background-position: cover;
@@ -38,6 +43,7 @@ span {
 }
 
 .icons {
+  user-select: none;
   font-family: icon-font;
   font-size: 40px;
 }
