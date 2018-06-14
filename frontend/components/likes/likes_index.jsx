@@ -29,6 +29,7 @@ export default class LikesIndex extends React.Component {
     //if no liked posts, return a diff page that says they have no liked posts and a link to the explore page
 
     const { posts, users } = this.props;
+    console.log(posts, 'posts');
     const postComponents = Object.keys(posts).map(postId => {
       let post = posts[postId];
       let author = users[post.userId];

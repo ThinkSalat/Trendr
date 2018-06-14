@@ -28,7 +28,7 @@ export default class UserProfile extends React.Component {
   render() {
     if (!this.state.isAvailable) {
       return(
-        <Redirect to="/404" />
+        <Redirect to={`/404/users/${this.props.match.params.userId}`} />
       );
     }
    

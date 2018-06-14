@@ -36,7 +36,7 @@ export default class Post extends React.Component {
   render() {
     if (!this.state.isAvailable) {
       return(
-        <Redirect to="/404" />
+        <Redirect to={`/404/posts/${this.props.postId}`} />
       );
     }
  
