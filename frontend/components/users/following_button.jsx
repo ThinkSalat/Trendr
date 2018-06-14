@@ -1,35 +1,24 @@
 import React from 'react';
 
 export default class FollowingButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      following: props.currentUser.followedUsers.includes(parseInt(props.userId)),
-      follow: {
-        follower_id: props.currentUser.id,
-        followed_id: props.userId
-      }
-    };
-  }
 
+  following() {
+    return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId));
+  }
   // ..current user not updating
-
-  componentWillReceiveProps(newProps) {
-    if (newProps.userId !== this.props.userId) {
-      this.setState({
-        following: newProps.currentUser.followedUsers.includes(parseInt(newProps.userId)),
-        follow: { 
-          followed_id: newProps.userId,
-          follower_id: this.props.currentUser.id
-        }
-      });
-    }
+  follow() {
+    return {follow: {
+      follower_id: this.props.currentUser.id,
+      followed_id: this.props.userId
+    }};
   }
-   
+
   changeFollowStatus() {
-    (this.props.currentUser.followedUsers.includes(parseInt(this.props.userId)) ? this.props.unfollowUser(this.state) : this.props.followUser(this.state)).then(() => {
-      this.setState({following: !this.state.following});
-    });
+   if (this.following()) {
+     this.props.unfollowUser(this.follow());
+    } else { 
+      this.props.followUser(this.follow());
+    }
   }
 
   followDisplay() {
