@@ -44,6 +44,7 @@
 }
 
 [class*="-button"] {
+  user-select: none;
   font-size: 16px;
   font-weight: 550;
   max-width: 298px;
