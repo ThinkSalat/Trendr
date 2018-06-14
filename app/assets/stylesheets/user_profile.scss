@@ -75,6 +75,13 @@
   background-color: #559FCA;
   color: white;
   outline: none;
+  a {
+    text-decoration: none;
+    color: white;
+    &:visited {
+      color: white;
+    }
+  }
   &:active {
     outline: none;
     background-color: #4e96c2;
