@@ -13,7 +13,7 @@ json.posts do
     end
   end
 end
-json.users do |post|
+json.users do
   @posts.each do |post|
     user = post.user
     json.set! user.id do
@@ -34,3 +34,4 @@ json.users do |post|
     end
   end
 end
+

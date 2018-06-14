@@ -9,6 +9,7 @@ export const likePost = (userId, postId) => dispatch => LikeApiUtil.likePost(use
 export const getLikedPosts = (userId = null) => dispatch => LikeApiUtil.getLikedPosts(userId).then( data => dispatch(receivePosts(data)));
 
 const receivePosts = ({posts, users}) => {
+  // debugger
   return({
     type: RECEIVE_ALL_POSTS,
     posts,

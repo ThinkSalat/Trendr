@@ -20,11 +20,17 @@ class Api::LikesController < ApplicationController
   end
 
   def index
-    unless params[:id].empty?
+    if params[:id] != ''
+      byebug
       @posts = User.find(params[:id]).liked_posts
     else
       @posts = current_user.liked_posts
     end
-    render 'api/posts/index'
+
+    if @posts.nil? || @posts.empty?
+      render json: {posts: {}, users: {}}
+    else
+      render 'api/posts/index'
+    end
   end
 end

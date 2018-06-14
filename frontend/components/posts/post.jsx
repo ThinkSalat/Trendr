@@ -13,18 +13,6 @@ export default class Post extends React.Component {
     };
   }
 
-  componentDidMount() {
-    this.props.fetchPost(this.props.postId)
-      .then( null, err => this.setState({isAvailable: false}));
-  }
-  
-  componentWillReceiveProps(newProps) {
-    if (newProps.postId !== this.props.postId) {
-      this.props.fetchPost(newProps.postId)
-      .then( null, err => this.setState({isAvailable: false}));
-    }
-  }
-
   isMainFeed() {
     if (this.props.location.pathname.slice(0,6) !== '/users') {
       return 'main-feed-margin-left';

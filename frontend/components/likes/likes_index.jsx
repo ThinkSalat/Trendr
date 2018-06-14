@@ -19,6 +19,7 @@ export default class LikesIndex extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
+    console.log(newProps, 'cwrp');
     if (newProps.userId !== this.props.userId) {
       this.props.getLikedPosts(this.props.userId)
         .then( null, err => this.setState({isAvailable: false}));
@@ -33,9 +34,10 @@ export default class LikesIndex extends React.Component {
     }
 
     //if no liked posts, return a diff page that says they have no liked posts and a link to the explore page
-
+    if (Object.keys(this.props.posts)) {
+      console.log('no likes');
+    }
     const { posts, users } = this.props;
-    console.log(posts, 'posts');
     const postComponents = Object.keys(posts).map(postId => {
       let post = posts[postId];
       let author = users[post.userId];
