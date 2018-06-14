@@ -5,6 +5,7 @@ class Api::FollowingsController < ApplicationController
     Following.create(
       follower_id: params[:follow][:follower_id],
       followed_id: params[:follow][:followed_id])
+      @user = User.find(params[:follow][:follower_id])
       render json: 'api/follows/create'
   end
 
@@ -13,6 +14,7 @@ class Api::FollowingsController < ApplicationController
       follower_id: params[:follow][:follower_id],
       followed_id: params[:follow][:followed_id]
     ).try(:destroy)
+    @user = User.find(params[:follow][:follower_id])
     render json: 'api/follows/destroy'
   end
 
