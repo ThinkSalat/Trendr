@@ -14,7 +14,7 @@ export default class FollowingButton extends React.Component {
 
    
   changeFollowStatus() {
-    (this.state.following ? this.props.unfollowUser(this.state) : this.props.unfollowUser(this.state)).then(() => {
+    (this.state.following ? this.props.unfollowUser(this.state) : this.props.followUser(this.state)).then(() => {
       this.setState({following: !this.state.following});
     });
   }

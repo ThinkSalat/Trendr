@@ -1,7 +1,9 @@
 class Api::FollowingsController < ApplicationController
 
   def create
-    Following.create(follow_params)
+    Following.create(
+      follower_id: params[:follow][:follower_id],
+      followed_id: params[:follow][:followed_id])
   end
 
   def destroy
