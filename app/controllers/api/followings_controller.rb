@@ -6,7 +6,7 @@ class Api::FollowingsController < ApplicationController
       follower_id: params[:follow][:follower_id],
       followed_id: params[:follow][:followed_id])
       @user = User.find(params[:follow][:follower_id])
-      render json: 'api/follows/create'
+      render 'api/follows/create'
   end
 
   def destroy
@@ -15,7 +15,7 @@ class Api::FollowingsController < ApplicationController
       followed_id: params[:follow][:followed_id]
     ).try(:destroy)
     @user = User.find(params[:follow][:follower_id])
-    render json: 'api/follows/destroy'
+    render 'api/follows/destroy'
   end
 
   def index
