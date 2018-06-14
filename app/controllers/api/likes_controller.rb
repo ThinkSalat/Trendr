@@ -1,4 +1,6 @@
 class Api::LikesController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def create
     Like.create(
       user_id: params[:user_id],
