@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import PostBottomNav from './post_bottom_nav';
+import { unlikePost, likePost } from '../../actions/like_actions';
 
 const mapStateToProps = ({entities: { posts, users }, session: { id } }, { postId }) => {
   const post = posts[postId] || {};
@@ -13,8 +14,8 @@ const mapStateToProps = ({entities: { posts, users }, session: { id } }, { postI
 
 const mapDispatchToProps = dispatch => {
   return {
-    // likePost: ,
-    // unlikePost: ,
+    likePost: (userId, postId) => dispatch(likePost(userId, postId)),
+    unlikePost: (userId, postId) => dispatch(unlikePost(userId, postId))
   };
 };
 
