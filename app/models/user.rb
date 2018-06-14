@@ -54,12 +54,14 @@ class User < ApplicationRecord
     through: :followed_users,
     source: :posts
     
+  has_many :likes
+  
   has_many :posts
     -> {order('created_at desc')}
+
   # has_many :recent_posts_15,
   #   -> {order('created_at desc').limit(15) },
   #   class_name: :Post
-  # has_many :likes
 
   def downcase_fields
     self.username.downcase!

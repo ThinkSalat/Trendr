@@ -5,6 +5,7 @@ class Api::FollowingsController < ApplicationController
     Following.create(
       follower_id: params[:follow][:follower_id],
       followed_id: params[:follow][:followed_id])
+      render json: 'api/follows/create'
   end
 
   def destroy
@@ -12,6 +13,7 @@ class Api::FollowingsController < ApplicationController
       follower_id: params[:follow][:follower_id],
       followed_id: params[:follow][:followed_id]
     ).try(:destroy)
+    render json: 'api/follows/destroy'
   end
 
   def index
