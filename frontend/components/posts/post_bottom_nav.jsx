@@ -3,7 +3,6 @@ import React from 'react';
 export default class PostBottomNav extends React.Component {
   constructor(props) {
     super(props);
-
     props.post.likes = props.post.likes || [];
     this.state = {
       liked: props.post.likes.includes(props.currentUser.id)
@@ -15,14 +14,12 @@ export default class PostBottomNav extends React.Component {
       parseInt(this.props.currentUser.id), 
       parseInt(this.props.post.id)
     ).then( succ => {
-      console.log('success');
       this.setState({liked: false});
     })
   }
 
   likePost() {
     this.props.likePost(parseInt(this.props.currentUser.id), parseInt(this.props.post.id)).then( succ => {
-      console.log('success');
       this.setState({liked: true});
     })
   }

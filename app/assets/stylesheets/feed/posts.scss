@@ -92,7 +92,7 @@
 .post-bottom-nav {
   height: 45px;
   padding: 0 20px 0 20px;
-
+  z-index: 50;
   // font-family: 
   display: flex;
   flex-direction: row;
@@ -110,6 +110,8 @@
     flex-direction: row;
     justify-content: space-between;
     .post-control {
+      z-index: 50;
+
       top: 13px;
       font-family: 'icon-font';
       font-size: 30px;

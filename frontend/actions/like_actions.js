@@ -7,7 +7,6 @@ export const unlikePost = (userId, postId) => dispatch => LikeApiUtil.unlikePost
 export const likePost = (userId, postId) => dispatch => LikeApiUtil.likePost(userId, postId).then( post => dispatch(likePostAction(post)));
 
 const unlikePostAction = ({ post }) => {
-  console.log('deleted');
   return({
     type: UNLIKE_POST,
     post
@@ -15,7 +14,6 @@ const unlikePostAction = ({ post }) => {
 }
 
 const likePostAction = ({ post }) => {
-  console.log('liked');
   return({
     type: LIKE_POST,
     post
