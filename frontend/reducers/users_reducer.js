@@ -13,6 +13,7 @@ const usersReducer = (state = {}, action) => {
     case RECEIVE_USER:
     case FOLLOW_USER:
     case UNFOLLOW_USER:
+    console.log(action.type);
     return merge({}, state, { [action.user.id]: action.user });
     case RECEIVE_ALL_POSTS:
     case RECEIVE_POSTS:

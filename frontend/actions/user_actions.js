@@ -16,12 +16,12 @@ const receiveUser = ({ user, posts}) => {
   });
 };
 
-const followUserAction = (user) => ({
+const followUserAction = ({user}) => ({
   type: FOLLOW_USER,
   user
 });
 
-const unfollowUserAction = (user) => ({
+const unfollowUserAction = ({user}) => ({
   type: UNFOLLOW_USER,
   user
 });
