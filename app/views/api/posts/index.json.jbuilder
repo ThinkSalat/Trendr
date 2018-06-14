@@ -7,6 +7,9 @@ json.posts do
           json.url img.service_url 
         end
       end
+      json.likes do
+        json.array! post.users_who_like_post_ids
+      end
     end
   end
 end

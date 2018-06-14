@@ -55,6 +55,9 @@ class User < ApplicationRecord
     source: :posts
     
   has_many :likes
+  has_many :liked_posts,
+    through: :likes,
+    source: :post
   
   has_many :posts
     -> {order('created_at desc')}
