@@ -1,8 +1,10 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
+import { ProtectedRoute } from '../../util/route_util';
 
 import ProfilePostContainer from '../posts/profile_post_container';
 import FollowingButtonContainer from './following_button_container';
+import LikesIndexContainer from '../likes/likes_index_container';
 
 export default class UserProfile extends React.Component {
   constructor(props) {
@@ -55,6 +57,8 @@ export default class UserProfile extends React.Component {
               {/* last post created at date */}
             </ul>
           </li>
+          {/* <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer}/> */}
+
           {postComponents}
         </ul>
       </div>

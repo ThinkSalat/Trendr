@@ -21,7 +21,6 @@ class Api::LikesController < ApplicationController
 
   def index
     if params[:id] != ''
-      byebug
       @posts = User.find(params[:id]).liked_posts
     else
       @posts = current_user.liked_posts
