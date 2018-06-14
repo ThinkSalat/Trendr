@@ -10,7 +10,7 @@ export default class LikesIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getLikedPosts();
+    this.props.getLikedPosts(this.props.userId);
   }
 
   render() {

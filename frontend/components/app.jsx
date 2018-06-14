@@ -35,7 +35,7 @@ export default class App extends React.Component {
           <Route path='/users/:userId' component={UserProfileContainer} />
           <ProtectedRoute exact path="/dashboard" component={MainFeed} />
           <ProtectedRoute exact path="/likes" component={LikesIndexContainer} />
-          <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer} />
+          <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer}/>
           <ProtectedRoute exact path="/" component={MainFeed} />
           <ProtectedRoute path="/new/" component={MainFeed} />
           <Route path='/' component={fourOhFour} />
