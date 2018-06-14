@@ -4,14 +4,19 @@ export default class FollowingButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      following: props.currentUser.followedUsers.includes(parseInt(props.userId))
+      following: props.currentUser.followedUsers.includes(parseInt(props.userId)),
+      follow: {
+        follower_id: props.currentUser.id,
+        followed_id: props.userId
+      }
     };
   }
 
    
   changeFollowStatus() {
-    console.log('changing follow status');
-    console.log(this.state.following ? 'true' : 'false');
+    (this.state.following ? this.props.unfollowUser(this.state) : this.props.unfollowUser(this.state)).then(() => {
+      this.setState({following: !this.state.following});
+    });
   }
 
   followDisplay() {
