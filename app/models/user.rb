@@ -25,10 +25,13 @@ class User < ApplicationRecord
   validates_presence_of :password_digest
   validates :username, length: { in: 5..30 }
   validates :password, length: { minimum: 6, allow_nil: true }
+
+  # after_create :follow_default_users, :ensure_following_self
+  # after_save :reset_demo_user
   
+  before_save :ensure_avatar
   before_validation :downcase_fields
   before_validation :ensure_session_token
-  before_save :ensure_avatar, :ensure_following_self
 
   has_one_attached :avatar
 
@@ -101,6 +104,22 @@ class User < ApplicationRecord
 
   def ensure_following_self
     Following.create(follower_id: id,followed_id: id) if Following.where(follower_id: id,followed_id: id).empty?
+  end
+
+  def follow_default_users
+    [27,28,36,20,25,34].each do |blog_id|
+      Following.create(follower_id: self.id, followed_id: blog_id)
+    end
+  end
+
+  def reset_demo_user
+    if self.username == 'demo user'
+      followed_user_records.destroy_all
+      posts.destroy_all
+      [27,28,36,20,25,34].each do |blog_id|
+        Following.create(follower_id: self.id, followed_id: blog_id)
+      end
+    end
   end
 
   def ensure_avatar

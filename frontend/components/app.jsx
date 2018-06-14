@@ -31,8 +31,8 @@ export default class App extends React.Component {
           <AuthRoute exact path="/login" component={LoginFormContainer} />
           <AuthRoute exact path="/signup" component={SignupFormContainer} />
           <AuthRoute exact path="/" component={SessionPage} />
-          <Route path='/posts/:postId' component={PostShowContainer} />
-          <Route exact path='/users/:userId' component={UserProfileContainer} />
+          <ProtectedRoute path='/posts/:postId' component={PostShowContainer} />
+          <ProtectedRoute exact path='/users/:userId' component={UserProfileContainer} />
           <ProtectedRoute exact path="/dashboard" component={MainFeed} />
           <ProtectedRoute exact path="/likes" component={LikesIndexContainer} />
           <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer}/>

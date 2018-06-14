@@ -57,8 +57,6 @@ export default class UserProfile extends React.Component {
               {/* last post created at date */}
             </ul>
           </li>
-          {/* <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer}/> */}
-
           {postComponents}
         </ul>
       </div>

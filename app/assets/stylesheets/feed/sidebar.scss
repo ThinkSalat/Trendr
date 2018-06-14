@@ -4,8 +4,43 @@
 }
 
 .sidebar-links {
+
+  user-select: none;
+
   li a {
+    
+    display: flex;
+    flex-direction: row;
+    // background-color: rgb(87, 96, 136);
+    display: block;
+    min-height: 48px;
+    min-width: 320px;
     text-decoration: none;
-    color: white;
+    box-sizing: border-box;
+    padding: 8px 8px 8px 8px;
+    border-bottom: 1px solid hsla(0,0%,100%,.07);
+    border-top: 1px solid hsla(0,0%,100%,.07);
+    
+    .sidebar-icon {
+      color: hsla(0,0%,100%,.75);
+      font-family: 'icon-font';
+      font-size: 25px;
+      position: relative;
+      top: 3px;
+      padding-right: 11px;
+    }
+    .sidebar-text{
+      color: hsla(0,0%,100%,.6);
+      font-size: 15px;
+    }
+    &:hover {
+      background-color: hsla(0,0%,100%,.07);
+    }
+  }
+}
+
+.disabled-link {
+  &:hover {
+    background-color: rgba(104, 7, 7, 0.7);
   }
 }
