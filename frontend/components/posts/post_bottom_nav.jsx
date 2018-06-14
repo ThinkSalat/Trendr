@@ -10,10 +10,16 @@ export default class PostBottomNav extends React.Component {
 
   likeIcon() {
     if (this.state.liked) {
+      console.log('liked');
+      return <li className='post-control' style={{color: '#d95e40'}}>&#59983;</li>;
+    } else if (this.props.currentUser.id === this.props.post.userId) {
+      console.log('own post');
       return <li className='post-control'>&#59982;</li>;
     } else if (!this.state.liked) {
+      console.log('unliked');
       return <li className='post-control'>&#59982;</li>;
     } else {
+      console.log('not liked, unliked, or users own post');
       return <li className='post-control'>&#59982;</li>;
     }
   }
