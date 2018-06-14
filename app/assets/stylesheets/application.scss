@@ -30,7 +30,7 @@ span {
 
 }
 
-img { 
+img, *::placeholder, nav a { 
   user-select: none;
 }
 

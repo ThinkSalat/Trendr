@@ -29,6 +29,7 @@
 
 
 .header-session-link {
+  user-select: none;
   text-decoration: none;
   font-size: 14px;
   background-color: rgba(0,0,0,.0941176);
@@ -79,6 +80,7 @@
     justify-content: space-around;  
     align-items: center;
     a {
+      user-select: none;
       color: #9BA2AD;
       padding-right: 16px;
       padding-left: 16px;
