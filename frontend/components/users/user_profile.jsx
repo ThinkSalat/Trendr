@@ -46,7 +46,7 @@ export default class UserProfile extends React.Component {
             <ul className='user-profile-nav'>
               <li><img className='large-avatar' src={this.props.user.avatar} alt={this.props.user.username}/></li>
               <li><FollowingButtonContainer currentUser={this.props.currentUser} userId={this.props.userId}/></li>
-              <li className='likes-link'> <Link to={`/users/${this.props.userId}/likes`}>Likes</Link> </li>
+              <li> <Link className='likes-link' to={`/users/${this.props.userId}/likes`}>Likes</Link> </li>
             </ul>
             <ul className='user-profile-info'>
               <li>{this.props.user.title}</li>

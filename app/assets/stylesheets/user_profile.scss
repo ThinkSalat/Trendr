@@ -76,6 +76,7 @@
   color: white;
   outline: none;
   a {
+    display: block;
     text-decoration: none;
     color: white;
     &:visited {
@@ -94,6 +95,8 @@
 .likes-link {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+  display: block;
+
 }
 .user-profile-info-container-container {
   position: relative;
