@@ -18,7 +18,7 @@ export default class LikesIndex extends React.Component {
       this.props.getLikedPosts(this.props.userId);
     }
   }
-
+  
   render() {
     // if (!this.state.isAvailable) {
     //   return(

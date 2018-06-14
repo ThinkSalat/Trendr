@@ -3,11 +3,15 @@
   border-radius: 3px;
 
   max-width: 540px;
-  height: 182px;
+  height: 215px;
   position: relative;
   top: 95px;
   margin: 0 auto;
   margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: row;
+
 
   .large-avatar {
     border-radius: 0px;
@@ -15,31 +19,42 @@
     border-top-left-radius: 3px;
   }
 
-  ul {
-    color: #444444;
-    display: flex;
-    flex-direction: column;
+  .user-profile-nav { 
+    ul {
+      color: #444444;
+      display: flex;
+      flex-direction: column;
 
-    position: relative;
-    bottom: 120px;
-    left: 155px;
-  }
-  img {
-    border-radius: 3px;
-    position: relative;
-    left: 10px;
-    top: 10px;
+      position: relative;
+      bottom: 120px;
+      left: 155px;
+    }
+    img {
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
   }
 }
 
 .user-profile-info {
+  margin-left: 12px;
+  color: #444444;
   width: 380px;
+  height: 100%;
+  li {
+    position: relative;
+    top: 12px;
+  }
   li:first-child {
     font-weight: bold;
   }
 }
 
-.following-switcher {
+
+.following-switcher, .likes-link {
 
   font-size: 16px;
   font-weight: 550;
@@ -57,8 +72,6 @@
   min-width: 128px;
   width: 64px;
   border-radius: 0px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
   background-color: #559FCA;
   color: white;
   outline: none;
@@ -70,6 +83,10 @@
   &:hover {
     cursor: pointer;
   }
+}
+.likes-link {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .user-profile-info-container-container {
   position: relative;
