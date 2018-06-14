@@ -2,7 +2,7 @@ import { merge } from 'lodash';
 
 import { RECEIVE_CURRENT_USER, 
   LOGOUT_CURRENT_USER } from '../actions/session_actions';
-import { RECEIVE_POST, RECEIVE_POSTS } from '../actions/post_actions';
+import { RECEIVE_POST, RECEIVE_POSTS, RECEIVE_ALL_POSTS } from '../actions/post_actions';
 import { RECEIVE_USER, FOLLOW_USER, UNFOLLOW_USER } from '../actions/user_actions';
 
 const usersReducer = (state = {}, action) => {
@@ -13,7 +13,8 @@ const usersReducer = (state = {}, action) => {
     case RECEIVE_USER:
     case FOLLOW_USER:
     case UNFOLLOW_USER:
-      return merge({}, state, { [action.user.id]: action.user });
+    return merge({}, state, { [action.user.id]: action.user });
+    case RECEIVE_ALL_POSTS:
     case RECEIVE_POSTS:
       return merge({},state, action.users);
     default:

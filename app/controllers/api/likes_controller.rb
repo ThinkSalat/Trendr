@@ -20,5 +20,11 @@ class Api::LikesController < ApplicationController
   end
 
   def index
+    unless params[:id].empty?
+      @posts = User.find(params[:id]).liked_posts
+    else
+      @posts = current_user.liked_posts
+    end
+    render 'api/posts/index'
   end
 end

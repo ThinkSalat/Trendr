@@ -12,12 +12,7 @@ import configureStore from './store/store';
 //       createPost,
 //       updatePost,
 //       deletePost} from './util/post_api_util';
-// import { 
-//   fetchPosts,
-//   fetchPost,
-//   createPost,
-//   updatePost,
-//   deletePost} from './util/post_api_util';
+
 import { 
   fetchPosts,
   fetchPost,
@@ -25,8 +20,8 @@ import {
   updatePost,
   deletePost} from './actions/post_actions';
 
-  // import { fetchUser } from './actions/user_actions';
-  import { fetchUser } from './util/user_api_util';
+  import { getLikedPosts } from './actions/like_actions';
+  // import { fetchUser } from './util/user_api_util';
 //END TEST
 
 
@@ -68,7 +63,7 @@ window.fetchPost = fetchPost;
 window.createPost = createPost;
 window.updatePost = updatePost;
 window.deletePost = deletePost;
-window.fetchUser = fetchUser;
+window.getLikedPosts =getLikedPosts;
 //END TEST
 
 

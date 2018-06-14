@@ -15,3 +15,13 @@ export const unlikePost = (userId, id) => {
     data: { user_id: userId }
   })
 )}
+
+export const getLikedPosts = (userId = null) => {
+  return(
+    $.ajax({
+      url: 'api/likes',
+      method: 'GET',
+      data: { id: userId }
+    })
+  )
+}

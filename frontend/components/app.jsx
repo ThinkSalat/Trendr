@@ -16,6 +16,7 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import PostContainer from './posts/post_container';
 import UserProfileContainer from './users/user_profile_container';
+import LikesIndexContainer from '../components/likes/likes_index_container';
 import fourOhFour from './errors/404';
 
 export default class App extends React.Component {
@@ -33,6 +34,8 @@ export default class App extends React.Component {
           <Route path='/posts/:postId' component={PostContainer} />
           <Route path='/users/:userId' component={UserProfileContainer} />
           <ProtectedRoute exact path="/dashboard" component={MainFeed} />
+          <ProtectedRoute exact path="/likes" component={LikesIndexContainer} />
+          <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer} />
           <ProtectedRoute exact path="/" component={MainFeed} />
           <ProtectedRoute path="/new/" component={MainFeed} />
           <Route path='/' component={fourOhFour} />
