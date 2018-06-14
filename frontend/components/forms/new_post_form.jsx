@@ -133,6 +133,29 @@ export default class NewPostForm extends React.Component {
             <input  className='submit-button'  type="submit" disabled={!(['title', 'body', 'summary'].some( el => this.state[el]))}/>
           </form>
         );
+      case 'quote': 
+        return(
+          <form  className='post-form-container' onSubmit={this.handleSubmit}>
+            <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Quote'/>
+            <textarea type="text" value={this.state.body} onChange={this.update('body')} placeholder='Source'/>
+            <input  className='submit-button'  type="submit" disabled={!(['title', 'body', 'summary'].some( el => this.state[el]))}/>
+          </form>
+        );
+      case 'link': 
+        return(
+          <form  className='post-form-container' onSubmit={this.handleSubmit}>
+            <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='URL'/>
+            <input  className='submit-button'  type="submit" disabled={!(['title', 'body', 'summary'].some( el => this.state[el]))}/>
+          </form>
+        );
+      case 'chat': 
+        return(
+          <form  className='post-form-container' onSubmit={this.handleSubmit}>
+            <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Title your chat (optional)'/>
+            <textarea id={'new-post-form-title'} type="text" value={this.state.body} onChange={this.update('body')} placeholder='Start a chat, ask a question!'/>
+            <input  className='submit-button'  type="submit" disabled={!(['body', 'summary'].some( el => this.state[el]))}/>
+          </form>
+        );
       default:
         return(
           <div id='new-post-form-title'>
