@@ -93,17 +93,17 @@ require 'open-uri'
 #   user.avatar.attach(io: avatar, filename: "#{user.email}_avatar")
 # end
 
-require 'open-uri'
-User.all.each do |user|
-  avatars = ['https://imgur.com/jnGiG1S.jpeg',
-              'https://i.imgur.com/PDkdrm6.png',
-              'https://i.imgur.com/QtFQt8p.png',
-              'https://i.imgur.com/piyqSHU.png',
-              'https://i.imgur.com/aEr4I1D.png',
-              'https://i.imgur.com/08sSlrI.png',
-              'https://i.imgur.com/klaH0DO.png',
-              'https://i.imgur.com/lzJzuN2.png',
-              'https://i.imgur.com/3nhqo4F.png',
-              'https://i.imgur.com/OpW7qCd.png']
-  user.avatar.attach(io: open(avatars.sample), filename: 'default')
-end
+# require 'open-uri'
+# User.all.each do |user|
+#   avatars = ['https://imgur.com/jnGiG1S.jpeg',
+#               'https://i.imgur.com/PDkdrm6.png',
+#               'https://i.imgur.com/QtFQt8p.png',
+#               'https://i.imgur.com/piyqSHU.png',
+#               'https://i.imgur.com/aEr4I1D.png',
+#               'https://i.imgur.com/08sSlrI.png',
+#               'https://i.imgur.com/klaH0DO.png',
+#               'https://i.imgur.com/lzJzuN2.png',
+#               'https://i.imgur.com/3nhqo4F.png',
+#               'https://i.imgur.com/OpW7qCd.png']
+#   user.avatar.attach(io: open(avatars.sample), filename: 'default')
+# end

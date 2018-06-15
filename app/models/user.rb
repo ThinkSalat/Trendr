@@ -106,9 +106,17 @@ class User < ApplicationRecord
     Following.create(follower_id: id,followed_id: id) if Following.where(follower_id: id,followed_id: id).empty?
   end
 
+  def default_users
+    ['crossconnectmag',
+    "dvdp    ",
+    "obviologist",
+    "darksilenceinsuburbia",
+    "skunkbear"]
+  end
+
   def follow_default_users
-    [27,28,36,20,25,34].each do |blog_id|
-    # User.all.sample(5).pluck(:id).each do |blog_id|
+    default_users.each do |blog_name|
+      blog_id = User.find_by_username(blog_name).id
       Following.create(follower_id: id, followed_id: blog_id)
     end
   end
@@ -117,8 +125,10 @@ class User < ApplicationRecord
     if self.username == 'demo user'
       followed_user_records.destroy_all
       posts.destroy_all
-      [27,28,36,20,25,34].each do |blog_id|
-      # User.all.sample(5).pluck(:id).each do |blog_id|
+      Following.create(follower_id: id, followed_id: id)
+      default_users.each do |blog_name|
+        blog_id = User.find_by_username(blog_name).id
+        # byebug
         Following.create(follower_id: self.id, followed_id: blog_id)
       end
     end
