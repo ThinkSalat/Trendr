@@ -23,7 +23,7 @@ class Api::PostsController < ApplicationController
   end
   
   def index
-    @posts = current_user.followed_users_posts.sample(15)
+    @posts = current_user.followed_users_posts.last(5)
     render 'api/posts/index'
   end
   

@@ -10,18 +10,18 @@ import SideBarContainer from '../feed/side_bar_container.js';
 export default class MainFeed extends React.Component {
 
   componentDidMount() {
-    // will take in a user id. 
-    // eventually will return things in order but for now just randomly
-    this.props.fetchPosts();
+    this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
   }
 
   componentWillReceiveProps(newProps) {
-    //maybe try to reset psots here
+    if (newProps.location.pathname !== this.props.location.pathname) {
+      this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
+    }
   }
 
    render() {
     const { posts } = this.props;
-    const postComponents = Object.keys(posts).map(postId => {
+    const postComponents = Object.keys(posts).sort((a,b) => b-a).map(postId => {
       let post = posts[postId];
       return (
         <li key={post.id}>

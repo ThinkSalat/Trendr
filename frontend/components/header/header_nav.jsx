@@ -15,7 +15,7 @@ export default class HeaderNav extends React.Component {
   render() {
     return(
       <div className='header-nav'>
-        <Link to='#' className={this.isActive('/dashboard')} >&#59980;</Link>
+        <Link to='/' className={this.isActive('/dashboard')} >&#59980;</Link>
         <Link to='#' className={this.isActive()} >&#59963;</Link>
         <Link to='#' className={this.isActive()} >&#59990;</Link>
         <Link to='#' className={this.isActive()} >&#59996;</Link>

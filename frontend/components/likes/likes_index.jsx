@@ -17,13 +17,19 @@ export default class LikesIndex extends React.Component {
 
   componentDidMount() {
     this.props.getLikedPosts(this.props.userId)
-      .then( null, err => this.setState({isAvailable: false}));
+      .then( 
+        succ => window.scrollTo(0, 0),
+        err => this.setState({isAvailable: false})
+      );
   }
 
   componentWillReceiveProps(newProps) {
     if (newProps.userId !== this.props.userId) {
       this.props.getLikedPosts(this.props.userId)
-        .then( null, err => this.setState({isAvailable: false}));
+        .then( 
+          succ => window.scrollTo(0, 0),
+          err => this.setState({isAvailable: false})
+        );
     }
   }
   

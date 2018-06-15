@@ -56,6 +56,7 @@ class User < ApplicationRecord
     has_many :followed_users_posts,
     through: :followed_users,
     source: :posts
+      -> {order('created_at desc').limit(10)}
     
   has_many :likes
   has_many :liked_posts,
@@ -64,10 +65,6 @@ class User < ApplicationRecord
   
   has_many :posts
     -> {order('created_at desc')}
-
-  # has_many :recent_posts_15,
-  #   -> {order('created_at desc').limit(15) },
-  #   class_name: :Post
 
   def downcase_fields
     self.username.downcase!
@@ -131,6 +128,7 @@ class User < ApplicationRecord
         # byebug
         Following.create(follower_id: self.id, followed_id: blog_id)
       end
+      Post.create(post_type: 'text', title: "Hello!", body: "Welcome to my page!", user_id: id)
     end
   end
 

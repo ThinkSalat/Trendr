@@ -10,12 +10,20 @@ export default class Followings extends React.Component {
 
   componentDidMount() {
     const { getFollowings, id } = this.props;
-    getFollowings(id);
+    getFollowings(id).then(succ => window.scrollTo(0, 0));
     //then (succ, err)
   }
 
+  componentWillReceiveProps(newProps) {
+    debugger
+    if (newProps.location.pathname !== this.props.location.pathname) {
+      const { getFollowings, id } = this.props;
+      getFollowings(id).then(succ => window.scrollTo(0, 0));
+    }
+  }
+
   usersArray() {
-    return Object.keys(this.props.users).map( id => this.props.users[id])
+    return Object.keys(this.props.users).map( id => this.props.users[id]);
   }
 
   followingListItems() {

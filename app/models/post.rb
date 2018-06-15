@@ -9,6 +9,7 @@ class Post < ApplicationRecord
   has_many :users_who_like_post,
     through: :likes,
     source: :user
+    
   # notes
   # has_many :tags
   # has_many :notes

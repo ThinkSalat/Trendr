@@ -15,7 +15,7 @@ const postsReducer = (state = {}, action) => {
     case RECEIVE_ALL_POSTS:
     case RECEIVE_POSTS:
     case RECEIVE_USER:
-      return action.posts;
+      return action.posts || {};
     case RECEIVE_POST:
     case UNLIKE_POST:
     case LIKE_POST:
