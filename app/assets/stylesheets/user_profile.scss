@@ -116,9 +116,12 @@
 
 .user-profile-container {
   position: relative;
-  bottom: 81px;
+  bottom: 82px;
+  padding-left: 85px;
+  max-width: 540px;
+  min-width: 540px;
   &.not-empty {
-    left: 110px;
+    // left: 110px;
   }
 
 }
