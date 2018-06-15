@@ -123,7 +123,7 @@ export default class NewPostForm extends React.Component {
                 </div>
               </div>
             </div>
-            <textarea id={'new-post-form-title'} type="text" value={this.state.title} onChange={this.update('title')} placeholder='Add a caption, if you like'/>
+            <textarea id={'new-post-form-title'} type="text" value={this.state.summary} onChange={this.update('summary')} placeholder='Add a caption, if you like'/>
             <input   className='submit-button' type="submit" disabled={!this.state.images.length}/>
           </form>
         );
@@ -166,6 +166,7 @@ export default class NewPostForm extends React.Component {
                 <div className='file-upload-icon'>&#60011; <span className='upload-text'>Upload Audio</span></div>
               </div>
             </Dropzone>
+            <textarea id={'new-post-form-title'} type="text" value={this.state.summary} onChange={this.update('summary')} placeholder='Add a caption, if you like'/>
           <input className='submit-button' type="submit" disabled={!this.state.images.length}/>
         </form>
         );
@@ -177,6 +178,7 @@ export default class NewPostForm extends React.Component {
               <div className='file-upload-icon'>&#60042; <span className='upload-text'>Upload Video</span></div>
             </div>
           </Dropzone>
+          <textarea id={'new-post-form-title'} type="text" value={this.state.summary} onChange={this.update('summary')} placeholder='Add a caption, if you like'/>
         <input className='submit-button' type="submit" disabled={!this.state.images.length}/>
       </form>
       );
