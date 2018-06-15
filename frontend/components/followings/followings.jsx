@@ -9,13 +9,14 @@ export default class Followings extends React.Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0)
     const { getFollowings, id } = this.props;
     getFollowings(id).then(succ => window.scrollTo(0, 0));
     //then (succ, err)
   }
 
   componentWillReceiveProps(newProps) {
-    debugger
+    window.scrollTo(0, 0)
     if (newProps.location.pathname !== this.props.location.pathname) {
       const { getFollowings, id } = this.props;
       getFollowings(id).then(succ => window.scrollTo(0, 0));

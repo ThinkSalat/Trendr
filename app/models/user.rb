@@ -54,9 +54,9 @@ class User < ApplicationRecord
     source: :followed
   
     has_many :followed_users_posts,
+    -> {order('created_at desc').limit(5)},
     through: :followed_users,
     source: :posts
-      -> {order('created_at desc').limit(10)}
     
   has_many :likes
   has_many :liked_posts,

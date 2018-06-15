@@ -10,10 +10,12 @@ import SideBarContainer from '../feed/side_bar_container.js';
 export default class MainFeed extends React.Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0)
     this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
   }
 
   componentWillReceiveProps(newProps) {
+    window.scrollTo(0, 0)
     if (newProps.location.pathname !== this.props.location.pathname) {
       this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
     }
