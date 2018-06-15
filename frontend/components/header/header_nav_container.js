@@ -3,9 +3,9 @@ import { withRouter } from 'react-router-dom';
 
 import HeaderNav from './header_nav';
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = ({ entities: { users }, session: { id } }, ownProps) => {
   return {
-    
+    userId: id
   };
 };
 

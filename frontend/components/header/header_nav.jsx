@@ -15,6 +15,10 @@ export default class HeaderNav extends React.Component {
     }
   }
 
+  userProfile() {
+    return `/users/${this.props.userId}`
+  }
+
   render() {
     return(
       <div className='header-nav'>
@@ -23,7 +27,7 @@ export default class HeaderNav extends React.Component {
         <Link to='#' className={this.isActive()} >&#59990;</Link>
         <Link to='#' className={this.isActive()} >&#59996;</Link>
         <Link to='#' className={this.isActive()} >&#59905;</Link>
-        <Link to='#' className={this.isActive()} >&#60070;</Link>
+        <Link to={this.userProfile()} className={this.isActive(this.userProfile())} >&#60070;</Link>
       </div>
     );
    }
