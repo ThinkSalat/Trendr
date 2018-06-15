@@ -108,18 +108,20 @@ class User < ApplicationRecord
 
   def follow_default_users
     # [27,28,36,20,25,34].each do |blog_id|
-    #   Following.create(follower_id: self.id, followed_id: blog_id)
-    # end
+    User.all.sample(5).pluck(:id).each do |blog_id|
+      Following.create(follower_id: id, followed_id: blog_id)
+    end
   end
 
   def reset_demo_user
-    # if self.username == 'demo user'
-    #   followed_user_records.destroy_all
-    #   posts.destroy_all
-    #   [27,28,36,20,25,34].each do |blog_id|
-    #     Following.create(follower_id: self.id, followed_id: blog_id)
-    #   end
-    # end
+    if self.username == 'demo user'
+      followed_user_records.destroy_all
+      posts.destroy_all
+      # [27,28,36,20,25,34].each do |blog_id|
+      User.all.sample(5).pluck(:id).each do |blog_id|
+        Following.create(follower_id: self.id, followed_id: blog_id)
+      end
+    end
   end
 
   def ensure_avatar

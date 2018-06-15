@@ -15,6 +15,10 @@ export default class MainFeed extends React.Component {
     this.props.fetchPosts();
   }
 
+  componentWillReceiveProps(newProps) {
+    console.log(newProps);
+  }
+
    render() {
     const { posts } = this.props;
     const postComponents = Object.keys(posts).map(postId => {
