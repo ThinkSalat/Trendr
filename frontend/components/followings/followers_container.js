@@ -8,7 +8,8 @@ const mapStateToProps = ({ entities: { users }, session: { id } }, { match : { p
   if (userId) id = userId;
   return {
     users,
-    id
+    id,
+    currentUser: users[id]
   };
 };
 
