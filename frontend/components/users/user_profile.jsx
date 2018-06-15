@@ -35,6 +35,15 @@ export default class UserProfile extends React.Component {
     }
   }
 
+  profileEmpty() {
+    if (Object.keys(this.props.posts).length === 0) {
+      // make main content left: 0px;
+      return '';
+    } else {
+      return 'not-empty';
+    }
+  }
+
   render() {
     if (!this.state.isAvailable) {
       return(
@@ -44,9 +53,7 @@ export default class UserProfile extends React.Component {
    
     let { posts, user } = this.props;
 
-    if (Object.keys(posts).length === 0) {
-      // make main content left: 0px;
-    }
+    
 
     const postComponents = Object.keys(posts).sort((a,b) => b-a).map( id => {
       let post = posts[id];
@@ -56,7 +63,7 @@ export default class UserProfile extends React.Component {
     });
     return(
       <div className='main-feed-container'>
-        <div className='user-profile-container'>
+        <div className={`user-profile-container ${this.profileEmpty()}`}>
       <ul className='user-profile-info-container-container'>
       <li className='user-profile-info-container'>
       <ul className='user-profile-nav'>

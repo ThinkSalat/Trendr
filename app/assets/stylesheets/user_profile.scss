@@ -117,7 +117,10 @@
 .user-profile-container {
   position: relative;
   bottom: 81px;
-  left: 110px;
+  &.not-empty {
+    left: 110px;
+  }
+
 }
 
 .following-switcher, .likes-link, .followers-link, .followed-users-link {
