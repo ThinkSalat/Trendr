@@ -16,7 +16,7 @@ export default class MainFeed extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    console.log(newProps);
+    //maybe try to reset psots here
   }
 
    render() {

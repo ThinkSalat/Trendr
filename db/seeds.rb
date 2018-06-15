@@ -105,6 +105,5 @@ User.all.each do |user|
               'https://i.imgur.com/lzJzuN2.png',
               'https://i.imgur.com/3nhqo4F.png',
               'https://i.imgur.com/OpW7qCd.png']
-
-              
+  user.avatar.attach(io: open(avatars.sample), filename: 'default')
 end

@@ -20,7 +20,6 @@ export default class FollowingButton extends React.Component {
   }
 
   followDisplay() {
-    console.log('fd', this.props);
     return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId)) ?  'Unfollow' : 'Follow'; 
   }
   render() {
