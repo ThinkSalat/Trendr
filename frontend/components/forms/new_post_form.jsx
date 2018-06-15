@@ -46,7 +46,7 @@ export default class NewPostForm extends React.Component {
     this.state.images.forEach(image => data.append('images[]', image));
 
     this.props.submitPost(data)
-      .then(this.props.history.push('/'));
+      .then( succ => this.props.history.push('/'));
       // might handle errors here
   }
 
