@@ -1,24 +1,6 @@
-# README
+# Trendr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### A site to share and create that which inspires
 
-Things you may want to cover:
+Trendr is a responsive React-Redux web app using Ruby on Rails on the backend. Simply put, people use Trendr to share whatever they desire using personally curated blogs.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
