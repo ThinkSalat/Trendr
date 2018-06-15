@@ -105,8 +105,7 @@ class User < ApplicationRecord
     through: :likes,
     source: :post
   
-  has_many :posts
-    -> {order('created_at desc')}
+  has_many :posts, -> {order('created_at desc').limit(5)}
 
   def downcase_fields
     self.username.downcase!
