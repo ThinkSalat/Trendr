@@ -43,6 +43,11 @@ export default class UserProfile extends React.Component {
     }
    
     let { posts, user } = this.props;
+
+    if (Object.keys(posts).length === 0) {
+      // make main content left: 0px;
+    }
+
     const postComponents = Object.keys(posts).sort((a,b) => b-a).map( id => {
       let post = posts[id];
       return <li key={post.id}>

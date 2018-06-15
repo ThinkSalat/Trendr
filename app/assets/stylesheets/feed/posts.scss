@@ -18,6 +18,10 @@
   margin-bottom: 20px;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .photoset-photo img {
   min-width: 540px;
   max-width: 540px;
