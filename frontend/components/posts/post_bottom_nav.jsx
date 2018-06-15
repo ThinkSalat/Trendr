@@ -40,7 +40,7 @@ export default class PostBottomNav extends React.Component {
   render() {
     return(
       <ul className='post-bottom-nav'>
-        <li>3,777 Notes</li>
+        <li>{this.props.post.numberNotes} Notes</li>
         <li>
           <ul className='post-bottom-nav-icons'>
             <li className='post-control' alt='Share'>&#59906;</li>

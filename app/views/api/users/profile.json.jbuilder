@@ -27,6 +27,7 @@ json.posts do
       json.likes do
         json.array! post.users_who_like_post_ids
       end
+      json.number_notes post.likes.count
     end
   end
 end

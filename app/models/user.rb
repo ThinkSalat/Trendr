@@ -17,14 +17,57 @@
 #  updated_at         :datetime         not null
 #
 
+class EmailValidator < ActiveModel::Validator
+  def validate(user)
+    email = user.email
+    errors = []
+
+    if email.length > 0 && !email.match( /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i) 
+      errors << " must be valid"
+    end
+
+    if email.length < 1
+      errors << ' must not be blank'
+    end
+
+    if User.exists? email: email
+      errors << ' has been taken'
+    end
+
+    user.errors[:email] << errors.last unless errors.empty?
+  end
+end
+
+class UsernameValidator < ActiveModel::Validator
+  def validate(user)
+    username = user.username
+    errors = []
+
+    if username.length < 4
+      errors << ' must be more than 3 characters'
+    end
+
+    if username.length < 1
+      errors << ' must not be blank'
+    end
+
+    if User.exists? username: username
+      errors << ' has been taken'
+    end
+
+    user.errors[:username] << errors.last unless errors.empty?
+  end
+end
+
 class User < ApplicationRecord
   attr_reader :password
 
-  validates :username, :email, :session_token, presence: true, uniqueness: true
-  validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
+  validates_with EmailValidator, fields: [:email], on: :create
+  validates_with UsernameValidator, fields: [:username], on: :create
+
+  validates :session_token, presence: true, uniqueness: true
   validates_presence_of :password_digest
-  validates :username, length: { in: 5..30 }
-  validates :password, length: { minimum: 6, allow_nil: true }
+  validates :password, length: { minimum: 6, allow_nil: true, message: ' must be at least 6 characters'}
 
   after_create :follow_default_users, :ensure_following_self
   after_save :reset_demo_user
@@ -35,7 +78,7 @@ class User < ApplicationRecord
 
   has_one_attached :avatar
 
-  has_many :followed_user_records,
+  has_many :followed_user_records, -> { includes :followed },
     class_name: :Following,
     foreign_key: :follower_id,
     primary_key: :id
@@ -49,12 +92,11 @@ class User < ApplicationRecord
     through: :follower_records,
     source: :follower
 
-  has_many :followed_users,
+  has_many :followed_users, -> { includes :followed_users_posts },
     through: :followed_user_records,
     source: :followed
   
-    has_many :followed_users_posts,
-    -> {order('created_at desc').limit(5)},
+    has_many :followed_users_posts, -> {order('created_at desc').limit(5)},
     through: :followed_users,
     source: :posts
     
