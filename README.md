@@ -23,3 +23,5 @@ It's as easy as clicking and dragging your content into the form!
 Trendr is filled with colorful blogs and content. Users can use the explore page to find content they might otherwise miss out on.
 
 ![explore](https://github.com/ThinkSalat/Trendr/blob/master/Documents/readme%20files/explore.gif?raw=true)
+
+Future updates will include: Tags, search, collections, upload photos by url! souncloud and spotify integration !
