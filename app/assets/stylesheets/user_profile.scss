@@ -3,7 +3,7 @@
   border-radius: 3px;
 
   max-width: 540px;
-  height: 215px;
+  height: 282px;
   position: relative;
   top: 95px;
   // margin: 0 auto;
@@ -42,6 +42,8 @@
 }
 
 .user-profile-info {
+  position: relative;
+  left: 10px;
   margin-left: 12px;
   color: #444444;
   width: 380px;
@@ -56,7 +58,7 @@
 }
 
 
-.following-switcher, .likes-link {
+.following-switcher, .likes-link, .followers-link, .followed-users-link {
 
   font-size: 16px;
   font-weight: 550;
@@ -97,19 +99,43 @@
     cursor: pointer;
   }
 }
-.likes-link {
+.followed-users-link {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   display: block;
-
 }
+
 .user-profile-info-container-container {
   position: relative;
   bottom: 13px;
+}
+
+.likes-link, .followers-link, .followed-users-link {
+  display: block;
 }
 
 .user-profile-container {
   position: relative;
   bottom: 81px;
   left: 110px;
+}
+
+.following-switcher, .likes-link, .followers-link, .followed-users-link {
+  -o-transition:.45s;
+  -ms-transition:.45s;
+  -moz-transition:.45s;
+  -webkit-transition:.45s;
+  transition:.45s;
+}
+.user-profile-nav .following-switcher:hover {
+  background-color: rgba(190, 22, 22, 0.801);
+}
+.likes-link:hover {
+  background-color: rgba(248, 23, 154, 0.584);
+}
+.followed-users-link:hover {
+  background-color: rgba(248, 66, 25, 0.856);
+}
+.followers-link:hover {
+  background-color: rgba(116, 211, 33, 0.788);
 }
