@@ -13,6 +13,14 @@ export default class Post extends React.Component {
     };
   }
 
+  isAvailable() {
+    if (!this.state.isAvailable) {
+      return(
+        <Redirect to={`/404/posts/${this.props.postId}`} />
+      );
+    }
+  }
+
   isMainFeed() {
     if (this.props.location.pathname.slice(0,6) !== '/users') {
       return 'main-feed-margin-left';
@@ -20,32 +28,44 @@ export default class Post extends React.Component {
       return 'user-profile-left';
     }
   }
-  
-  render() {
-    if (!this.state.isAvailable) {
-      return(
-        <Redirect to={`/404/posts/${this.props.postId}`} />
-      );
-    }
- 
-    let { post, author } = this.props;
 
-    let images;
-    if(Object.keys(post).length !== 0) {
-      images = post.images.map((image,i) => (
+  postImages() {
+    const {post} = this.props;
+    if(Object.keys(post).length !== 0 && post.postType !== 'audio') {
+      return post.images.map((image,i) => (
       <li key={i} className='photoset-photo'>
         <img src={image.url}/>
       </li>
     ));
     }
+  }
 
-    let postBody;
-    if (post.postType === 'text') {
-      postBody = <li className='text-post-body' dangerouslySetInnerHTML={{__html: post.body}}></li>;
-    } else {
-     postBody = <li className='post-body' dangerouslySetInnerHTML={{__html: post.summary}}></li>;
+  postAudio() {
+    if (this.props.post.postType === "audio") {
+      return (
+        <audio controls>
+          <source src="horse.ogg" type="audio/ogg" />
+          <source src="horse.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      );
     }
+  }
 
+  postBody() {
+    const {post} = this.props;
+    if (post.postType === 'text') {
+      return <li className='text-post-body' dangerouslySetInnerHTML={{__html: post.body}}></li>;
+    } else {
+     return <li className='post-body' dangerouslySetInnerHTML={{__html: post.summary}}></li>;
+    }
+  }
+  
+  render() {
+    this.isAvailable();
+ 
+    let { post, author } = this.props;
+   
     return(
       <div className={`post-and-avatar-container ${this.isMainFeed()}`}>
         <div className='post-avatar'>
@@ -62,11 +82,12 @@ export default class Post extends React.Component {
             </li>
             <li>
               <ul className='post-media'>
-                {images}
+                {this.postImages()}
               </ul>
+              {this.postAudio()}
             </li>
             <li className='post-title'>{post.title}</li>
-            {postBody}
+            {this.postBody()}
             <li>
               <PostBottomNavContainer postId={this.props.postId}/>
             </li>
