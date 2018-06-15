@@ -188,3 +188,20 @@
 .post-nav-header-container {
   border-radius: 3px;
 }
+
+.file-upload {
+  border: none;
+}
+.upload-text {
+  font-size: 20px;
+}
+.audio-upload, .video-upload {
+  border: none;
+  color:#989898;
+  background-color: rgb(242, 242, 242);
+
+  * {
+    
+    border-right: none !important;
+  }
+}

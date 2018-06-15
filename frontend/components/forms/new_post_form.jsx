@@ -25,8 +25,10 @@ export default class NewPostForm extends React.Component {
   }
 
   componentDidMount() {
-    const focusedInput = document.getElementById('new-post-form-title');
-    focusedInput.focus();
+    if (!['audio','video'].includes(this.props.postType)){
+      const focusedInput = document.getElementById('new-post-form-title');
+      focusedInput.focus();
+    }
   }
 
   handleSubmit(e) {
@@ -156,6 +158,28 @@ export default class NewPostForm extends React.Component {
             <input  className='submit-button'  type="submit" disabled={!(['body', 'summary'].some( el => this.state[el]))}/>
           </form>
         );
+      case 'audio':
+        return (
+          <form  className='post-form-container audio-upload' onSubmit={this.handleSubmit}>
+            <Dropzone className={dropzoneStyle} onDrop={(files) => this.onDrop(files)} accept={'audio/*'}>
+              <div className='file-upload-container'>
+                <div className='file-upload-icon'>&#60011; <span className='upload-text'>Upload Audio</span></div>
+              </div>
+            </Dropzone>
+          <input className='submit-button' type="submit" disabled={!this.state.images.length}/>
+        </form>
+        );
+      case 'video':
+      return (
+        <form  className='post-form-container video-upload' onSubmit={this.handleSubmit}>
+          <Dropzone className={dropzoneStyle} onDrop={(files) => this.onDrop(files)} accept={'video/*'}>
+            <div className='file-upload-container'>
+              <div className='file-upload-icon'>&#60042; <span className='upload-text'>Upload Video</span></div>
+            </div>
+          </Dropzone>
+        <input className='submit-button' type="submit" disabled={!this.state.images.length}/>
+      </form>
+      );
       default:
         return(
           <div id='new-post-form-title'>
