@@ -194,6 +194,10 @@
 }
 .upload-text {
   font-size: 20px;
+  position: relative;
+  top: -12px;
+  right: 1px;
+  display: inline-block;
 }
 .audio-upload, .video-upload {
   border: none;
@@ -202,6 +206,6 @@
 
   * {
     
-    border-right: none !important;
+    border-right: none;
   }
 }
