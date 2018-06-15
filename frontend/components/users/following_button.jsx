@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default class FollowingButton extends React.Component {
-
   following() {
     return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId));
   }
@@ -21,6 +20,7 @@ export default class FollowingButton extends React.Component {
   }
 
   followDisplay() {
+    console.log('fd', this.props);
     return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId)) ?  'Unfollow' : 'Follow'; 
   }
   render() {
@@ -30,7 +30,7 @@ export default class FollowingButton extends React.Component {
    }
 }
 
-//refactored code above worked and then stopped working. 
+// refactored code above worked and then stopped working. 
 
 // import React from 'react';
 

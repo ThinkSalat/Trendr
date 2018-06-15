@@ -26,8 +26,8 @@ class User < ApplicationRecord
   validates :username, length: { in: 5..30 }
   validates :password, length: { minimum: 6, allow_nil: true }
 
-  # after_create :follow_default_users, :ensure_following_self
-  # after_save :reset_demo_user
+  after_create :follow_default_users, :ensure_following_self
+  after_save :reset_demo_user
   
   before_save :ensure_avatar
   before_validation :downcase_fields
@@ -107,19 +107,19 @@ class User < ApplicationRecord
   end
 
   def follow_default_users
-    [27,28,36,20,25,34].each do |blog_id|
-      Following.create(follower_id: self.id, followed_id: blog_id)
-    end
+    # [27,28,36,20,25,34].each do |blog_id|
+    #   Following.create(follower_id: self.id, followed_id: blog_id)
+    # end
   end
 
   def reset_demo_user
-    if self.username == 'demo user'
-      followed_user_records.destroy_all
-      posts.destroy_all
-      [27,28,36,20,25,34].each do |blog_id|
-        Following.create(follower_id: self.id, followed_id: blog_id)
-      end
-    end
+    # if self.username == 'demo user'
+    #   followed_user_records.destroy_all
+    #   posts.destroy_all
+    #   [27,28,36,20,25,34].each do |blog_id|
+    #     Following.create(follower_id: self.id, followed_id: blog_id)
+    #   end
+    # end
   end
 
   def ensure_avatar
