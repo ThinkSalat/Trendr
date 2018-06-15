@@ -25,7 +25,6 @@ export default class LikesIndex extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    window.scrollTo(0, 0);
     if (newProps.userId !== this.props.userId) {
       this.props.getLikedPosts(this.props.userId)
         .then( 

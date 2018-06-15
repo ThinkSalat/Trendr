@@ -15,7 +15,6 @@ export default class MainFeed extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    window.scrollTo(0, 0);
     if (newProps.location.pathname !== this.props.location.pathname) {
       this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
     }

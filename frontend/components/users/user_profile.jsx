@@ -26,7 +26,6 @@ export default class UserProfile extends React.Component {
   }
   
   componentWillReceiveProps(newProps) {
-    window.scrollTo(0, 0)
     if (newProps.match.params.userId !== this.props.userId) {
       this.props.fetchUser(newProps.userId)
       .then( 
