@@ -16,14 +16,14 @@ export default class HeaderNav extends React.Component {
   }
 
   userProfile() {
-    return `/users/${this.props.userId}`
+    return `/users/${this.props.userId}`;
   }
 
   render() {
     return(
       <div className='header-nav'>
         <Link to='/' className={this.isActive('/dashboard')} >&#59980;</Link>
-        <Link to='#' className={this.isActive()} >&#59963;</Link>
+        <Link to='/explore' className={this.isActive('/explore')} >&#59963;</Link>
         <Link to='#' className={this.isActive()} >&#59990;</Link>
         <Link to='#' className={this.isActive()} >&#59996;</Link>
         <Link to='#' className={this.isActive()} >&#59905;</Link>

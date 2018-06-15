@@ -26,6 +26,11 @@ class Api::PostsController < ApplicationController
     @posts = current_user.followed_users_posts
     render 'api/posts/index'
   end
+
+  def explore
+    @posts = Post.all.sample(params[:num_posts].to_i)
+    render 'api/posts/index'
+  end
   
   def show
     @post = Post.find(params[:id])

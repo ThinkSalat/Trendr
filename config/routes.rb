@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :posts, only: [:create, :update, :show, :index, :destroy]
     resources :followings, only: [:create, :index]
     delete 'followings(.:format)', to: 'followings#destroy'
+    get 'explore', to: 'posts#explore'
     resources :likes, only: [:create, :destroy, :index]
     resource :search, only: [:show, :index]
   end

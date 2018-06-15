@@ -20,6 +20,10 @@ import fourOhFour from './errors/404';
 import PostShowContainer from './posts/post_show_container';
 import FollowersContainer from './followings/followers_container';
 import FollowedUsersContainer from './followings/followed_users_container';
+import ExplorePageContainer from './feed/explore_page_container';
+
+
+
 export default class App extends React.Component {
   
   render() {
@@ -41,6 +45,7 @@ export default class App extends React.Component {
           <ProtectedRoute exact path="/followed_users" component={FollowedUsersContainer}/>
           <ProtectedRoute exact path="/users/:userId/followers" component={FollowersContainer}/>
           <ProtectedRoute exact path="/users/:userId/followed_users" component={FollowedUsersContainer}/>
+          <ProtectedRoute exact path="/explore" component={ExplorePageContainer}/>
           <ProtectedRoute exact path="/" component={MainFeed} />
           <ProtectedRoute path="/new/" component={MainFeed} />
           <Route path='/' component={fourOhFour} />

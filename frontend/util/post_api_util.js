@@ -38,4 +38,10 @@ export const deletePost = id => (
   })
 );
 
-
+export const fetchRandomPosts = numPosts => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/explore',
+    data: { num_posts: numPosts }
+  })
+)
