@@ -42,17 +42,29 @@ export default class Post extends React.Component {
 
   postAudio() {
     const {post} = this.props;
-      if(Object.keys(post).length !== 0 && post.postType === 'audio') {
-        debugger
-        return post.images.map((audio,i) => (
-          <li key={i}><audio controls>
-          <source src={audio.url}  />
-          Your browser does not support the audio element.
-          </audio></li>
-        ));
-      }
+    if(Object.keys(post).length !== 0 && post.postType === 'audio') {
+      return post.images.map((audio,i) => (
+        <li key={i}><audio controls>
+        <source src={audio.url}  />
+        Your browser does not support the audio element.
+        </audio></li>
+      ));
     }
+  }
   
+  postVideos() {
+    const {post} = this.props;
+    if(Object.keys(post).length !== 0 && post.postType === 'video') {
+      return post.images.map((video,i) => (
+        <li key={i}>
+          <video width='540' controls>
+          <source src={video.url}  />
+          Your browser does not support the audio element.
+          </video>
+        </li>
+      ));
+    }
+  }
 
   postBody() {
     const {post} = this.props;
@@ -88,6 +100,9 @@ export default class Post extends React.Component {
               </ul>
               <ul>
                 {this.postAudio()}
+              </ul>
+              <ul>
+                {this.postVideos()}
               </ul>
             </li>
             <li className='post-title'>{post.title}</li>
