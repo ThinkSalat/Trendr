@@ -20,6 +20,8 @@ class Api::FollowingsController < ApplicationController
   end
 
   def index
+    @followers = User.find(params[:id]).followers
+    @followed_users = User.find(params[:id]).followed_users
   end
 
   private
