@@ -6,19 +6,31 @@
   // align-content: center;
   // justify-content: center;
   .following-list-item {
-    height: 60px;
+    height: 65px;
     list-style-type: none;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid hsla(0,0%,100%,.07);
+    border-top: 1px solid hsla(0,0%,100%,.07);
+   
     .following-list-item-details {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
 
       height: inherit;
+      .link-wrapper {
+        display: flex;
+        flex-direction: row;
+      }
+      .following-avatar img {
+        width: 65px;
+        height: 65px;
+        border-radius: 4px;
+      }
       .following-list-title {
         min-width: 130px;
       }
-      .following-list-title, .following-list-username {
+     
+      .following-list-title, .following-list-username{
         max-width: 130px;
         position: relative;
         top: 13px;
@@ -26,16 +38,32 @@
         font-size: 13px;
       }
       li {
+        padding-left: 9px;
+        text-decoration: none;
+        color: white;
         height: inherit;
         .following-switcher {
+          text-decoration: none !important;
           position: relative;
+          top: 12px;
           left: 0px;
           border-radius: 3px;
+
         }
       }
     }
     &:hover {
       background-color: hsla(0,0%,100%,.07);
     }
+  }
+}
+.following-list-follows-you { 
+  position: relative;
+  bottom: 9px;
+  right: 45px;
+  text-decoration: none !important;
+  color: white;
+  &:visited {
+    color: white;
   }
 }
