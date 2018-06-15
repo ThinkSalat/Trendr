@@ -5,6 +5,7 @@ import { ProtectedRoute } from '../../util/route_util';
 import ProfilePostContainer from '../posts/profile_post_container';
 import FollowingButtonContainer from './following_button_container';
 import LikesIndexContainer from '../likes/likes_index_container';
+import SideBarContainer from '../feed/side_bar_container';
 
 export default class UserProfile extends React.Component {
   constructor(props) {
@@ -42,24 +43,30 @@ export default class UserProfile extends React.Component {
       </li>;
     });
     return(
-      <div className='user-profile-container'>
-        <ul className='user-profile-info-container-container'>
-          <li className='user-profile-info-container'>
-            <ul className='user-profile-nav'>
-              <li><img className='large-avatar' src={this.props.user.avatar} alt={this.props.user.username}/></li>
-              <li><FollowingButtonContainer currentUser={this.props.currentUser} userId={this.props.userId}/></li>
-              <li> <Link className='likes-link' to={`/users/${this.props.userId}/likes`}>Likes</Link> </li>
-            </ul>
-            <ul className='user-profile-info'>
-              <li>{this.props.user.title}</li>
-              <li>{this.props.user.description}</li>
-              {/* followers, following, likes etc. num followers could go here */}
-              {/* last post created at date */}
-            </ul>
-          </li>
-          {postComponents}
-        </ul>
+      <div className='main-feed-container'>
+        <div className='user-profile-container'>
+      <ul className='user-profile-info-container-container'>
+      <li className='user-profile-info-container'>
+      <ul className='user-profile-nav'>
+      <li><img className='large-avatar' src={this.props.user.avatar} alt={this.props.user.username}/></li>
+      <li><FollowingButtonContainer currentUser={this.props.currentUser} userId={this.props.userId}/></li>
+      <li> <Link className='likes-link' to={`/users/${this.props.userId}/likes`}>Likes</Link> </li>
+      </ul>
+      <ul className='user-profile-info'>
+      <li>{this.props.user.title}</li>
+      <li>{this.props.user.description}</li>
+      {/* followers, following, likes etc. num followers could go here */}
+      {/* last post created at date */}
+      </ul>
+      </li>
+      {postComponents}
+      </ul>
       </div>
+      <div className='main-content-sidebar col-2'>
+      <SideBarContainer />
+      </div>
+      </div>
+      
     );
    }
 }

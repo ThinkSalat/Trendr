@@ -6,7 +6,7 @@
   height: 215px;
   position: relative;
   top: 95px;
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-bottom: 60px;
 
   display: flex;
@@ -105,8 +105,11 @@
 }
 .user-profile-info-container-container {
   position: relative;
-  bottom: 13px;}
+  bottom: 13px;
+}
 
 .user-profile-container {
-
+  position: relative;
+  bottom: 81px;
+  left: 1110px;
 }

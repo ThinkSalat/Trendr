@@ -3,6 +3,8 @@ import { Redirect } from 'react-router-dom';
 
 
 import FeedPostContainer from '../posts/feed_post_container';
+import SideBarContainer from '../feed/side_bar_container';
+
 
 export default class LikesIndex extends React.Component {
   constructor(props) {
@@ -48,6 +50,9 @@ export default class LikesIndex extends React.Component {
             <ul className='feed-posts'>
               {postComponents}
             </ul>
+        </div>
+        <div className='main-content-sidebar col-2'>
+          <SideBarContainer />
         </div>
       </div>
     );
