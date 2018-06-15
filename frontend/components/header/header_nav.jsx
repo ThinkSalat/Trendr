@@ -7,6 +7,9 @@ export default class HeaderNav extends React.Component {
   }
 
   isActive(path) {
+    if (this.props.location.pathname.slice(0,5) === '/new/' && path === '/dashboard'){
+      return 'active';
+    }
     if (this.props.location.pathname === path) {
       return 'active';
     }
