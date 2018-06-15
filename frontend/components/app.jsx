@@ -18,7 +18,8 @@ import UserProfileContainer from './users/user_profile_container';
 import LikesIndexContainer from '../components/likes/likes_index_container';
 import fourOhFour from './errors/404';
 import PostShowContainer from './posts/post_show_container';
-
+import FollowersContainer from './followings/followers_container';
+import FollowedUsersContainer from './followings/followed_users_container';
 export default class App extends React.Component {
   
   render() {
@@ -36,6 +37,10 @@ export default class App extends React.Component {
           <ProtectedRoute exact path="/dashboard" component={MainFeed} />
           <ProtectedRoute exact path="/likes" component={LikesIndexContainer} />
           <ProtectedRoute exact path="/users/:userId/likes" component={LikesIndexContainer}/>
+          <ProtectedRoute exact path="/followers" component={FollowersContainer}/>
+          <ProtectedRoute exact path="/followed_users" component={FollowedUsersContainer}/>
+          <ProtectedRoute exact path="/users/:userId/followers" component={FollowersContainer}/>
+          <ProtectedRoute exact path="/users/:userId/followed_users" component={FollowedUsersContainer}/>
           <ProtectedRoute exact path="/" component={MainFeed} />
           <ProtectedRoute path="/new/" component={MainFeed} />
           <Route path='/' component={fourOhFour} />

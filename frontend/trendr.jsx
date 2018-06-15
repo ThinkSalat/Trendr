@@ -22,6 +22,7 @@ import {
 
   import { getLikedPosts } from './actions/like_actions';
   // import { fetchUser } from './util/user_api_util';
+  import { getFollowedUsers, getFollowers } from './util/following_api_util';
 //END TEST
 
 
@@ -64,6 +65,8 @@ window.createPost = createPost;
 window.updatePost = updatePost;
 window.deletePost = deletePost;
 window.getLikedPosts =getLikedPosts;
+window.getFollowedUsers = getFollowedUsers;
+window.getFollowers = getFollowers;
 //END TEST
 
 

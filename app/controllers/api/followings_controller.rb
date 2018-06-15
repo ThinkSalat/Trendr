@@ -10,7 +10,6 @@ class Api::FollowingsController < ApplicationController
   end
 
   def destroy
-    # byebug
     Following.find_by(
       follower_id: params[:follow][:follower_id],
       followed_id: params[:follow][:followed_id]
@@ -20,12 +19,12 @@ class Api::FollowingsController < ApplicationController
   end
 
   def index
-    @followers = User.find(params[:id]).followers
-    @followed_users = User.find(params[:id]).followed_users
-  end
-
-  private
-  def follow_params
-    params.require(:follow).require(:follower_id, :followed_id)
+    case params[:page]
+    when 'followed_users'
+      @users = User.find(params[:id]).followed_users
+    when 'followers'
+      @users = User.find(params[:id]).followers
+    end
+    render 'api/follows/index'
   end
 end
