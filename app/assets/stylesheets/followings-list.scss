@@ -20,6 +20,7 @@
       .link-wrapper {
         display: flex;
         flex-direction: row;
+        text-decoration: none;
       }
       .following-avatar img {
         width: 65px;
@@ -65,5 +66,6 @@
   color: white;
   &:visited {
     color: white;
+    text-decoration: none !important;
   }
 }
