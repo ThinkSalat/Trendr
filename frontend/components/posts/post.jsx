@@ -118,13 +118,13 @@ export default class Post extends React.Component {
    }
 }
 
-Post.DefaultProps = {
+Post.defaultProps = {
   post: {},
   author: {},
   currentUser:{}
 }
 
-Post.PropTypes = {
+Post.propTypes = {
   post: PropTypes.object,
   author: PropTypes.object,
   postId: PropTypes.number,
