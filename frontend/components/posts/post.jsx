@@ -127,6 +127,6 @@ Post.defaultProps = {
 Post.propTypes = {
   post: PropTypes.object,
   author: PropTypes.object,
-  postId: PropTypes.number,
+  postId: PropTypes.string.isRequired,
   currentUser: PropTypes.object
 }
