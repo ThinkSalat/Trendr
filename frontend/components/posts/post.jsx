@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
+import PropTypes from 'prop-types'; 
 
 import PostBottomNavContainer from './post_bottom_nav_container';
 
@@ -115,4 +116,17 @@ export default class Post extends React.Component {
       </div>
     );
    }
+}
+
+Post.DefaultProps = {
+  post: {},
+  author: {},
+  currentUser:{}
+}
+
+Post.PropTypes = {
+  post: PropTypes.object,
+  author: PropTypes.object,
+  postId: PropTypes.number,
+  currentUser: PropTypes.object
 }
