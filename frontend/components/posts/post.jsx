@@ -80,7 +80,12 @@ export default class Post extends React.Component {
     this.isAvailable();
  
     let { post, author } = this.props;
-   
+    if (author === null) {
+      author = this.props.users[post.userId]
+    }
+    if (author === undefined) {
+      author = {}
+    }
     return(
       <div className={`post-and-avatar-container ${this.isMainFeed()}`}>
         <div className='post-avatar'>
@@ -121,12 +126,13 @@ export default class Post extends React.Component {
 Post.defaultProps = {
   post: {},
   author: {},
-  currentUser:{}
+  postId: 0,
+  currentUser: {}
 }
 
 Post.propTypes = {
   post: PropTypes.object,
   author: PropTypes.object,
-  postId: PropTypes.string.isRequired,
-  currentUser: PropTypes.object
+  currentUser: PropTypes.object,
+  postId: PropTypes.number,
 }

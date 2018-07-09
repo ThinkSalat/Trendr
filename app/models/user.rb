@@ -92,11 +92,15 @@ class User < ApplicationRecord
     through: :follower_records,
     source: :follower
 
-  has_many :followed_users, -> { includes :followed_users_posts },
+  has_many :followed_users, -> { includes :followed_users_posts_random },
     through: :followed_user_records,
     source: :followed
   
-    has_many :followed_users_posts, -> {order('created_at desc').limit(5)},
+    has_many :followed_users_posts_by_date_created, -> {order('created_at desc').limit(5)},
+    through: :followed_users,
+    source: :posts
+
+    has_many :followed_users_posts_random,
     through: :followed_users,
     source: :posts
     
