@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; 
 
 export default class PostBottomNav extends React.Component {
   constructor(props) {
@@ -52,4 +53,17 @@ export default class PostBottomNav extends React.Component {
       </ul>
     );
    }
+}
+
+Post.defaultProps = {
+  post: {},
+  author: {},
+  currentUser: {}
+}
+
+Post.propTypes = {
+  post: PropTypes.object,
+  author: PropTypes.object,
+  currentUser: PropTypes.object,
+  postId: PropTypes.number,
 }

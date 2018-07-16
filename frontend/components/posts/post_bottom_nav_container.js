@@ -4,8 +4,8 @@ import PostBottomNav from './post_bottom_nav';
 import { unlikePost, likePost } from '../../actions/like_actions';
 
 const mapStateToProps = ({entities: { posts, users }, session: { id } }, { postId }) => {
-  const post = posts[postId] || {};
-  const currentUser = users[id] || {};
+  const post = posts[postId];
+  const currentUser = users[id];
   return {
     post,
     currentUser
