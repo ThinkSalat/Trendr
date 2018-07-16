@@ -6,8 +6,8 @@ import { fetchPost, updatePost, deletPost } from '../../actions/post_actions';
 
 import Post from './post';
 
-const mapStateToProps = ({ entities: { posts, users }, session: { id } }, {post, author}) => {
-  const currentUser = users[id] || {};
+const mapStateToProps = ({ entities: { users }, session: { id } }, {post, author}) => {
+  const currentUser = users[id];
   author = author || users[post.userId];
   return {
     post,

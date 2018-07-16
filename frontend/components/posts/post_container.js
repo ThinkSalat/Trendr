@@ -8,15 +8,14 @@ import Post from './post';
 
 const mapStateToProps = ({ entities: { posts, users }, session: { id } }, { match: { params: { postId } } }) => {
   const post = posts[postId];
-  const author = post ? users[post.userId] : null;
+  const author = post ? users[post.userId] : undefined;
   const currentUser = users[id];
 
   return {
     post,
     author,
     postId,
-    currentUser,
-    users
+    currentUser
   };
 };
 
