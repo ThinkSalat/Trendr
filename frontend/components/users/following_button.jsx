@@ -1,6 +1,11 @@
 import React from 'react';
 
 export default class FollowingButton extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { following: this.following() }
+  }
+
   following() {
     return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId));
   }
@@ -11,20 +16,33 @@ export default class FollowingButton extends React.Component {
     }};
   }
 
-  changeFollowStatus() {
-   if (this.following()) {
-     this.props.unfollowUser(this.follow());
+   changeFollowStatus() {
+     console.log(this.state.following, 'following or not');
+   if (this.state.following) {
+     this.setState({following: false})
+      this.props.unfollowUser(this.follow());
     } else { 
-      this.props.followUser(this.follow());
+      this.setState({following: true})
+       this.props.followUser(this.follow());
     }
   }
+  // changeFollowStatus() {
+  //  if (this.following()) {
+  //    this.setState({following: false})
+  //    this.props.unfollowUser(this.follow());
+  //   } else { 
+  //     this.setState({following: true})
+  //     this.props.followUser(this.follow());
+  //   }
+  // }
 
   followDisplay() {
-    return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId)) ?  'Unfollow' : 'Follow'; 
+    // return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId)) ?  'Unfollow' : 'Follow'; 
+    return this.state.following ?  'Unfollow' : 'Follow'; 
   }
   render() {
     return(
-      <div className='following-switcher' onClick={() => this.changeFollowStatus()}>{this.followDisplay()}</div>
+      <div className='following-switcher' onClick={() => this.changeFollowStatus.bind(this)}>{this.followDisplay()}</div>
     );
    }
 }

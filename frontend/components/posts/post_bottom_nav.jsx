@@ -55,12 +55,12 @@ export default class PostBottomNav extends React.Component {
    }
 }
 
-Post.defaultProps = {
+PostBottomNav.defaultProps = {
   post: {},
   currentUser: {}
 }
 
-Post.propTypes = {
+PostBottomNav.propTypes = {
   post: PropTypes.object,
   currentUser: PropTypes.object
 }
