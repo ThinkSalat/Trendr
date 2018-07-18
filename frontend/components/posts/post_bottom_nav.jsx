@@ -14,7 +14,7 @@ export default class PostBottomNav extends React.Component {
     this.props.unlikePost(
       parseInt(this.props.currentUser.id), 
       parseInt(this.props.post.id)
-    ).then( succ => {
+    ).then( () => {
       this.setState({liked: false});
     })
   }

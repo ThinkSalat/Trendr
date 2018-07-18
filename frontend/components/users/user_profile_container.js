@@ -4,14 +4,11 @@ import UserProfile from './user_profile';
 import { fetchUser } from '../../actions/user_actions';
 
 const mapStateToProps = ({ entities: { users, posts }, session: { id }}, { match: { params: { userId } } }) => {
-  posts = posts || {};
-  const user = users[userId] || {};
-  const currentUser = users[id] || {}
   return {
     posts,
-    user,
+    user: users[userId],
     userId,
-    currentUser
+    currentUser: users[id]
   };
 };
 

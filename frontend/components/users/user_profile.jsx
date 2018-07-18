@@ -1,10 +1,9 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
-import { ProtectedRoute } from '../../util/route_util';
+import PropTypes from 'prop-types'; 
 
 import ProfilePostContainer from '../posts/profile_post_container';
 import FollowingButtonContainer from './following_button_container';
-import LikesIndexContainer from '../likes/likes_index_container';
 import SideBarContainer from '../feed/side_bar_container';
 
 export default class UserProfile extends React.Component {
@@ -29,8 +28,8 @@ export default class UserProfile extends React.Component {
     if (newProps.match.params.userId !== this.props.userId) {
       this.props.fetchUser(newProps.userId)
       .then( 
-        succ => window.scrollTo(0, 0), 
-        err => this.setState({isAvailable: false})
+        () => window.scrollTo(0, 0), 
+        () => this.setState({isAvailable: false})
       );
     }
   }
@@ -90,4 +89,17 @@ export default class UserProfile extends React.Component {
       
     );
    }
+}
+
+UserProfile.defaultProps = {
+  posts: {},
+  user: {},
+  currentUser: {}
+}
+
+UserProfile.propTypes = {
+  posts: PropTypes.object,
+  user: PropTypes.object,
+  currentUser: PropTypes.object,
+  userId: PropTypes.number,
 }
