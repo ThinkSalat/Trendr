@@ -22,12 +22,12 @@ export default class HeaderNav extends React.Component {
   render() {
     return(
       <div className='header-nav'>
-        <Link to='/' className={this.isActive('/dashboard')} >&#59980;</Link>
-        <Link to='/explore' className={this.isActive('/explore')} >&#59963;</Link>
-        <Link to='#' className={this.isActive()} >&#59990;</Link>
-        <Link to='#' className={this.isActive()} >&#59996;</Link>
-        <Link to='#' className={this.isActive()} >&#59905;</Link>
-        <Link to={this.userProfile()} className={this.isActive(this.userProfile())} >&#60070;</Link>
+        <Link title='Home' to='/' className={this.isActive('/dashboard')} >&#59980;</Link>
+        <Link title='Explore' to='/explore' className={this.isActive('/explore')} >&#59963;</Link>
+        <Link title='Messages (not implemented)' to='#' className={this.isActive()} >&#59990;</Link>
+        <Link title='Chat (not implemented)' to='#' className={this.isActive()} >&#59996;</Link>
+        <Link title='Notifications (not implemented)' to='#' className={this.isActive()} >&#59905;</Link>
+        <Link title='Profile' to={this.userProfile()} className={this.isActive(this.userProfile())} >&#60070;</Link>
       </div>
     );
    }
