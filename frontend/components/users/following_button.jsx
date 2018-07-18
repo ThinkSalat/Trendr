@@ -9,7 +9,7 @@ export default class FollowingButton extends React.Component {
   following() {
     return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId));
   }
-  
+
   followInfo() {
     return {follow: {
       follower_id: this.props.currentUser.id,
@@ -28,8 +28,7 @@ export default class FollowingButton extends React.Component {
   }
 
   followDisplay() {
-    // return this.props.currentUser.followedUsers.includes(parseInt(this.props.userId)) ?  'Unfollow' : 'Follow'; 
-    return this.state.following ?  'Unfollow' : 'Follow'; 
+    return this.state.following ?  'Unfollow' : 'Follow';
   }
   render() {
     return(
