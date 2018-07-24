@@ -58,7 +58,7 @@ class SignUpForm extends React.Component {
           <div className='personal-icons'>
             <a href='https://github.com/ThinkSalat' target='_blank'><i className="fab fa-github-square github"></i></a>
             <a href='https://www.linkedin.com/in/shawnsalat/' target='_blank'><i className="fab fa-linkedin linkedin"></i></a>
-            <a href='http://thinksalat.com/' target='_blank'><i className="fas fa-portrait portfolio"></i></a>
+            <a href='http://shawnsalat.com/' target='_blank'><i className="fas fa-portrait portfolio"></i></a>
           </div>
         </div>
       </div>
