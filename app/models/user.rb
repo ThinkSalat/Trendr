@@ -70,7 +70,7 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6, allow_nil: true, message: ' must be at least 6 characters'}
 
   after_create :ensure_following_self
-  after_save :reset_demo_user
+  # after_save :reset_demo_user
 
   before_save :ensure_avatar
   before_validation :downcase_fields
