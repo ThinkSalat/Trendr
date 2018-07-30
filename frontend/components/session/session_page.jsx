@@ -28,7 +28,7 @@ export default class SessionPage extends React.Component {
             <Link to="/login" onClick={() => this.props.clearErrors()} className="login-button">Log In</Link>
           </div>
           <div>
-            <Link to="/dashboard" onClick={() => this.props.demoLogin()} className="demo-button">Demo Login</Link>
+            <Link to="/" onClick={() => this.props.demoLogin()} className="demo-button">Demo Login</Link>
           </div>
           <div className='personal-icons'>
             <a className='animated rubberBand' href='https://github.com/ThinkSalat' target='_blank'><i className="fab fa-github-square github "></i></a>
