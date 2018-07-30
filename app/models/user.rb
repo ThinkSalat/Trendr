@@ -69,9 +69,9 @@ class User < ApplicationRecord
   validates_presence_of :password_digest
   validates :password, length: { minimum: 6, allow_nil: true, message: ' must be at least 6 characters'}
 
-  after_create :follow_default_users, :ensure_following_self
+  after_create :ensure_following_self
   after_save :reset_demo_user
-  
+
   before_save :ensure_avatar
   before_validation :downcase_fields
   before_validation :ensure_session_token
