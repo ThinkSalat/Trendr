@@ -69,8 +69,8 @@ class User < ApplicationRecord
   validates_presence_of :password_digest
   validates :password, length: { minimum: 6, allow_nil: true, message: ' must be at least 6 characters'}
 
-  after_create :ensure_following_self
-  # after_save :reset_demo_user
+  after_create :ensure_following_self, :follow_default_users
+  after_save :reset_demo_user
 
   before_save :ensure_avatar
   before_validation :downcase_fields
@@ -170,7 +170,6 @@ class User < ApplicationRecord
       Following.create(follower_id: id, followed_id: id)
       default_users.each do |blog_name|
         blog_id = User.find_by_username(blog_name).id
-        # byebug
         Following.create(follower_id: self.id, followed_id: blog_id)
       end
       Post.create(post_type: 'text', title: "Hello!", body: "Welcome to my page!", user_id: id)
