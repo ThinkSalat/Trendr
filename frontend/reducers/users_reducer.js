@@ -12,7 +12,8 @@ import {
   FOLLOW_USER, 
   UNFOLLOW_USER,
   RECEIVE_FOLLOWERS,
-  RECEIVE_FOLLOWED_USERS } from '../actions/following_actions';
+  RECEIVE_FOLLOWED_USERS, 
+  REMOVE_FOLLOWERS} from '../actions/following_actions';
 
 const usersReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -28,6 +29,8 @@ const usersReducer = (state = {}, action) => {
     case RECEIVE_FOLLOWERS:
     case RECEIVE_FOLLOWED_USERS:
       return merge({},state, action.users);
+    case REMOVE_FOLLOWERS:
+      return {};
     default:
       return state;
   }

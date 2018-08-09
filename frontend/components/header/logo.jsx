@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { log } from 'util';
 
 export default class Logo extends React.Component {
   constructor(props) {

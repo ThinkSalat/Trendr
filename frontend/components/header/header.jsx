@@ -10,8 +10,6 @@ class Header extends React.Component {
   //conditionally render navbar
   renderHeaderSessionButton() {
     switch (this.props.location.pathname){
-      // case '/dashboard':
-      //   return <button className='header-session-link' onClick={() => this.props.logout()}> Log out </button>;
       case '/signup':
         return <Link className='header-session-link' to='/login' onClick={() => this.props.clearErrors()} > Log in </Link>;
       case '/login':
