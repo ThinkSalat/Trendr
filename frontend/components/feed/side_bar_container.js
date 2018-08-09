@@ -2,8 +2,6 @@ import { connect } from 'react-redux';
 
 import Sidebar from './sidebar';
 
-import { removeFollowers } from '../../actions/following_actions'
-
 const mapStateToProps = (state, ownProps) => {
   return {
     
@@ -12,7 +10,6 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    removeFollowers: () => dispatch(removeFollowers())
   };
 };
 
