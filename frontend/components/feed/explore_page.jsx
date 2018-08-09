@@ -12,7 +12,6 @@ export default class ExplorePage extends React.Component {
     window.scrollTo(0, 0);
     this.props.getRandomPosts(5);
   }
-
   
   render() {
 

@@ -69,7 +69,7 @@ export default class Post extends React.Component {
 
   postBody() {
     const {post} = this.props;
-    if (post.postType === 'text') {
+    if (['text', 'chat'].includes(post.postType)) {
       return <li className='text-post-body' dangerouslySetInnerHTML={{__html: post.body}}></li>;
     } else {
      return <li className='post-body' dangerouslySetInnerHTML={{__html: post.summary}}></li>;
