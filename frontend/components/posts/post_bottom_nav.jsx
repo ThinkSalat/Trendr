@@ -44,9 +44,9 @@ export default class PostBottomNav extends React.Component {
         <li>{this.props.post.numberNotes} Notes</li>
         <li>
           <ul className='post-bottom-nav-icons'>
-            <li className='post-control' alt='Share'>&#59906;</li>
+            {/* <li className='post-control' alt='Share'>&#59906;</li>
             <li className='post-control'>&#60054;</li>
-            <li className='post-control'>&#60047;</li>
+            <li className='post-control'>&#60047;</li> */}
             {this.likeIcon()}
           </ul>
         </li>
