@@ -3,7 +3,11 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.1'
+
 gem 'image_processing', '~> 1.2'
+
+# search
+gem 'pg_search'
 
 # allows easy searching models by specified columns 
 gem 'pg_search'

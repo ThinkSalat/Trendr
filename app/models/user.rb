@@ -111,6 +111,9 @@ class User < ApplicationRecord
   
   has_many :posts, -> {order('created_at desc').limit(5)}
 
+  # Search
+  include PgSearch
+
   def downcase_fields
     self.username.downcase!
     self.email.downcase!
