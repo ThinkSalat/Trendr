@@ -113,8 +113,7 @@ class User < ApplicationRecord
 
   # Search
   include PgSearch
-  pg_search_scope :search_by_title, :against => :title
-  pg_search_scope :search_by_username, :against => :username
+  multisearchable :against => [:title, :username]
 
   def downcase_fields
     self.username.downcase!
