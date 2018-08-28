@@ -62,6 +62,7 @@ end
 class User < ApplicationRecord
   attr_reader :password
 
+  # Validations
   validates_with EmailValidator, fields: [:email], on: :create
   validates_with UsernameValidator, fields: [:username], on: :create
 
@@ -76,6 +77,7 @@ class User < ApplicationRecord
   before_validation :downcase_fields
   before_validation :ensure_session_token
 
+  # Associations
   has_one_attached :avatar
 
   has_many :followed_user_records, -> { includes :followed },
@@ -96,11 +98,11 @@ class User < ApplicationRecord
     through: :followed_user_records,
     source: :followed
   
-    has_many :followed_users_posts_by_date_created, -> {order('created_at desc').limit(5)},
+  has_many :followed_users_posts_by_date_created, -> {order('created_at desc').limit(5)},
     through: :followed_users,
     source: :posts
 
-    has_many :followed_users_posts_random,
+  has_many :followed_users_posts_random,
     through: :followed_users,
     source: :posts
     
@@ -113,8 +115,11 @@ class User < ApplicationRecord
 
   # Search
   include PgSearch
-  multisearchable :against => [:title, :username]
+  pg_search_scope :search,
+    against: [:title, :username],
+    using: {tsearch: {prefix: true}}
 
+  # Methods
   def downcase_fields
     self.username.downcase!
     self.email.downcase!
