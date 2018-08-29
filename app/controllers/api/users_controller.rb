@@ -29,7 +29,6 @@ class Api::UsersController < ApplicationController
   
   def search
     @users = User.search(params[:query])
-    # byebug
     render 'api/users/search'
   end
 

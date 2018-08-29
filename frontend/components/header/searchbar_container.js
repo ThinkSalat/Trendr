@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import SearchBar from './searchbar';
 import { search } from '../../actions/search_actions'
 
-const mapStateToProps = ({ session, entities: { users } }) => {
+const mapStateToProps = ({ search: {results} }) => {
   return {
-
+    results
   };
 };
 

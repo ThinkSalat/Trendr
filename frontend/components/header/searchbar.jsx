@@ -4,18 +4,12 @@ export default class SearchBar extends React.Component {
 
   search(e) {
     e.preventDefault();
-    let query = e.currentTarget.value;
-    // console.log(query);
-    // pass to rails
-    window.search = this.props.search
-    this.props.search(query).then( res => {
-      debugger
-    }, res => {
-      debugger
-    })
+    this.props.search(e.currentTarget.value)
   }
 
   render() {
+    const { results } = this.props;
+    window.results = results;
     return(
       <div>
         <input onInput={this.search.bind(this)} className='searchbar' type="text" placeholder='Search Trendr (in progress)'/>
