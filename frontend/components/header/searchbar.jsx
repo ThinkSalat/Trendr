@@ -7,7 +7,7 @@ class SearchResultItem extends React.Component {
     return (
       <Link to={`/users/${user.id}`}>
         <li className="search-result-item" key={user.id}> 
-            <span>{user.title}</span> <span>{user.username}</span> <img src={user.avatar} className="search-result-avatar"/> 
+            <span>{user.title || user.username}</span> <img src={user.avatar} className="search-result-avatar"/> 
         </li>
       </Link>
     )
@@ -15,10 +15,6 @@ class SearchResultItem extends React.Component {
 }
 
 export default class SearchBar extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { focused: false }
-  }
 
   search(e) {
     e.preventDefault();
@@ -27,10 +23,9 @@ export default class SearchBar extends React.Component {
   }
 
   displayResults() {
-    if (!this.state.focused) return null;
     let { results } = this.props;
     if (!Object.keys(results).length) {
-      return <li>no results for this search</li>;
+      return null;
     } else {
       return Object.values(results).map ( user => {
         return <SearchResultItem user={user}/>
