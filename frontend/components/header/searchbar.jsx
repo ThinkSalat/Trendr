@@ -3,7 +3,7 @@ import React from 'react';
 class SearchResultItem extends React.Component {
   render() {
     const { user } = this.props
-    return <li> {user.title} {user.username} <img src={user.avatar} className="search-result-avatar"/> </li>
+    return <li className="search-result-item" key={user.id}> {user.title} {user.username} <img src={user.avatar} className="search-result-avatar"/> </li>
   }
 }
 
@@ -37,7 +37,7 @@ export default class SearchBar extends React.Component {
         <input onInput={this.search.bind(this)} className='searchbar' type="text" placeholder='Search Trendr (in progress)'/>
         <i className="fas fa-search searchbar-icon"></i>
         <div className="search-results">
-          <ul>
+          <ul className='search-results'>
             {this.displayResults()}
           </ul>
         </div>
