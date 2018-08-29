@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom';
 class SearchResultItem extends React.Component {
   render() {
     const { user } = this.props
-    return <li className="search-result-item" key={user.id}> 
+    return (
       <Link to={`/users/${user.id}`}>
-        {user.title} {user.username} <img src={user.avatar} className="search-result-avatar"/> 
+        <li className="search-result-item" key={user.id}> 
+            <span>{user.title}</span> <span>{user.username}</span> <img src={user.avatar} className="search-result-avatar"/> 
+        </li>
       </Link>
-    </li>
+    )
   }
 }
 
@@ -39,7 +41,7 @@ export default class SearchBar extends React.Component {
   render() {
     return(
       <div>
-        <input onInput={this.search.bind(this)} className='searchbar' type="text" placeholder='Search Trendr (in progress)'/>
+        <input onInput={this.search.bind(this)} className='searchbar' type="text" placeholder='Search Trendr'/>
         <i className="fas fa-search searchbar-icon"></i>
         <div className="search-results">
           <ul className='search-results'>
