@@ -6,7 +6,7 @@ export const search = () => dispatch => (
   SearchAPIUtil.search().then(res => dispatch(searchActionCreator(res)))
 );
 
-const searchActionCreator = ({userSearchResults}) => ({
+const searchActionCreator = ({results}) => ({
   type: SEARCH,
-  userSearchResults
+  results
 })
