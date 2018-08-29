@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     resource :session, only: [:create, :destroy, :show]
     resources :users, only: [:create, :update, :show]
+    get 'users/search/:query', to: 'users#search'
     resources :posts, only: [:create, :update, :show, :index, :destroy]
     resources :followings, only: [:create, :index]
     delete 'followings(.:format)', to: 'followings#destroy'

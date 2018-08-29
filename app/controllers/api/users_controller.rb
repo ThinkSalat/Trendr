@@ -25,6 +25,11 @@ class Api::UsersController < ApplicationController
       render json: @user.errors.full_messages, status: 422
     end
   end
+  
+  def search
+    @users = User.search(params[:query])
+    render json: 'api/users/search'
+  end
 
   private
   def user_params
