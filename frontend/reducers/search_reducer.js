@@ -5,7 +5,11 @@ const searchReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case SEARCH:
-      return action.results
+      if (!action.results) {
+        return {};
+      } else {
+        return action.results
+      }
     default:
       return state;
   }
