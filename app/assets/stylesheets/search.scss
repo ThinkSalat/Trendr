@@ -3,12 +3,19 @@
   width: 590px;
   left: 30px;
   top: 30px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  & a:last-child li {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
 }
 
 .search-result-avatar {
-  height: 45px;
-  width: 45px;
-  border-radius: 2px;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius: 3px;
 }
 
 .search-result-item {
@@ -18,8 +25,20 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 18px;
+  &:hover {
+    background-color: #e6eff7;
+  }
 }
+
 a  {
   text-decoration: none;
   color: #444444;
 }
+
+.searchbar:focus ~ .search-results, .search-results:hover {
+  visibility: visible;
+}
+.searchbar:not(:focus) ~ .search-results {
+  visibility: hidden;
+}
+
