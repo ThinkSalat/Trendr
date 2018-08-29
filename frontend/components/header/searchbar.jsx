@@ -1,9 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SearchResultItem extends React.Component {
   render() {
     const { user } = this.props
-    return <li className="search-result-item" key={user.id}> {user.title} {user.username} <img src={user.avatar} className="search-result-avatar"/> </li>
+    return <li className="search-result-item" key={user.id}> 
+      <Link to={`/users/${user.id}`}>
+        {user.title} {user.username} <img src={user.avatar} className="search-result-avatar"/> 
+      </Link>
+    </li>
   }
 }
 
