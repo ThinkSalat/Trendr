@@ -7,8 +7,12 @@ export default class SearchBar extends React.Component {
     let query = e.currentTarget.value;
     // console.log(query);
     // pass to rails
-    let results = this.props.search(query)
-    console.log(results);
+    window.search = this.props.search
+    this.props.search(query).then( res => {
+      debugger
+    }, res => {
+      debugger
+    })
   }
 
   render() {

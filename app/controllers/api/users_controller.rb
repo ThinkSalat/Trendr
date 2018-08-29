@@ -1,3 +1,4 @@
+require 'byebug'
 class Api::UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
 
@@ -28,7 +29,8 @@ class Api::UsersController < ApplicationController
   
   def search
     @users = User.search(params[:query])
-    render json: 'api/users/search'
+    # byebug
+    render 'api/users/search'
   end
 
   private
