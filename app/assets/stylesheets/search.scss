@@ -1,0 +1,24 @@
+.search-results {
+  position: absolute;
+  width: 590px;
+  left: 30px;
+}
+
+.search-result-avatar {
+  height: 45px;
+  width: 45px;
+  border-radius: 2px;
+}
+
+.search-result-item {
+  background-color: #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+}
+a  {
+  text-decoration: none;
+  color: #444444;
+}

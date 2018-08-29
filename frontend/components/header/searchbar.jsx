@@ -1,21 +1,53 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+class SearchResultItem extends React.Component {
+  render() {
+    const { user } = this.props
+    return (
+      <Link to={`/users/${user.id}`}>
+        <li className="search-result-item" key={user.id}> 
+            <span>{user.title}</span> <span>{user.username}</span> <img src={user.avatar} className="search-result-avatar"/> 
+        </li>
+      </Link>
+    )
+  }
+}
 
 export default class SearchBar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { focused: false }
+  }
 
   search(e) {
     e.preventDefault();
-    let query = e.currentTarget.value;
-    // console.log(query);
-    // pass to rails
-    let results = this.props.search(query)
-    console.log(results);
+    this.setState({focused: true})
+    this.props.search(e.currentTarget.value)
+  }
+
+  displayResults() {
+    if (!this.state.focused) return null;
+    let { results } = this.props;
+    if (!Object.keys(results).length) {
+      return <li>no results for this search</li>;
+    } else {
+      return Object.values(results).map ( user => {
+        return <SearchResultItem user={user}/>
+      })
+    }
   }
 
   render() {
     return(
       <div>
-        <input onInput={this.search.bind(this)} className='searchbar' type="text" placeholder='Search Trendr (in progress)'/>
+        <input onInput={this.search.bind(this)} className='searchbar' type="text" placeholder='Search Trendr'/>
         <i className="fas fa-search searchbar-icon"></i>
+        <div className="search-results">
+          <ul className='search-results'>
+            {this.displayResults()}
+          </ul>
+        </div>
       </div>
     );
   }

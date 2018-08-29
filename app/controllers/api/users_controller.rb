@@ -1,3 +1,4 @@
+require 'byebug'
 class Api::UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
 
@@ -24,6 +25,11 @@ class Api::UsersController < ApplicationController
     else
       render json: @user.errors.full_messages, status: 422
     end
+  end
+  
+  def search
+    @users = User.search(params[:query])
+    render 'api/users/search'
   end
 
   private
