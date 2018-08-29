@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import SearchBar from './searchbar';
+import { search } from '../../actions/search_actions'
 
 const mapStateToProps = ({ session, entities: { users } }) => {
   return {
@@ -9,7 +10,7 @@ const mapStateToProps = ({ session, entities: { users } }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-
+  search: query => dispatch(search(query))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
