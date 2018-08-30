@@ -18,7 +18,6 @@ export default class SearchBar extends React.Component {
 
   search(e) {
     e.preventDefault();
-    this.setState({focused: true})
     this.props.search(e.currentTarget.value)
   }
 

@@ -5,8 +5,7 @@ import logger from 'redux-logger';
 import rootReducer from '../reducers/root_reducer';
 
 const middlewares = [thunk];
-// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const composeEnhancers = compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 if (process.env.NODE_ENV !== 'production') {
   // must use 'require' (import only allowed at top of file)
