@@ -2,7 +2,7 @@
   position: absolute;
   width: 590px;
   left: 30px;
-  top: 30px;
+  top: 30.5px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   & a:last-child li {
@@ -27,6 +27,10 @@
   font-size: 18px;
   &:hover {
     background-color: #e6eff7;
+  }
+  & div {
+    align-self: center;
+    margin-left: 10px;
   }
 }
 

@@ -7,7 +7,7 @@ class SearchResultItem extends React.Component {
     return (
       <Link to={`/users/${user.id}`}>
         <li className="search-result-item" key={user.id}> 
-            <span>{user.title || user.username}</span> <img src={user.avatar} className="search-result-avatar"/> 
+            <div>{user.title || user.username}</div> <img src={user.avatar} className="search-result-avatar"/> 
         </li>
       </Link>
     )
