@@ -23,7 +23,8 @@ class Api::PostsController < ApplicationController
   end
   
   def index
-    @posts = current_user.followed_users_posts_random.sample(10)
+    # @posts = current_user.followed_users_posts_random.sample(10)
+    @posts = current_user.followed_users_posts_by_date_created
     render 'api/posts/index'
   end
 
