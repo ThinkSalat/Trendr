@@ -1,6 +1,8 @@
 import React from 'react';
 import { Switch, Link } from 'react-router-dom';
 import { ProtectedRoute } from '../../util/route_util';
+import Infinite from 'react-infinite';
+
 
 import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';

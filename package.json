@@ -18,6 +18,7 @@
     "react-dom": "^16.4.0",
     "react-dropzone": "^4.2.11",
     "react-dropzone-s3-uploader": "^1.1.0",
+    "react-infinite": "^0.13.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-thunk": "^1.0.0",
