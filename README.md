@@ -24,4 +24,4 @@ Trendr is filled with colorful blogs and content. Users can use the explore page
 
 ![explore](https://github.com/ThinkSalat/Trendr/blob/master/Documents/readme%20files/explore.gif?raw=true)
 
-Future updates will include: Tags, search, collections, infinite scroll, upload photos by url, soundcloud and spotify integration.
+Future updates will include: Tags, collections, infinite scroll, upload photos by url, soundcloud and spotify integration.
