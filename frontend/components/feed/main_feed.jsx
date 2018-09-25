@@ -10,15 +10,21 @@ import FeedPostContainer from '../posts/feed_post_container';
 import SideBarContainer from '../feed/side_bar_container.js';
 
 export default class MainFeed extends React.Component {
-
+  constructor(props){
+    super(props)
+    this.state = {
+      loadingInfiniteScroll: false,
+      offset: 0
+    } 
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
+    this.props.fetchPosts().then( () => window.scrollTo(0, 0));
   }
 
   componentWillReceiveProps(newProps) {
     if (newProps.location.pathname !== this.props.location.pathname) {
-      this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
+      this.props.fetchPosts().then( () => window.scrollTo(0, 0));
     }
   }
 
@@ -51,11 +57,6 @@ export default class MainFeed extends React.Component {
                 <ProtectedRoute exact path='/new/video' component={(props) => <FormContainer {...props} postType={'video'} />}  />
               </Switch>
             </li>
-
-            <div className='main-feed'>  {/*  <MainFeedContainer /> */}
-              <div></div>
-              <div></div>
-            </div>
             <ul className='feed-posts'>
               {postComponents}
             </ul>
