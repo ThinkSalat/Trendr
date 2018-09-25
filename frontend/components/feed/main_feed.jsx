@@ -1,8 +1,6 @@
 import React from 'react';
 import { Switch, Link } from 'react-router-dom';
 import { ProtectedRoute } from '../../util/route_util';
-import Infinite from 'react-infinite';
-
 
 import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';
@@ -12,6 +10,7 @@ import SideBarContainer from '../feed/side_bar_container.js';
 export default class MainFeed extends React.Component {
   constructor(props){
     super(props)
+    window.lnp = this.props.loadNextPosts
     this.state = {
       loadingInfiniteScroll: false,
       offset: 0
@@ -20,9 +19,16 @@ export default class MainFeed extends React.Component {
 
   onScroll() {
      if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      // uncoment when created
-      // this.props.loadNextPosts();
-      
+      this.setState( { loadingInfiniteScroll: true }, _ => {
+        this.props.loadNextPosts(this.state.offset)
+       })
+      // this.setState( { loadingInfiniteScroll: true }, _ =>
+      //  this.props.loadNextPosts(this.state.offset).then( _ => {
+      //   this.setState( {
+      //     loadingInfiniteScroll: false,
+      //     offest: this.state.offset + 5
+      //   })
+      // }))
     }
   }
 
@@ -40,6 +46,12 @@ export default class MainFeed extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.onScroll.bind(this), false);
+  }
+
+  loading() {
+    if (this.state.loadingInfiniteScroll) {
+     return
+    }
   }
 
    render() {
@@ -74,6 +86,7 @@ export default class MainFeed extends React.Component {
             <ul className='feed-posts'>
               {postComponents}
             </ul>
+            {this.loading()}
           </ol>
         </div>
         <div className='main-content-sidebar col-2'>

@@ -1,7 +1,8 @@
-export const fetchPosts = filter => (
+export const fetchPosts = (filter, offset = 0) => (
   $.get({
     url: 'api/posts',
-    date: { filter }
+    date: { filter },
+    offset
   })
 );
 
@@ -20,7 +21,6 @@ export const createPost = post => {
 };
 
 // for photos
-
 
 //update this to match createPost
 export const updatePost = post => (

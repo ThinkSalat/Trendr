@@ -1,8 +1,8 @@
 import * as PostAPIUtil from '../util/post_api_util';
 
-export const RECEIVE_ALL_POSTS = 'RECEIVE_ALL_POSTS';
 export const RECEIVE_POST = 'RECEIVE_POST';
 export const RECEIVE_POSTS = 'RECEIVE_POSTS';
+export const RECEIVE_NEXT_POSTS = 'RECEIVE_NEXT_POSTS';
 export const REMOVE_POST = 'REMOVE_POST';
 
 export const fetchPosts = () => dispatch => (
@@ -20,13 +20,21 @@ export const updatePost = post => dispatch => (
 export const deletePost = postId => dispatch => (
   PostAPIUtil.deletePost(postId).then(post => dispatch(removePost(post.id)))
 );
-
 export const fetchRandomPosts = numPosts => dispatch => (
   PostAPIUtil.fetchRandomPosts(numPosts).then(res => dispatch(receivePosts(res)))
+);
+export const fetchNextPosts = offset => dispatch => (
+  PostAPIUtil.fetchPosts(offset).then(res => dispatch(addPostsToState(res)))
 );
 
 const receivePosts = ({ posts, users }) => ({
   type: RECEIVE_POSTS,
+  posts,
+  users
+})
+
+const addPostsToState = ({ posts, users }) => ({
+  type: RECEIVE_NEXT_POSTS,
   posts,
   users
 })
