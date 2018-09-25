@@ -24,7 +24,6 @@ class Api::PostsController < ApplicationController
   
   def index
     # will have to select .where(date: params[:date])
-
     @posts = current_user.followed_users_posts_by_date_created.offset(params[:offset])
     render 'api/posts/index'
   end

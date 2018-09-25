@@ -24,7 +24,7 @@ export const fetchRandomPosts = numPosts => dispatch => (
   PostAPIUtil.fetchRandomPosts(numPosts).then(res => dispatch(receivePosts(res)))
 );
 export const fetchNextPosts = offset => dispatch => (
-  PostAPIUtil.fetchPosts(offset).then(res => dispatch(addPostsToState(res)))
+  PostAPIUtil.fetchPosts(null, offset).then(res => dispatch(addPostsToState(res)))
 );
 
 const receivePosts = ({ posts, users }) => ({

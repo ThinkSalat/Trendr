@@ -16,6 +16,7 @@ const postsReducer = (state = {}, action) => {
     case RECEIVE_USER:
       return action.posts || {};
     case RECEIVE_NEXT_POSTS:
+      console.log('merge', merge(state,action.posts))
       return merge(state, action.posts)
     case RECEIVE_POST:
     case UNLIKE_POST:
