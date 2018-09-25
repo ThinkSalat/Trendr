@@ -17,8 +17,18 @@ export default class MainFeed extends React.Component {
       offset: 0
     } 
   }
+
+  onScroll() {
+     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      // uncoment when created
+      // this.props.loadNextPosts();
+      
+    }
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0);
+    window.addEventListener('scroll', this.onScroll.bind(this), false);
     this.props.fetchPosts().then( () => window.scrollTo(0, 0));
   }
 
@@ -26,6 +36,10 @@ export default class MainFeed extends React.Component {
     if (newProps.location.pathname !== this.props.location.pathname) {
       this.props.fetchPosts().then( () => window.scrollTo(0, 0));
     }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll.bind(this), false);
   }
 
    render() {
