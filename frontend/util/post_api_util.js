@@ -1,8 +1,7 @@
 export const fetchPosts = (filter, offset = 0) => (
   $.get({
-    url: 'api/posts',
-    date: { filter },
-    offset
+    url: `api/posts?offset=${offset}`,
+    data: { filter }
   })
 );
 

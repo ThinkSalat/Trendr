@@ -23,16 +23,9 @@ class Api::PostsController < ApplicationController
   end
   
   def index
-    # here will implement infinte scroll
-    offset = params[:offset] || 0
-    puts '==============='
-    puts '==============='
-    puts '==============='
-    puts params[:offset]
-    puts '==============='
-    puts '==============='
-    puts '==============='
-    @posts = current_user.followed_users_posts_by_date_created.offset(offset)
+    # will have to select .where(date: params[:date])
+
+    @posts = current_user.followed_users_posts_by_date_created.offset(params[:offset])
     render 'api/posts/index'
   end
 

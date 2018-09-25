@@ -13,7 +13,8 @@ export default class MainFeed extends React.Component {
     window.lnp = this.props.loadNextPosts
     this.state = {
       loadingInfiniteScroll: false,
-      offset: 0
+      offset: 0,
+      date: new Date()
     } 
   }
 
