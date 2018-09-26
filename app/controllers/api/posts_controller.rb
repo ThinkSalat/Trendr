@@ -24,6 +24,13 @@ class Api::PostsController < ApplicationController
   
   def index
     # will have to select .where(date: params[:date])
+    puts '============================='
+    puts '============================='
+    puts '============================='
+    puts params[:offset]
+    puts '============================='
+    puts '============================='
+    puts '============================='
     @posts = current_user.followed_users_posts_by_date_created.offset(params[:offset])
     render 'api/posts/index'
   end

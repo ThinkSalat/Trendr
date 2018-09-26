@@ -19,7 +19,7 @@ export default class MainFeed extends React.Component {
   }
 
   onScroll() {
-     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+     if($(window).scrollTop() + $(window).height() == $(document).height() && !this.state.loadingInfiniteScroll) {
       this.setState( { loadingInfiniteScroll: true }, _ =>
        this.props.loadNextPosts(this.state.offset).then( _ => {
         this.setState( {
