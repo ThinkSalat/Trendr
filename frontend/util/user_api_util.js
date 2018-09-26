@@ -1,1 +1,1 @@
-export const fetchUser = userId => $.get(`api/users/${userId}`);
+export const fetchUser = (userId, offset) => $.get(`api/users/${userId}?offset=${offset || 0}`);
