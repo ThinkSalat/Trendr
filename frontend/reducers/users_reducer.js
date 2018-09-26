@@ -6,7 +6,8 @@ import {
 import { 
   RECEIVE_POST, 
   RECEIVE_POSTS, 
-  RECEIVE_ALL_POSTS } from '../actions/post_actions';
+  RECEIVE_ALL_POSTS,
+  RECEIVE_NEXT_POSTS } from '../actions/post_actions';
 import { RECEIVE_USER } from '../actions/user_actions';
 import { 
   FOLLOW_USER, 
@@ -26,7 +27,8 @@ const usersReducer = (state = {}, action) => {
       return merge({}, state, { [action.user.id]: action.user });
     case RECEIVE_ALL_POSTS:
     case RECEIVE_POSTS:
-      return merge({},state, action.users);
+    case RECEIVE_NEXT_POSTS:
+      return merge({}, state, action.users)
     case RECEIVE_FOLLOWERS:
     case RECEIVE_FOLLOWED_USERS:
       return action.users

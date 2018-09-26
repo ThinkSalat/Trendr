@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { fetchPosts } from '../../actions/post_actions';
+import { fetchPosts, fetchNextPosts } from '../../actions/post_actions';
 
 import MainFeed from './main_feed';
 
@@ -13,7 +13,8 @@ const mapStateToProps = ({ session, entities: { users, posts } }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  fetchPosts: () => dispatch(fetchPosts())
+  fetchPosts: () => dispatch(fetchPosts()),
+  loadNextPosts: offset => dispatch(fetchNextPosts(offset))
 });
 
 

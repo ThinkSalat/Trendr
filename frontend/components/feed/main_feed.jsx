@@ -1,8 +1,6 @@
 import React from 'react';
 import { Switch, Link } from 'react-router-dom';
 import { ProtectedRoute } from '../../util/route_util';
-import Infinite from 'react-infinite';
-
 
 import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';
@@ -10,15 +8,47 @@ import FeedPostContainer from '../posts/feed_post_container';
 import SideBarContainer from '../feed/side_bar_container.js';
 
 export default class MainFeed extends React.Component {
+  constructor(props){
+    super(props)
+    window.lnp = this.props.loadNextPosts
+    this.state = {
+      loadingInfiniteScroll: false,
+      offset: 0,
+      date: new Date()
+    } 
+  }
+
+  onScroll() {
+     if($(window).scrollTop() + $(window).height() == $(document).height() && !this.state.loadingInfiniteScroll) {
+      this.setState( { loadingInfiniteScroll: true }, _ =>
+       this.props.loadNextPosts(this.state.offset).then( _ => {
+        this.setState( {
+          loadingInfiniteScroll: false,
+          offset: this.state.offset + 5
+        })
+      }))
+    }
+  }
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
+    window.addEventListener('scroll', this.onScroll.bind(this), false);
+    this.props.fetchPosts().then( () => window.scrollTo(0, 0));
   }
 
   componentWillReceiveProps(newProps) {
     if (newProps.location.pathname !== this.props.location.pathname) {
-      this.props.fetchPosts().then(succ => window.scrollTo(0, 0));
+      this.props.fetchPosts().then( () => window.scrollTo(0, 0));
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll.bind(this), false);
+  }
+
+  loading() {
+    if (this.state.loadingInfiniteScroll) {
+     return <div>Loading...</div>
     }
   }
 
@@ -51,14 +81,10 @@ export default class MainFeed extends React.Component {
                 <ProtectedRoute exact path='/new/video' component={(props) => <FormContainer {...props} postType={'video'} />}  />
               </Switch>
             </li>
-
-            <div className='main-feed'>  {/*  <MainFeedContainer /> */}
-              <div></div>
-              <div></div>
-            </div>
             <ul className='feed-posts'>
               {postComponents}
             </ul>
+            {this.loading()}
           </ol>
         </div>
         <div className='main-content-sidebar col-2'>
