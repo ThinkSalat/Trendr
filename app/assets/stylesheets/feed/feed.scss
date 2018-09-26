@@ -5,13 +5,9 @@
   height: 100vh;
   max-width: 990px;
   min-width: 990px;
-
   background-color: transparent;
   padding:  92px 5px 0 5px;
-
   margin: 0 auto;
-
-
 }
 
 .main-content {
@@ -49,8 +45,45 @@
 }
 
 .main-feed-avatar {
-
   display: block;
   height: 64px;
   width: 64px;
+}
+
+.feed-loading-bar-container {
+  margin: 20px auto 20px auto;
+}
+
+.feed-loading-bar {
+  // display: none;
+  height: 20px;
+  width: 20px;
+  margin: 0 3px;
+  opacity: 0.5;
+  border-radius: 5px;
+  background-color: #d0d0d0;
+}
+
+.animate>.feed-loading-bar {
+  display: inline-block;
+  animation: loading-bar ease-in-out 300ms infinite alternate;
+}
+
+.feed-loading-bar:nth-child(1) {
+  animation-delay: -200ms;
+}
+
+.feed-loading-bar:nth-child(2) {
+  animation-delay: -100ms;
+}
+
+@keyframes loading-bar {
+  0% {
+    opacity: 0.5;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1.4);
+  }
 }

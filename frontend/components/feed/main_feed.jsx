@@ -48,7 +48,13 @@ export default class MainFeed extends React.Component {
 
   loading() {
     if (this.state.loadingInfiniteScroll) {
-     return <div>Loading...</div>
+     return (
+      <div className='feed-loading-bar-container animate'>
+        <div className="feed-loading-bar"></div>
+        <div className="feed-loading-bar"></div>
+        <div className="feed-loading-bar"></div>
+      </div>
+     )
     }
   }
 
