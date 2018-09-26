@@ -10,7 +10,7 @@ import SideBarContainer from '../feed/side_bar_container.js';
 export default class MainFeed extends React.Component {
   constructor(props){
     super(props)
-    window.lnp = this.props.loadNextPosts
+
     this.state = {
       loadingInfiniteScroll: false,
       offset: 0,

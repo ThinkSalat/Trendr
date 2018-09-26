@@ -5,7 +5,7 @@ import {
   REMOVE_POST,
   RECEIVE_POSTS,
   RECEIVE_NEXT_POSTS } from '../actions/post_actions';
-import { RECEIVE_USER } from '../actions/user_actions';
+import { RECEIVE_USER, RECEIVE_NEXT_POSTS_FROM_USER } from '../actions/user_actions';
 import { UNLIKE_POST, LIKE_POST } from '../actions/like_actions';
 
 const postsReducer = (state = {}, action) => {
@@ -16,6 +16,7 @@ const postsReducer = (state = {}, action) => {
     case RECEIVE_USER:
       return action.posts || {};
     case RECEIVE_NEXT_POSTS:
+    case RECEIVE_NEXT_POSTS_FROM_USER:
       return merge({}, state, action.posts)
     case RECEIVE_POST:
     case UNLIKE_POST:
