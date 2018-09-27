@@ -1,6 +1,0 @@
-{
-	"SourceDir": "/frontend",
-	"DistributionDir": "build",
-	"BuildCommand": "npm run build",
-	"StartCommand": "npm run start"
-}
