@@ -39,7 +39,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch --mode=development",
-    "build": "webpack --optimize-minimize"
+    "postinstall": "webpack --optimize-minimize"
   },
   "repository": {
     "type": "git",
