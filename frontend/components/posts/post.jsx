@@ -105,8 +105,10 @@ export default class Post extends React.Component {
                 {this.postVideos()}
               </ul>
             </li>
-            <li className='post-title'>{post.title}</li>
-            {this.postBody()}
+            <li className='post-title'>
+              <h3>{post.title}</h3>
+            </li>
+              <p>{this.postBody()}</p>
             <li>
               <PostBottomNavContainer postId={this.props.postId}/>
             </li>
