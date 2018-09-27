@@ -14,14 +14,14 @@ export default class MainFeed extends React.Component {
     this.state = {
       loadingInfiniteScroll: false,
       offset: 0,
-      date: new Date()
+      date: new Date().toISOString()
     } 
   }
 
   onScroll() {
      if($(window).scrollTop() + $(window).height() == $(document).height() && !this.state.loadingInfiniteScroll) {
       this.setState( { loadingInfiniteScroll: true }, _ =>
-       this.props.loadNextPosts(this.state.offset).then( _ => {
+       this.props.loadNextPosts(this.state.offset, this.state.date).then( _ => {
         setTimeout(this.setState( {
           loadingInfiniteScroll: false,
           offset: this.state.offset + 5

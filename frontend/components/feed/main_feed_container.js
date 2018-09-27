@@ -14,7 +14,7 @@ const mapStateToProps = ({ session, entities: { users, posts } }) => {
 
 const mapDispatchToProps = dispatch => ({
   fetchPosts: () => dispatch(fetchPosts()),
-  loadNextPosts: offset => dispatch(fetchNextPosts(offset))
+  loadNextPosts: (offset, date) => dispatch(fetchNextPosts(offset, date))
 });
 
 

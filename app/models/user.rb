@@ -98,7 +98,7 @@ class User < ApplicationRecord
     through: :followed_user_records,
     source: :followed
   
-  has_many :followed_users_posts_by_date_created, -> {order('created_at desc').limit(5)},
+  has_many :followed_users_posts_by_date_created, -> {order('created_at desc')},
     through: :followed_users,
     source: :posts
 
@@ -111,7 +111,7 @@ class User < ApplicationRecord
     through: :likes,
     source: :post
   
-  has_many :posts, -> {order('created_at desc').limit(5)}
+  has_many :posts, -> {order('created_at desc')}
 
   # Search
   include PgSearch

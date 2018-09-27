@@ -15,7 +15,7 @@ const mapStateToProps = ({ entities: { users, posts }, session: { id }}, { match
 const mapDispatchToProps = dispatch => {
   return {
     fetchUser: userId => dispatch(fetchUser(userId)),
-    fetchNextPostsFromUser: (userId, offset) => dispatch(fetchNextPostsFromUser(userId, offset))
+    fetchNextPostsFromUser: (userId, offset, date) => dispatch(fetchNextPostsFromUser(userId, offset, date))
   };
 };
 

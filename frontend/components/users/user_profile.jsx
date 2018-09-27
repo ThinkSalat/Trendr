@@ -14,14 +14,14 @@ export default class UserProfile extends React.Component {
       isAvailable: true,
       loadingInfiniteScroll: false,
       offset: 0,
-      date: new Date()
+      date: new Date().toISOString()
     };
   }
 
   onScroll() {
     if($(window).scrollTop() + $(window).height() == $(document).height() && !this.state.loadingInfiniteScroll) {
      this.setState( { loadingInfiniteScroll: true }, _ =>
-      this.props.fetchNextPostsFromUser(this.props.userId, this.state.offset).then( _ => {
+      this.props.fetchNextPostsFromUser(this.props.userId, this.state.offset, this.state.date).then( _ => {
        setTimeout(this.setState( {
          loadingInfiniteScroll: false,
          offset: this.state.offset + 5

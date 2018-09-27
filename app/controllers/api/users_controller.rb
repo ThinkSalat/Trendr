@@ -4,6 +4,7 @@ class Api::UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @offset = params[:offset] || 0
+    @date = params[:date]
     render "api/users/profile"
   end
 

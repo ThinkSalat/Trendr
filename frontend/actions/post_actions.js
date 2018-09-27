@@ -23,8 +23,8 @@ export const deletePost = postId => dispatch => (
 export const fetchRandomPosts = numPosts => dispatch => (
   PostAPIUtil.fetchRandomPosts(numPosts).then(res => dispatch(receivePosts(res)))
 );
-export const fetchNextPosts = offset => dispatch => (
-  PostAPIUtil.fetchPosts(null, offset).then(res => dispatch(addPostsToState(res)))
+export const fetchNextPosts = (offset, date) => dispatch => (
+  PostAPIUtil.fetchPosts(null, offset, date).then(res => dispatch(addPostsToState(res)))
 );
 
 const receivePosts = ({ posts, users }) => ({

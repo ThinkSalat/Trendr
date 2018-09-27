@@ -1,6 +1,6 @@
-export const fetchPosts = (filter, offset = 0) => (
+export const fetchPosts = (filter, offset = 0, date = new Date().toISOString()) => (
   $.get({
-    url: `api/posts?offset=${offset}`,
+    url: `api/posts?offset=${offset}&date=${date}`,
     data: { filter }
   })
 );
