@@ -158,11 +158,15 @@ class User < ApplicationRecord
   end
 
   def default_users
-    ['crossconnectmag',
-    "dvdp    ",
-    "obviologist",
-    "darksilenceinsuburbia",
-    "skunkbear"]
+    [
+      'crossconnectmag',
+      "darksilenceinsuburbia",
+      "bigblueboo",
+      "matthen",
+      "kirillnazin",
+      "dvdp    ",
+      "obviologist",
+    ]
   end
 
   def follow_default_users
