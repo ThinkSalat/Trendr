@@ -14,12 +14,17 @@ export default class UserProfile extends React.Component {
       isAvailable: true,
       loadingInfiniteScroll: false,
       offset: 0,
-      date: new Date().toISOString()
+      date: new Date().toISOString(),
+      endOfPosts: false
     };
   }
 
   onScroll() {
-    if($(window).scrollTop() + $(window).height() == $(document).height() && !this.state.loadingInfiniteScroll) {
+    if(
+      $(window).scrollTop() + $(window).height() == $(document).height()
+      && !this.state.loadingInfiniteScroll
+      && !this.state.endOfPosts
+    ) {
      this.setState( { loadingInfiniteScroll: true }, _ =>
       this.props.fetchNextPostsFromUser(this.props.userId, this.state.offset, this.state.date).then( _ => {
        setTimeout(this.setState( {
@@ -44,7 +49,10 @@ export default class UserProfile extends React.Component {
     window.removeEventListener('scroll', this.onScroll.bind(this), false);
   }
 
-  componentWillReceiveProps(newProps) {
+  componentWillReceiveProps(newProps, oldProps) {
+    if(Object.keys(newProps.posts).length === Object.keys(this.props.posts).length && this.state.offset > 1) {
+      this.setState({endOfPosts: true})
+    }
     if (newProps.match.params.userId !== this.props.userId) {
       this.props.fetchUser(newProps.userId)
       .then( 
