@@ -14,12 +14,17 @@ export default class MainFeed extends React.Component {
     this.state = {
       loadingInfiniteScroll: false,
       offset: 0,
-      date: new Date().toISOString()
+      date: new Date().toISOString(),
+      endOfPosts: false
     } 
   }
 
   onScroll() {
-     if($(window).scrollTop() + $(window).height() == $(document).height() && !this.state.loadingInfiniteScroll) {
+     if(
+       $(window).scrollTop() + $(window).height() == $(document).height()
+       && !this.state.loadingInfiniteScroll
+       && !this.state.endOfPosts
+      ) {
       this.setState( { loadingInfiniteScroll: true }, _ =>
        this.props.loadNextPosts(this.state.offset, this.state.date).then( _ => {
         setTimeout(this.setState( {
@@ -37,6 +42,9 @@ export default class MainFeed extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
+    if(Object.keys(newProps.posts).length === Object.keys(this.props.posts).length && this.state.offset > 1) {
+      this.setState({endOfPosts: true})
+    }
     if (newProps.location.pathname !== this.props.location.pathname) {
       this.props.fetchPosts().then( () => window.scrollTo(0, 0));
     }
