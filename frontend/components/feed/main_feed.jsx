@@ -60,9 +60,7 @@ export default class MainFeed extends React.Component {
 
    render() {
     const { posts } = this.props;
-    const sortByDate = (a,b) => {
-      return new Date(posts[b].createdAt) - new Date(posts[a].createdAt)
-    }
+    const sortByDate = (a,b) => new Date(posts[b].createdAt) - new Date(posts[a].createdAt)
     const postComponents = Object.keys(posts).sort(sortByDate).map(postId => {
       let post = posts[postId];
       return (

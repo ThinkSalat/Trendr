@@ -83,8 +83,8 @@ export default class UserProfile extends React.Component {
     }
    
     let { posts, user } = this.props;
-
-    const postComponents = Object.keys(posts).sort((a,b) => b-a).map( id => {
+    const sortByDate = (a,b) => new Date(posts[b].createdAt) - new Date(posts[a].createdAt)
+    const postComponents = Object.keys(posts).sort(sortByDate).map( id => {
       let post = posts[id];
       return <li key={post.id}>
         <ProfilePostContainer post={post} author={this.props.user}/>
