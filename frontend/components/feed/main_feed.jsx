@@ -6,7 +6,7 @@ import NewPostNavContainer from './new_post_nav_container';
 import FormContainer from '../forms/forms_container';
 import FeedPostContainer from '../posts/feed_post_container';
 import SideBarContainer from '../feed/side_bar_container.js';
-
+ 
 export default class MainFeed extends React.Component {
   constructor(props){
     super(props)
@@ -60,7 +60,10 @@ export default class MainFeed extends React.Component {
 
    render() {
     const { posts } = this.props;
-    const postComponents = Object.keys(posts).sort((a,b) => b-a).map(postId => {
+    const sortByDate = (a,b) => {
+      return new Date(posts[b].createdAt) - new Date(posts[a].createdAt)
+    }
+    const postComponents = Object.keys(posts).sort(sortByDate).map(postId => {
       let post = posts[postId];
       return (
         <li key={post.id}>
