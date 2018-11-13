@@ -7,7 +7,8 @@ import SignUpForm from './sign_up_form';
 const mapStateToProps = ({ errors }) => {
   return {
     errors: errors.session,
-    formType: 'signup'
+    formType: 'signup',
+    bg: `bg-${Math.floor(Math.random()*37)}`
   };
 };
 

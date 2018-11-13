@@ -1,34 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 
-class SignUpForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      username: '',
-      email: '',
-      password: '',
-      bg: `bg-${Math.floor(Math.random()*37)}`
-    };
+const SignUpForm = ({ processForm, history, errors, bg }) => {
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('')
 
-  update(field) {
-    return e => this.setState({
-      [field]: e.currentTarget.value
-    });
-  }
-
-  handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.processForm(user).then( res => this.props.history.push('/dashboard'));
+    const user = { password, email, username }
+    processForm(user).then(res => history.push('/dashboard'));
   }
-  renderErrors() {
-    if (this.props.errors.length > 4) return <li className='session-form-error'> You do have to fill this stuff out, you know.</li>;
+
+  function renderErrors() {
+    if (errors.length > 4) return <li className='session-form-error'> You do have to fill stuff out, you know.</li>;
     return(
-        this.props.errors.map((error, i) => (
+        errors.map((error, i) => (
           <li className='session-form-error' key={`error-${i}`}>
             {error}
           </li>
@@ -36,34 +24,32 @@ class SignUpForm extends React.Component {
     );
   }
   
-  render() {
-    return(
-      <div className={`session-page ${this.state.bg} `}>
-        <div className="session-page-form animated fadeInUp">
-          <div className="session-page-form-logo"> trendr. </div>
-          <div className="session-page-slogan">
-              <p>Come for what you love.</p>
-              <p>Stay for what you discover.</p>
-              <br/>
-          </div>
-          <form className='session-form' onSubmit={this.handleSubmit}>
-            <input id='top-session-form-input' type='text' placeholder='Username' onChange={this.update('username')} value={this.state.username}/>
-            <input type="text" placeholder="Email" onChange={this.update('email')} value={this.state.email}/>
-            <input type="password" placeholder="Password" onChange={this.update('password')} value={this.state.password}/>
-            <ul className='session-form-error-container animated fadeInUp'>
-              {this.renderErrors()}
-            </ul>
-            <input type="submit" value="Sign Up" className="session-submit-button"/>
-          </form>
-          <div className='personal-icons'>
-            <a href='https://github.com/ThinkSalat' target='_blank'><i className="fab fa-github-square github"></i></a>
-            <a href='https://www.linkedin.com/in/shawnsalat/' target='_blank'><i className="fab fa-linkedin linkedin"></i></a>
-            <a href='http://shawnsalat.com/' target='_blank'><i className="fas fa-portrait portfolio"></i></a>
-          </div>
+  return(
+    <div className={`session-page ${bg}`}>
+      <div className="session-page-form animated fadeInUp">
+        <div className="session-page-form-logo"> trendr. </div>
+        <div className="session-page-slogan">
+            <p>Come for what you love.</p>
+            <p>Stay for what you discover.</p>
+            <br/>
+        </div>
+        <form className='session-form' onSubmit={handleSubmit}>
+          <input id='top-session-form-input' type='text' placeholder='Username' onChange={e => setUsername(e.currentTarget.value)} value={username}/>
+          <input type="text" placeholder="Email" onChange={e => setEmail(e.currentTarget.value)} value={email}/>
+          <input type="password" placeholder="Password" onChange={e => setPassword(e.currentTarget.value)} value={password}/>
+          <ul className='session-form-error-container animated fadeInUp'>
+            {renderErrors()}
+          </ul>
+          <input type="submit" value="Sign Up" className="session-submit-button"/>
+        </form>
+        <div className='personal-icons'>
+          <a href='https://github.com/ThinkSalat' target='_blank'><i className="fab fa-github-square github"></i></a>
+          <a href='https://www.linkedin.com/in/shawnsalat/' target='_blank'><i className="fab fa-linkedin linkedin"></i></a>
+          <a href='http://shawnsalat.com/' target='_blank'><i className="fas fa-portrait portfolio"></i></a>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default withRouter(SignUpForm);
