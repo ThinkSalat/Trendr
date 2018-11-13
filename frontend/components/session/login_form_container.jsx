@@ -11,7 +11,8 @@ import LoginForm from './login_form';
 const mapStateToProps = ({ errors }) => {
   return {
     errors: errors.session,
-    formType: 'login'
+    formType: 'login',
+    bgClass: `bg-${Math.floor(Math.random()*37)}`
   };
 };
 
