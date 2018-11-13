@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 
-const LoginForm = (props) => {
+const LoginForm = ({ processForm, history, errors, bgClass }) => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -9,12 +9,12 @@ const LoginForm = (props) => {
   function handleSubmit(e) {
     e.preventDefault();
     const user = { password, email }
-    props.processForm(user).then(res => props.history.push('/dashboard'));
+    processForm(user).then(res => history.push('/dashboard'));
   }
 
   function renderErrors() {
     return(
-        props.errors.map((error, i) => (
+        errors.map((error, i) => (
           <li className='session-form-error' key={`error-${i}`}>
             {error}
           </li>
@@ -23,7 +23,7 @@ const LoginForm = (props) => {
   }
     
   return(
-    <div className={`session-page ${props.bgClass}`}>
+    <div className={`session-page ${bgClass}`}>
       <div className="session-page-form animated fadeInUp">
       <div className="session-page-form-logo"> trendr. </div>
         <form className='session-form' onSubmit={handleSubmit}>

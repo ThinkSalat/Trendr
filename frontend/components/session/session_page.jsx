@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SessionPage = (props) => (
+const SessionPage = ({ clearErrors, demoLogin }) => (
   <div className={`session-page bg-${Math.floor(Math.random()*37)}`}>
     <div className="session-page-form-placeholder"></div>
     <div className="session-page-form  animated fadeInUp">
@@ -12,14 +12,14 @@ const SessionPage = (props) => (
         <br/>
       </div>
       <div>
-        <Link to="/signup" onClick={() => props.clearErrors()} className="signup-button">Get Started</Link>
+        <Link to="/signup" onClick={clearErrors} className="signup-button">Get Started</Link>
       </div>
       
       <div>
-        <Link to="/login" onClick={() => props.clearErrors()} className="login-button">Log In</Link>
+        <Link to="/login" onClick={clearErrors} className="login-button">Log In</Link>
       </div>
       <div>
-        <Link to="/" onClick={() => props.demoLogin()} className="demo-button">Demo Login</Link>
+        <Link to="/" onClick={demoLogin} className="demo-button">Demo Login</Link>
       </div>
       <div className='personal-icons'>
         <a className='animated rubberBand' href='https://github.com/ThinkSalat' target='_blank'><i className="fab fa-github-square github "></i></a>
